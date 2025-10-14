@@ -1,58 +1,49 @@
 import { motion } from 'framer-motion'
-import { Crown, Zap, Calendar, Users, Sparkles, Star, Trophy, Lock } from 'lucide-react'
+import { Crown, Zap, Calendar, CreditCard, Tag, Sticker, Gift, Lock, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import budsProBadge from '../assets/budspro-badge.png'
-import rewardsIcon from '../assets/rewards-icon.png'
 
 const BudsProPage = () => {
   const benefits = [
     {
-      icon: Zap,
-      title: '1.5x Points Multiplier',
-      description: 'Earn rewards 50% faster on every purchase across the Buds network',
-      tier: 'Beta'
-    },
-    {
       icon: Calendar,
-      title: 'Birthday Gift',
-      description: 'Celebrate your special day with an exclusive reward from us',
-      tier: 'Beta'
+      title: 'Backdated Buds',
+      description: 'Get credit for all your past purchases - your loyalty history counts from day one'
     },
     {
-      icon: Star,
-      title: 'Early Access to Drops',
-      description: 'Be the first to purchase new and limited-edition products before anyone else',
-      tier: 'Beta'
+      icon: Zap,
+      title: '+1 Perks',
+      description: 'Unlock an additional perk tier with exclusive benefits beyond standard rewards'
     },
     {
-      icon: Sparkles,
-      title: 'Exclusive Content',
-      description: 'Access premium content, guides, and special partner offers',
-      tier: 'Beta'
+      icon: ArrowRight,
+      title: 'Early Access',
+      description: 'Be the first to purchase new and limited-edition products before anyone else'
     },
     {
-      icon: Crown,
-      title: 'Digital Pro Badge',
-      description: 'Show your status with an exclusive BudsPro badge in your profile',
-      tier: 'Beta'
+      icon: CreditCard,
+      title: 'Unique NFC Card',
+      description: 'Exclusive black card with NFC technology - tap to collect your Buds in style'
     },
     {
-      icon: Users,
-      title: 'VIP Community Access',
-      description: 'Join a private community of cannabis connoisseurs and industry insiders',
-      tier: 'Coming Soon'
+      icon: Tag,
+      title: 'Preferential Prices',
+      description: 'Access member-only pricing and special discounts across the network'
     },
     {
-      icon: Trophy,
-      title: 'Exclusive Events',
-      description: 'Invitations to private parties, grow tours, and industry events',
-      tier: 'Coming Soon'
+      icon: Sticker,
+      title: 'Sticker Packs and Emojis',
+      description: 'Exclusive BudsPro digital stickers and custom emojis for your profile'
+    },
+    {
+      icon: Gift,
+      title: 'Pro Rewards',
+      description: 'Access to exclusive Pro-tier rewards not available to standard members'
     },
     {
       icon: Lock,
-      title: 'Concierge Service',
-      description: 'Personalized recommendations and priority customer support',
-      tier: 'Coming Soon'
+      title: 'Invite Only Experiences',
+      description: 'Private events, grow tours, and VIP experiences reserved for Pro members only'
     }
   ]
 
@@ -85,10 +76,10 @@ const BudsProPage = () => {
             </h1>
             
             <p className="text-3xl text-gray-300 mb-4 font-light">
-              Go Pro. Get Closer.
+              Invite Only. Elevated Experience.
             </p>
             
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
               The insider's tier for true cannabis connoisseurs. More than just points—it's access to the heart of cannabis culture.
             </p>
 
@@ -96,17 +87,14 @@ const BudsProPage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-6"
+              className="inline-block"
             >
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-black text-xl px-12 py-6 rounded-full font-bold shadow-2xl shadow-yellow-500/50"
-              >
-                Join BudsPro
-              </Button>
-              <p className="text-gray-400">
-                $99/year or qualify with $1,000+ annual spend
-              </p>
+              <div className="bg-gradient-to-r from-yellow-500/20 to-yellow-400/20 border border-yellow-500/50 rounded-2xl px-8 py-4">
+                <p className="text-yellow-400 font-semibold text-lg flex items-center gap-2">
+                  <Lock className="w-5 h-5" />
+                  Invitation Required
+                </p>
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -124,7 +112,7 @@ const BudsProPage = () => {
             <div className="border-l-4 border-yellow-400 pl-8 text-left">
               <h2 className="text-4xl font-black text-yellow-400 mb-4">Your Loyalty, Elevated.</h2>
               <p className="text-xl text-gray-300">
-                You're not a casual fan. You're a connoisseur. BudsPro recognizes your dedication with accelerated rewards, exclusive access, and a premium experience tailored to your passion.
+                You're not a casual fan. You're a connoisseur. BudsPro recognizes your dedication with exclusive access, premium perks, and experiences tailored to your passion.
               </p>
             </div>
 
@@ -147,8 +135,8 @@ const BudsProPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-black text-white mb-4">Pro Benefits</h2>
-            <p className="text-xl text-gray-400">Unlock exclusive perks designed for dedicated members</p>
+            <h2 className="text-5xl font-black text-white mb-4">Pro Experience</h2>
+            <p className="text-xl text-gray-400">Exclusive perks designed for our most dedicated members</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -169,15 +157,7 @@ const BudsProPage = () => {
                   </div>
                   
                   <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
-                  <p className="text-gray-400 mb-4">{benefit.description}</p>
-                  
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                    benefit.tier === 'Beta' 
-                      ? 'bg-yellow-500/20 text-yellow-400' 
-                      : 'bg-gray-700 text-gray-400'
-                  }`}>
-                    {benefit.tier}
-                  </span>
+                  <p className="text-gray-400">{benefit.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -185,7 +165,7 @@ const BudsProPage = () => {
         </div>
       </section>
 
-      {/* Qualification Section */}
+      {/* How to Get Invited Section */}
       <section className="py-20 px-6 bg-black">
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -194,41 +174,63 @@ const BudsProPage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-5xl font-black text-white mb-4">How to Qualify</h2>
-            <p className="text-xl text-gray-400">Two pathways to Pro status</p>
+            <h2 className="text-5xl font-black text-white mb-4">How to Receive an Invitation</h2>
+            <p className="text-xl text-gray-400">BudsPro is invite-only. Here's how you can earn your place.</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-yellow-900/30 to-black border border-yellow-500/30 rounded-3xl p-10 text-center"
+              className="bg-gradient-to-br from-yellow-900/30 to-black border border-yellow-500/30 rounded-3xl p-8 text-center"
             >
               <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Trophy className="w-10 h-10 text-black" />
+                <Zap className="w-10 h-10 text-black" />
               </div>
-              <h3 className="text-3xl font-black text-yellow-400 mb-4">Earn Your Status</h3>
-              <p className="text-2xl text-white font-bold mb-2">$1,000+</p>
-              <p className="text-gray-400">Annual spend across the Buds network</p>
-              <p className="text-sm text-gray-500 mt-4">Automatic invitation when you reach the threshold</p>
+              <h3 className="text-2xl font-black text-yellow-400 mb-4">Top Spenders</h3>
+              <p className="text-gray-400">Reach $1,000+ in annual purchases across the Buds network</p>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-yellow-900/30 to-black border border-yellow-500/30 rounded-3xl p-10 text-center"
+              transition={{ delay: 0.1 }}
+              className="bg-gradient-to-br from-yellow-900/30 to-black border border-yellow-500/30 rounded-3xl p-8 text-center"
             >
               <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Crown className="w-10 h-10 text-black" />
               </div>
-              <h3 className="text-3xl font-black text-yellow-400 mb-4">Instant Access</h3>
-              <p className="text-2xl text-white font-bold mb-2">$99/year</p>
-              <p className="text-gray-400">Immediate Pro benefits and status</p>
-              <p className="text-sm text-gray-500 mt-4">Perfect for dedicated enthusiasts</p>
+              <h3 className="text-2xl font-black text-yellow-400 mb-4">Community Leaders</h3>
+              <p className="text-gray-400">Active engagement and contributions to the Buds community</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-gradient-to-br from-yellow-900/30 to-black border border-yellow-500/30 rounded-3xl p-8 text-center"
+            >
+              <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Gift className="w-10 h-10 text-black" />
+              </div>
+              <h3 className="text-2xl font-black text-yellow-400 mb-4">Partner Referrals</h3>
+              <p className="text-gray-400">Exclusive nominations from our partner dispensaries and brands</p>
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <p className="text-gray-400 text-lg">
+              Invitations are sent quarterly to qualifying members. Keep building your Buds balance and engaging with the community to increase your chances.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -256,7 +258,7 @@ const BudsProPage = () => {
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-start gap-3">
                   <span className="text-green-400 mt-1">✓</span>
-                  <span>1x points on all purchases</span>
+                  <span>Standard points on all purchases</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-400 mt-1">✓</span>
@@ -269,6 +271,10 @@ const BudsProPage = () => {
                 <li className="flex items-start gap-3">
                   <span className="text-green-400 mt-1">✓</span>
                   <span>Free to join</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>Standard NFC card</span>
                 </li>
               </ul>
             </motion.div>
@@ -287,7 +293,11 @@ const BudsProPage = () => {
               <ul className="space-y-4 text-gray-200">
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
-                  <span><strong>1.5x points</strong> on all purchases</span>
+                  <span><strong>Backdated Buds</strong> - credit for past purchases</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">★</span>
+                  <span><strong>+1 Perks</strong> - additional benefit tier</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
@@ -295,19 +305,23 @@ const BudsProPage = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
-                  <span><strong>Exclusive content</strong> and offers</span>
+                  <span><strong>Unique NFC card</strong> - exclusive black card</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
-                  <span><strong>Birthday gift</strong> and Pro badge</span>
+                  <span><strong>Preferential prices</strong> - member discounts</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
-                  <span><strong>VIP community</strong> access (coming soon)</span>
+                  <span><strong>Sticker packs & emojis</strong> - exclusive digital content</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">★</span>
-                  <span><strong>Exclusive events</strong> (coming soon)</span>
+                  <span><strong>Pro Rewards</strong> - exclusive tier rewards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">★</span>
+                  <span><strong>Invite only experiences</strong> - VIP events</span>
                 </li>
               </ul>
             </motion.div>
@@ -330,18 +344,23 @@ const BudsProPage = () => {
               <img src={budsProBadge} alt="BudsPro Badge" className="w-32 h-32 mx-auto mb-6" />
               
               <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 mb-6">
-                Ready to Go Pro?
+                Earn Your Invitation
               </h2>
               
               <p className="text-xl text-gray-300 mb-8">
-                Join the inner circle of cannabis connoisseurs. Elevate your experience with BudsPro.
+                BudsPro is reserved for our most dedicated members. Build your Buds balance, engage with the community, and watch for your exclusive invitation.
               </p>
+              
+              <div className="flex items-center justify-center gap-2 text-yellow-400 mb-8">
+                <Lock className="w-6 h-6" />
+                <span className="text-lg font-semibold">Invitation Only</span>
+              </div>
               
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-black text-xl px-12 py-6 rounded-full font-bold shadow-2xl shadow-yellow-500/50"
               >
-                Become a BudsPro Member
+                Start Earning Buds Today
               </Button>
               
               <p className="text-sm text-gray-500 mt-6">
