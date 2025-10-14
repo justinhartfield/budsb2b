@@ -292,6 +292,130 @@ const BudsPage = () => {
             See how Buds Rewards appears naturally in real Shopify and WooCommerce checkout flows, featuring exclusive VIBES™ branded products and seamless user experience.
           </p>
 
+          {/* Checkout Mockups */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Before - Non-member */}
+            <div className="bg-white rounded-2xl border-2 border-gray-300 overflow-hidden shadow-lg">
+              <div className="bg-gray-100 px-4 py-2 border-b border-gray-300">
+                <p className="text-xs text-gray-600">checkout.shopify.com/wellness-store</p>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-4">Checkout</h4>
+                
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">CBD Wellness Tea</span>
+                    <span className="font-semibold">€24.90</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Hemp Seed Oil</span>
+                    <span className="font-semibold">€35.60</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Aromatherapy Kit</span>
+                    <span className="font-semibold">€27.00</span>
+                  </div>
+                  <div className="border-t border-gray-200 pt-3 flex justify-between text-sm">
+                    <span className="text-gray-700">Subtotal</span>
+                    <span className="font-semibold">€87.50</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Shipping</span>
+                    <span className="font-semibold">€4.99</span>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-50 to-cyan-50 border-2 border-green-400 rounded-xl p-4 mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h5 className="font-bold text-gray-900">Unlock Exclusive Rewards</h5>
+                    <span className="text-xs text-green-600 font-semibold">- Add as member reward</span>
+                  </div>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white mb-2">Join Buds - It's Free</Button>
+                  <p className="text-center text-xs text-gray-600 mb-1">Already a member? <a href="#" className="text-green-600 font-semibold">Sign in</a></p>
+                  <p className="text-center text-xs text-gray-500">Quick signup • No purchase required • Cancel anytime</p>
+                </div>
+
+                <div className="border-t border-gray-200 pt-3 flex justify-between font-bold">
+                  <span>Total</span>
+                  <span>€92.49</span>
+                </div>
+              </div>
+            </div>
+
+            {/* After - Member with reward */}
+            <div className="bg-white rounded-2xl border-2 border-green-400 overflow-hidden shadow-lg">
+              <div className="bg-gray-100 px-4 py-2 border-b border-gray-300">
+                <p className="text-xs text-gray-600">checkout.shopify.com/wellness-store</p>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="text-lg font-bold text-gray-900">Checkout</h4>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-sm">JD</div>
+                    <div>
+                      <p className="text-xs font-semibold text-gray-900">John Doe</p>
+                      <p className="text-xs text-green-600">Buds Member</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <div>
+                      <p className="text-xs font-semibold text-yellow-900">Gold Tier</p>
+                      <p className="text-xs text-yellow-700">Next tier: Platinum (53 credits away)</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-lg font-bold text-yellow-900">247</p>
+                      <p className="text-xs text-yellow-700">Buds Credits</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-yellow-700">€31.25 Credit Value</p>
+                </div>
+                
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">CBD Wellness Tea</span>
+                    <span className="font-semibold">€24.90</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Hemp Seed Oil</span>
+                    <span className="font-semibold">€35.60</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Aromatherapy Kit</span>
+                    <span className="font-semibold">€27.00</span>
+                  </div>
+                  <div className="border-t border-gray-200 pt-3 flex justify-between text-sm">
+                    <span className="text-gray-700">Subtotal</span>
+                    <span className="font-semibold">€87.50</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-700">Shipping</span>
+                    <span className="font-semibold">€4.99</span>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-50 to-cyan-50 border-2 border-green-400 rounded-xl p-4 mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h5 className="font-bold text-gray-900">Buds Reward Available!</h5>
+                    <span className="text-xs text-green-600 font-semibold">- Add as member reward</span>
+                  </div>
+                  <p className="text-xs text-gray-600 mb-3 flex items-center gap-1">
+                    <Check className="w-3 h-3 text-green-600" />
+                    Exclusive access to VIBES™ branded products & your favorite brands
+                  </p>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Add Reward</Button>
+                </div>
+
+                <div className="border-t border-gray-200 pt-3 flex justify-between font-bold">
+                  <span>Total</span>
+                  <span>€92.49</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { title: 'Quick Signup Flow', desc: 'Frictionless registration process during checkout' },
@@ -382,7 +506,7 @@ const BudsPage = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-12">Placement & perks (how we rank)</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Donor Score</h3>
               <p className="text-gray-600">We compute a monthly Donor Score = (credited donations / target).</p>
@@ -394,6 +518,160 @@ const BudsPage = () => {
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Tiebreakers</h3>
               <p className="text-gray-600">Ties are broken by recent click‑through performance.</p>
+            </div>
+          </div>
+
+          {/* Newsletter & Widget Mockup */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-6">Top Donors Get Prime Exposure</h3>
+            <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+              See how high-performing partners get featured in our weekly newsletter and receive top widget placement across the Buds network.
+            </p>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Newsletter Mockup */}
+              <div className="bg-white rounded-2xl border-2 border-gray-300 overflow-hidden shadow-lg">
+                <div className="bg-gray-100 px-4 py-3 border-b border-gray-300 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <span className="ml-4 text-sm font-semibold text-gray-700">Gmail</span>
+                  </div>
+                  <span className="text-xs text-gray-500">•••</span>
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h4 className="font-bold text-gray-900">Buds Weekly Newsletter</h4>
+                      <p className="text-sm text-gray-600">hello@budsrewards.com</p>
+                    </div>
+                    <span className="text-xs text-gray-500">Today, 8:00 AM</span>
+                  </div>
+                  <p className="text-xs text-gray-500 mb-4">To: you@example.com</p>
+                  
+                  <div className="bg-gradient-to-br from-green-50 to-cyan-50 rounded-xl p-6 mb-4">
+                    <h5 className="text-xl font-black text-gray-900 mb-2">Buds Weekly</h5>
+                    <p className="text-sm text-gray-600 mb-4">Partner Spotlight Edition</p>
+                    
+                    <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
+                      <p className="text-xs font-semibold text-yellow-800">SPONSORED CONTENT</p>
+                      <p className="text-xs text-yellow-700">This content is sponsored by VIBES™ - Premium tobacco accessories</p>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4 mb-4">
+                      <p className="text-xs font-semibold text-purple-600 mb-2">FEATURED ADVERTISER PARTNER</p>
+                      <h6 className="font-bold text-gray-900 mb-2">VIBES™ Signature Series</h6>
+                      <p className="text-xs text-gray-600 mb-3">Our advertising partner VIBES™ is offering exclusive rolling papers and accessories as Buds rewards.</p>
+                      
+                      <div className="bg-green-50 border border-green-200 rounded p-2">
+                        <p className="text-xs font-semibold text-green-800">Advertiser Exclusive Offer</p>
+                        <p className="text-xs text-green-700">Donor Score 1.2+ gets priority access</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4">
+                      <p className="text-xs font-semibold text-gray-900 mb-3">This Week's Top Donors</p>
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="w-6 h-6 bg-yellow-400 text-yellow-900 rounded-full flex items-center justify-center text-xs font-bold">1</span>
+                            <span className="text-xs font-semibold">Partner Store A</span>
+                          </div>
+                          <span className="text-xs text-green-600 font-semibold">Score: 1.8</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="w-6 h-6 bg-gray-300 text-gray-700 rounded-full flex items-center justify-center text-xs font-bold">2</span>
+                            <span className="text-xs font-semibold">Partner Store B</span>
+                          </div>
+                          <span className="text-xs text-green-600 font-semibold">Score: 1.5</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="w-6 h-6 bg-orange-300 text-orange-900 rounded-full flex items-center justify-center text-xs font-bold">3</span>
+                            <span className="text-xs font-semibold">Partner Store C</span>
+                          </div>
+                          <span className="text-xs text-green-600 font-semibold">Score: 1.3</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-xs text-gray-500 text-center">Sent to 12,450+ cannabis enthusiasts across EU</p>
+                </div>
+              </div>
+
+              {/* Widget Placement Hierarchy */}
+              <div className="space-y-4">
+                <h4 className="text-xl font-bold text-gray-900 mb-4">Widget Placement</h4>
+                <p className="text-sm text-gray-600 mb-6">Donor Score Hierarchy</p>
+                
+                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-xl p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold text-yellow-800">Top Placement</span>
+                    <span className="text-xs font-bold text-yellow-900">Score: 1.5+</span>
+                  </div>
+                  <h5 className="font-bold text-gray-900 mb-2">VIBES™ Signature Series Kit</h5>
+                  <div className="space-y-1">
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-green-600" /> First position in widget
+                    </p>
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-green-600" /> Featured in newsletter
+                    </p>
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-green-600" /> Premium analytics
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-xl p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold text-blue-800">Mid Placement</span>
+                    <span className="text-xs font-bold text-blue-900">Score: 1.0-1.4</span>
+                  </div>
+                  <h5 className="font-bold text-gray-900 mb-2">Partner Store B - Premium Accessories</h5>
+                  <div className="space-y-1">
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-blue-600" /> Standard widget position
+                    </p>
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-blue-600" /> Monthly newsletter mention
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold text-gray-700">Standard Placement</span>
+                    <span className="text-xs font-bold text-gray-900">Score: 0.8-0.9</span>
+                  </div>
+                  <h5 className="font-bold text-gray-900 mb-2">Partner Store C - Basic Rewards</h5>
+                  <div className="space-y-1">
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-gray-600" /> Rotation-based display
+                    </p>
+                    <p className="text-xs text-gray-700 flex items-center gap-1">
+                      <Check className="w-3 h-3 text-gray-600" /> Basic analytics
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-300 rounded-xl p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold text-red-800">Below Target</span>
+                    <span className="text-xs font-bold text-red-900">Score: &lt;0.8</span>
+                  </div>
+                  <h5 className="font-bold text-gray-900 mb-2">Reduced visibility until catch-up</h5>
+                  <p className="text-xs text-red-700">⚠ Limited display • Catch-up plan required</p>
+                </div>
+
+                <p className="text-center text-sm font-semibold text-gray-900 mt-6">
+                  Higher Donor Score = Better Placement & More Features
+                </p>
+              </div>
             </div>
           </div>
 
