@@ -17,12 +17,21 @@ import {
   MapPin
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { partnerContent, sectionContent } from '../data/partnerContent'
 
 const BudsPage = () => {
   const [gmv, setGmv] = useState(100000)
   const [openFaq, setOpenFaq] = useState(null)
   const [activeTab, setActiveTab] = useState('partners')
   const [language, setLanguage] = useState('en')
+
+  // Get current content based on active tab and language
+  const currentContent = partnerContent[activeTab][language]
+  const currentSections = {
+    whatYouGet: sectionContent.whatYouGet[language],
+    howDonationsWork: sectionContent.howDonationsWork[language],
+    cta: sectionContent.cta[language]
+  }
 
   const copackTarget = gmv * 0.008
   const copackCredit = copackTarget * 1.25
@@ -152,27 +161,27 @@ const BudsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full mb-8 text-sm font-semibold">
-              🎁 Partner Rewards Program 📈
+              {currentContent.badge}
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-              Free to join. No fees. Donate overstock to power Buds rewards.
+              {currentContent.headline}
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Turn excess inventory into conversions—without public discounting. Partners simply donate monthly overstock (co‑pack or send to our 3PL). Top donors get prime widget placement and newsletter features.
+              {currentContent.description}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                Apply to Partner <ArrowRight className="ml-2 w-5 h-5" />
+                {currentSections.cta.applyToPartner} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-900 px-8 py-6 text-lg rounded-lg font-bold hover:bg-gray-50">
-                Integration Docs
+                {currentSections.cta.integrationDocs}
               </Button>
               <Link to="/partners/login">
                 <Button size="lg" variant="outline" className="border-2 border-red-500 text-red-500 px-8 py-6 text-lg rounded-lg font-bold hover:bg-red-50">
-                  Contact Sales
+                  {currentSections.cta.contactSales}
                 </Button>
               </Link>
             </div>
@@ -183,30 +192,14 @@ const BudsPage = () => {
       {/* What You Get Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">What you get</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{currentSections.whatYouGet.title}</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              {
-                icon: TrendingUp,
-                title: 'Higher Conversion & AOV',
-                description: 'Boost checkout conversion and average order value via Buds rewards (no couponing required).'
-              },
-              {
-                icon: Package,
-                title: 'Quiet Stock Relief',
-                description: 'Transform dead stock into valuable loyalty rewards without public discounting.'
-              },
-              {
-                icon: Star,
-                title: 'Prime Exposure',
-                description: 'Get top widget placement and features in Buds weekly newsletter.'
-              },
-              {
-                icon: Shield,
-                title: 'Privacy-Safe Insights',
-                description: 'Access aggregated, GDPR-aligned analytics and performance data.'
-              }
+              { icon: TrendingUp, ...currentSections.whatYouGet.benefits[0] },
+              { icon: Package, ...currentSections.whatYouGet.benefits[1] },
+              { icon: Star, ...currentSections.whatYouGet.benefits[2] },
+              { icon: Shield, ...currentSections.whatYouGet.benefits[3] }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -230,7 +223,7 @@ const BudsPage = () => {
       {/* How Donations Work */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">How donations work</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{currentSections.howDonationsWork.title}</h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div
@@ -245,15 +238,15 @@ const BudsPage = () => {
               
               <div className="flex items-center gap-3 mb-4">
                 <Truck className="w-6 h-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-900">Co-pack (preferred)</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{currentSections.howDonationsWork.copack.title}</h3>
               </div>
               
-              <p className="text-gray-600 mb-6">You ship the Reward from your own facility.</p>
+              <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.copack.description}</p>
               
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-green-800 font-semibold">
-                  €1 of your COGS = €1.25 of donation credit
+                  {currentSections.howDonationsWork.copack.credit}
                 </p>
               </div>
             </motion.div>
@@ -266,15 +259,15 @@ const BudsPage = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="w-6 h-6 text-blue-600" />
-                <h3 className="text-2xl font-bold text-gray-900">Central (Buds 3PL)</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{currentSections.howDonationsWork.central.title}</h3>
               </div>
               
-              <p className="text-gray-600 mb-6">Send stock to our EU 3PL; we fulfill redemptions across the network.</p>
+              <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.central.description}</p>
               
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-start gap-3">
                 <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-blue-800 font-semibold">
-                  €1 COGS = €1.00 credit
+                  {currentSections.howDonationsWork.central.credit}
                 </p>
               </div>
             </motion.div>
