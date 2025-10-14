@@ -5,6 +5,7 @@ import BudsProPage from './pages/BudsProPage'
 import PartnersPage from './pages/PartnersPage'
 import PartnerLoginPage from './pages/PartnerLoginPage'
 import PartnerDashboardPage from './pages/PartnerDashboardPage'
+import ExistingLoyaltyPage from './pages/ExistingLoyaltyPage'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/partners/login" element={<PartnerLoginPage />} />
           <Route path="/partners/dashboard" element={<PartnerDashboardPage />} />
+          <Route path="/existing-loyalty" element={<><Navigation /><ExistingLoyaltyPage /></>} />
         </Routes>
       </div>
     </Router>

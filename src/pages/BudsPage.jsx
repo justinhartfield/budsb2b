@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { 
   TrendingUp, 
   Package, 
@@ -20,10 +20,19 @@ import { Button } from '@/components/ui/button'
 import { partnerContent, sectionContent } from '../data/partnerContent'
 
 const BudsPage = () => {
+  const navigate = useNavigate()
   const [gmv, setGmv] = useState(100000)
   const [openFaq, setOpenFaq] = useState(null)
   const [activeTab, setActiveTab] = useState('partners')
   const [language, setLanguage] = useState('en')
+
+  const handleTabClick = (tab) => {
+    if (tab === 'existing') {
+      navigate('/existing-loyalty')
+    } else {
+      setActiveTab(tab)
+    }
+  }
 
   // Get current content based on active tab and language
   const currentContent = partnerContent[activeTab][language]
@@ -65,7 +74,7 @@ const BudsPage = () => {
             {/* Navigation Tabs */}
             <div className="flex items-center gap-2 flex-wrap">
               <button
-                onClick={() => setActiveTab('partners')}
+                onClick={() => handleTabClick('partners')}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
                   activeTab === 'partners'
                     ? 'bg-orange-500 text-white'
@@ -77,7 +86,7 @@ const BudsPage = () => {
               </button>
               
               <button
-                onClick={() => setActiveTab('platforms')}
+                onClick={() => handleTabClick('platforms')}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
                   activeTab === 'platforms'
                     ? 'bg-purple-600 text-white'
@@ -89,7 +98,7 @@ const BudsPage = () => {
               </button>
               
               <button
-                onClick={() => setActiveTab('pharmacies')}
+                onClick={() => handleTabClick('pharmacies')}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
                   activeTab === 'pharmacies'
                     ? 'bg-cyan-500 text-white'
@@ -101,7 +110,7 @@ const BudsPage = () => {
               </button>
               
               <button
-                onClick={() => setActiveTab('manufacturers')}
+                onClick={() => handleTabClick('manufacturers')}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
                   activeTab === 'manufacturers'
                     ? 'bg-pink-500 text-white'
@@ -113,7 +122,7 @@ const BudsPage = () => {
               </button>
               
               <button
-                onClick={() => setActiveTab('existing')}
+                onClick={() => handleTabClick('existing')}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
                   activeTab === 'existing'
                     ? 'bg-purple-600 text-white'
