@@ -6,6 +6,9 @@ import PartnersPage from './pages/PartnersPage'
 import PartnerLoginPage from './pages/PartnerLoginPage'
 import PartnerDashboardPage from './pages/PartnerDashboardPage'
 import ExistingLoyaltyPage from './pages/ExistingLoyaltyPage'
+import PlatformsPage from './pages/PlatformsPage'
+import PharmaciesPage from './pages/PharmaciesPage'
+import ManufacturersPage from './pages/ManufacturersPage'
 import './App.css'
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
           <Route path="/partners/login" element={<PartnerLoginPage />} />
           <Route path="/partners/dashboard" element={<PartnerDashboardPage />} />
           <Route path="/existing-loyalty" element={<><Navigation /><ExistingLoyaltyPage /></>} />
+          <Route path="/platforms" element={<><Navigation /><PlatformsPage /></>} />
+          <Route path="/pharmacies" element={<><Navigation /><PharmaciesPage /></>} />
+          <Route path="/manufacturers" element={<><Navigation /><ManufacturersPage /></>} />
         </Routes>
       </div>
     </Router>

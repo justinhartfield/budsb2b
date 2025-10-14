@@ -29,6 +29,12 @@ const BudsPage = () => {
   const handleTabClick = (tab) => {
     if (tab === 'existing') {
       navigate('/existing-loyalty')
+    } else if (tab === 'platforms') {
+      navigate('/platforms')
+    } else if (tab === 'pharmacies') {
+      navigate('/pharmacies')
+    } else if (tab === 'manufacturers') {
+      navigate('/manufacturers')
     } else {
       setActiveTab(tab)
     }
