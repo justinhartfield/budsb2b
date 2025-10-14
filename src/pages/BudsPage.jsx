@@ -21,6 +21,8 @@ import { Button } from '@/components/ui/button'
 const BudsPage = () => {
   const [gmv, setGmv] = useState(100000)
   const [openFaq, setOpenFaq] = useState(null)
+  const [activeTab, setActiveTab] = useState('partners')
+  const [language, setLanguage] = useState('en')
 
   const copackTarget = gmv * 0.008
   const copackCredit = copackTarget * 1.25
@@ -47,8 +49,102 @@ const BudsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Navigation Tabs & Language Switcher */}
+      <div className="fixed top-20 left-0 right-0 bg-white border-b border-gray-200 z-40">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            {/* Navigation Tabs */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                onClick={() => setActiveTab('partners')}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  activeTab === 'partners'
+                    ? 'bg-orange-500 text-white'
+                    : 'bg-orange-100 text-orange-700 hover:bg-orange-200'
+                }`}
+              >
+                Partners
+                <span className="block text-xs font-normal">For retailers & brands</span>
+              </button>
+              
+              <button
+                onClick={() => setActiveTab('platforms')}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  activeTab === 'platforms'
+                    ? 'bg-purple-600 text-white'
+                    : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
+                }`}
+              >
+                Platforms
+                <span className="block text-xs font-normal">For marketplaces</span>
+              </button>
+              
+              <button
+                onClick={() => setActiveTab('pharmacies')}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  activeTab === 'pharmacies'
+                    ? 'bg-cyan-500 text-white'
+                    : 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200'
+                }`}
+              >
+                Pharmacies
+                <span className="block text-xs font-normal">For pharmacy chains</span>
+              </button>
+              
+              <button
+                onClick={() => setActiveTab('manufacturers')}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  activeTab === 'manufacturers'
+                    ? 'bg-pink-500 text-white'
+                    : 'bg-pink-100 text-pink-700 hover:bg-pink-200'
+                }`}
+              >
+                Manufacturers
+                <span className="block text-xs font-normal">For pharma companies</span>
+              </button>
+              
+              <button
+                onClick={() => setActiveTab('existing')}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  activeTab === 'existing'
+                    ? 'bg-purple-600 text-white'
+                    : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
+                }`}
+              >
+                Existing Loyalty?
+                <span className="block text-xs font-normal">Augment your program</span>
+              </button>
+            </div>
+
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors flex items-center gap-1 ${
+                  language === 'en'
+                    ? 'bg-green-500 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                🇬🇧 English
+              </button>
+              <button
+                onClick={() => setLanguage('de')}
+                className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors flex items-center gap-1 ${
+                  language === 'de'
+                    ? 'bg-green-500 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                🇩🇪 Deutsch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-48 pb-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
