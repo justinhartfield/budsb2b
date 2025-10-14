@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom'
 import budsLogo from '../assets/buds-logo.png'
 
 const PartnerLoginPage = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('demo@greenvallley.com')
+  const [password, setPassword] = useState('demo123')
   const navigate = useNavigate()
 
   const handleLogin = (e) => {
@@ -28,6 +28,11 @@ const PartnerLoginPage = () => {
           <img src={budsLogo} alt="Buds" className="h-16 w-auto mx-auto mb-4" />
           <h1 className="text-4xl font-black text-white mb-2">Partner Portal</h1>
           <p className="text-gray-400">Sign in to access your dashboard</p>
+          
+          <div className="mt-4 bg-green-500/20 border border-green-500/50 rounded-xl px-4 py-3 text-sm text-green-400">
+            <p className="font-semibold">🎯 Demo Mode</p>
+            <p className="text-green-300">Click "Sign In" to view the sample dashboard</p>
+          </div>
         </div>
 
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-green-500/30 rounded-3xl p-8 shadow-2xl">
@@ -43,6 +48,7 @@ const PartnerLoginPage = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="partner@dispensary.com"
+                  disabled
                   className="w-full pl-12 pr-4 py-3 bg-gray-950 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                   required
                 />
@@ -60,6 +66,7 @@ const PartnerLoginPage = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
+                  disabled
                   className="w-full pl-12 pr-4 py-3 bg-gray-950 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                   required
                 />
