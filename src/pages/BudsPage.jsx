@@ -841,6 +841,7 @@ const BudsPage = () => {
                 <li><a href="#" className="hover:text-white">Integration Docs</a></li>
                 <li><a href="#" className="hover:text-white">API Reference</a></li>
                 <li><Link to="/partners/login" className="hover:text-white">Partner Portal</Link></li>
+                <li><Link to="/partners/dashboard" className="hover:text-white font-semibold text-green-400">View Sample Dashboard</Link></li>
                 <li><a href="#" className="hover:text-white">Support Center</a></li>
               </ul>
             </div>
@@ -878,13 +879,20 @@ const BudsPage = () => {
             <p className="text-sm text-gray-400 mb-4">
               Buds rewards are limited to merchandise, accessories (18+ where applicable), and education. No cannabis for sale or advertising. Age‑verified delivery may be required for some items. GDPR‑aligned (joint‑controller addendum + DPA available).
             </p>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between flex-wrap gap-4">
               <p className="text-sm text-gray-500">© 2025 Buds Rewards. All rights reserved.</p>
-              <Link to="/partners/login">
-                <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">
-                  Partner Login →
-                </Button>
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link to="/partners/dashboard">
+                  <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white">
+                    View Sample Dashboard →
+                  </Button>
+                </Link>
+                <Link to="/partners/login">
+                  <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">
+                    Partner Login →
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
