@@ -166,9 +166,18 @@ const BudsPage = () => {
           <p className="text-xl text-gray-800 mb-8">
             Is your business part of the cannabis community? From dispensaries and manufacturers to clothing brands, smoke gear and cannabis-friendly venues, let's talk.
           </p>
-          <Button size="lg" variant="outline" className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white text-lg px-8 py-6 rounded-full font-bold">
-            Partner With Us
-          </Button>
+          <div className="flex items-center justify-center gap-4">
+            <Link to="/partners">
+              <Button size="lg" variant="outline" className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white text-lg px-8 py-6 rounded-full font-bold">
+                Partner With Us
+              </Button>
+            </Link>
+            <Link to="/partners/login">
+              <Button size="lg" className="bg-gray-900 text-white hover:bg-gray-800 text-lg px-8 py-6 rounded-full font-bold">
+                Partner Login
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
