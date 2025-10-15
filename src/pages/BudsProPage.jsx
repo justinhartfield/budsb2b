@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import budsProBadge from '../assets/budspro-badge.png'
 import { useTranslation } from '../hooks/useTranslation'
+import VideoBackground from '@/components/VideoBackground'
 
 const BudsProPage = () => {
   const { t, tArray } = useTranslation('budsProPage')
@@ -29,7 +30,8 @@ const BudsProPage = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/20 via-black to-black" />
+        <VideoBackground opacity={0.15} />
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/30 via-black/50 to-black/70" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div

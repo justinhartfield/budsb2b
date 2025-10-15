@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Building2, TrendingUp, Users, BarChart3, Shield, Zap, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
+import VideoBackground from '@/components/VideoBackground'
 
 const PartnersPage = () => {
   const features = [
@@ -40,8 +41,9 @@ const PartnersPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+        <VideoBackground opacity={0.2} />
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
