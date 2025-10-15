@@ -29,6 +29,7 @@ const ExistingLoyaltyPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
 
   const objections = tArray('objections')
+  const rewardChoices = tArray('reward_choice.choices')
   const integrationModes = tArray('integrationModes')
   const comparisonData = tArray('comparisonTable.features')
   const useCases = tArray('useCases')
@@ -108,6 +109,57 @@ const ExistingLoyaltyPage = () => {
                 </motion.div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Reward Choice Control */}
+      <section className="py-20 px-6 bg-gradient-to-br from-green-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
+            {t('reward_choice.title')}
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+            {t('reward_choice.subtitle')}
+          </p>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {rewardChoices.map((choice, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`bg-white rounded-2xl p-8 border-2 ${
+                  index === 2 
+                    ? 'border-green-400 shadow-lg shadow-green-100' 
+                    : 'border-gray-200'
+                } hover:border-green-400 transition-all`}
+              >
+                {index === 2 && (
+                  <div className="inline-flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full mb-4 text-xs font-bold">
+                    <Sparkles className="w-3 h-3" /> RECOMMENDED
+                  </div>
+                )}
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">{choice.title}</h3>
+                <p className="text-gray-600 mb-6">{choice.description}</p>
+                
+                <ul className="space-y-3 mb-6">
+                  {choice.benefits.map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm text-gray-700">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <p className="text-sm text-green-700 font-medium">Example</p>
+                  <p className="text-sm text-gray-700 mt-1">{choice.example}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

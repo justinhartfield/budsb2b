@@ -58,6 +58,46 @@ export const existingLoyaltyPage = {
     }
   ],
   
+  reward_choice: {
+    title: "You Control What Rewards Your Customers See",
+    subtitle: "Three flexible options to match your business strategy",
+    choices: [
+      {
+        title: "Your Own Products",
+        description: "Showcase your own inventory as Buds rewards",
+        benefits: [
+          "Move overstock or seasonal items",
+          "Promote new product launches",
+          "Full control over what's offered",
+          "Keep customers in your ecosystem"
+        ],
+        example: "Feature your premium product line as exclusive rewards"
+      },
+      {
+        title: "Specific Partner Brands",
+        description: "Choose exactly which partner brands to feature (VIBES, Cookies, etc.)",
+        benefits: [
+          "Curate rewards that match your brand",
+          "Feature complementary products",
+          "Build strategic partnerships",
+          "Control brand associations"
+        ],
+        example: "Select VIBES rolling papers and Cookies merchandise only"
+      },
+      {
+        title: "Algorithm-Optimized (Recommended)",
+        description: "Let Buds' AI select the highest-converting rewards for your customers",
+        benefits: [
+          "Maximize conversion rates automatically",
+          "Personalized to each customer",
+          "Data-driven reward selection",
+          "Continuously optimized performance"
+        ],
+        example: "AI analyzes customer behavior and shows rewards with highest redemption probability"
+      }
+    ]
+  },
+  
   integration_modes: {
     title: "How Buds works with your existing program",
     exampleLabel: "Example"
@@ -173,7 +213,7 @@ export const existingLoyaltyPage = {
     {
       q: "Can we control which Buds rewards appear?",
       a:
-        "Yes. You have full control over which partner rewards display to your customers. Filter by category, brand, value, or exclude entirely."
+        "Absolutely. You have three options: (1) Show only your own products as rewards, (2) Select specific partner brands like VIBES or Cookies, or (3) Use our algorithm to automatically show the highest-converting rewards for each customer. You can switch between these options anytime in your dashboard."
     },
     {
       q: "What if we want to stop using Buds?",
