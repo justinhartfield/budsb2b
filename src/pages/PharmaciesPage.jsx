@@ -16,150 +16,128 @@ import {
   Lock
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useLanguage } from '../contexts/LanguageContext';
+import { allTranslations } from '../data/allTranslations';
 
 const PharmaciesPage = () => {
+  const { language } = useLanguage();
+  const t = allTranslations.pharmacies[language];
+
   const [openFaq, setOpenFaq] = useState(null)
 
   const pharmacyBenefits = [
     {
       icon: Heart,
-      title: "Patient Retention & Loyalty",
-      description: "Transform slow-moving wellness inventory into patient rewards. Increase repeat visits without discounting prescription margins.",
-      metric: "+34% retention"
+      title: t.sectionBenefits.benefit1.title,
+      description: t.sectionBenefits.benefit1.description,
+      metric: t.sectionBenefits.benefit1.metric
     },
     {
       icon: TrendingUp,
-      title: "Move Non-Rx Inventory",
-      description: "Vitamins, supplements, OTC wellness items become valuable rewards. Clear shelf space, maintain margins.",
-      metric: "Zero waste"
+      title: t.sectionBenefits.benefit2.title,
+      description: t.sectionBenefits.benefit2.description,
+      metric: t.sectionBenefits.benefit2.metric
     },
     {
       icon: Shield,
-      title: "Pharmacy-Safe Compliance",
-      description: "GDPR/DSGVO compliant, no Rx data sharing, age verification built-in. Designed for pharmacy regulatory requirements.",
-      metric: "100% compliant"
+      title: t.sectionBenefits.benefit3.title,
+      description: t.sectionBenefits.benefit3.description,
+      metric: t.sectionBenefits.benefit3.metric
     },
     {
       icon: Users,
-      title: "Cross-Chain Network",
-      description: "Join pharmacy network. Your patients can redeem rewards from partner wellness brands. Expand value without inventory.",
-      metric: "Network effect"
+      title: t.sectionBenefits.benefit4.title,
+      description: t.sectionBenefits.benefit4.description,
+      metric: t.sectionBenefits.benefit4.metric
     }
   ]
 
   const eligibleProducts = {
-    accepted: [
-      "Vitamins & supplements",
-      "OTC wellness products",
-      "Health & beauty items",
-      "Medical accessories (non-Rx)",
-      "Fitness & recovery products",
-      "Aromatherapy & essential oils",
-      "Natural remedies & homeopathy",
-      "Health monitoring devices"
-    ],
-    notAccepted: [
-      "Prescription medications",
-      "Controlled substances",
-      "Expired products",
-      "Recalled items",
-      "Medical devices requiring prescription",
-      "Products with patient data",
-      "Compounded medications",
-      "Refrigerated biologics"
-    ]
+    accepted: t.eligibleProducts.accepted,
+    notAccepted: t.eligibleProducts.notAccepted
   }
 
   const complianceFeatures = [
     {
-      title: "GDPR/DSGVO Compliance",
-      description: "No patient data sharing. Anonymous redemption tracking only. Full data sovereignty.",
+      title: t.complianceFeatures.feature1.title,
+      description: t.complianceFeatures.feature1.description,
       icon: Lock
     },
     {
-      title: "Age Verification",
-      description: "Built-in age gates for 18+ products. Configurable by product category and local regulations.",
+      title: t.complianceFeatures.feature2.title,
+      description: t.complianceFeatures.feature2.description,
       icon: FileCheck
     },
     {
-      title: "Pharmacy License Verification",
-      description: "Only licensed pharmacies can join. Verification process ensures network integrity.",
+      title: t.complianceFeatures.feature3.title,
+      description: t.complianceFeatures.feature3.description,
       icon: Shield
     },
     {
-      title: "Audit Trail",
-      description: "Complete donation and redemption logs. Regulatory audit-ready reporting.",
+      title: t.complianceFeatures.feature4.title,
+      description: t.complianceFeatures.feature4.description,
       icon: FileCheck
     }
   ]
 
   const pharmacyExamples = [
     {
-      chain: "Regional Pharmacy Chain (45 locations)",
-      challenge: "€120K in slow-moving vitamin inventory, patient churn to online competitors",
-      solution: "Donated vitamins as Buds rewards, positioned as exclusive patient benefit",
-      result: "Cleared 80% of slow inventory in 3 months. Patient retention increased 34%. New patient signups +22%.",
-      metric: "+34% retention"
+      chain: t.pharmacyExamples.example1.chain,
+      challenge: t.pharmacyExamples.example1.challenge,
+      solution: t.pharmacyExamples.example1.solution,
+      result: t.pharmacyExamples.example1.result,
+      metric: t.pharmacyExamples.example1.metric
     },
     {
-      chain: "Independent Pharmacy Group (8 locations)",
-      challenge: "Competing with big-box stores on wellness products, thin margins",
-      solution: "Used Buds to offer partner brand rewards without inventory investment",
-      result: "Positioned as wellness destination. Average transaction value +€18. Zero additional inventory cost.",
-      metric: "+€18 ATV"
+      chain: t.pharmacyExamples.example2.chain,
+      challenge: t.pharmacyExamples.example2.challenge,
+      solution: t.pharmacyExamples.example2.solution,
+      result: t.pharmacyExamples.example2.result,
+      metric: t.pharmacyExamples.example2.metric
     },
     {
-      chain: "Wellness-Focused Pharmacy (3 locations)",
-      challenge: "Premium positioning, needed to differentiate from discount pharmacies",
-      solution: "Curated premium wellness rewards from partner brands, VIP patient program",
-      result: "Premium patient tier grew 156%. Became known for exclusive wellness access.",
-      metric: "+156% VIP tier"
+      chain: t.pharmacyExamples.example3.chain,
+      challenge: t.pharmacyExamples.example3.challenge,
+      solution: t.pharmacyExamples.example3.solution,
+      result: t.pharmacyExamples.example3.result,
+      metric: t.pharmacyExamples.example3.metric
     }
   ]
 
   const integrationProcess = [
     {
       step: 1,
-      title: "License Verification",
-      description: "Submit pharmacy license and regulatory documentation. We verify within 48 hours.",
-      duration: "2 days"
+      title: t.integrationProcess.step1.title,
+      description: t.integrationProcess.step1.description,
+      duration: t.integrationProcess.step1.duration
     },
     {
       step: 2,
-      title: "Inventory Assessment",
-      description: "Optional: We help identify eligible non-Rx products for donation. No obligation.",
-      duration: "1 week"
+      title: t.integrationProcess.step2.title,
+      description: t.integrationProcess.step2.description,
+      duration: t.integrationProcess.step2.duration
     },
     {
       step: 3,
-      title: "System Integration",
-      description: "Install checkout widget or integrate via pharmacy management system API.",
-      duration: "3-5 days"
+      title: t.integrationProcess.step3.title,
+      description: t.integrationProcess.step3.description,
+      duration: t.integrationProcess.step3.duration
     },
     {
       step: 4,
-      title: "Staff Training",
-      description: "We provide training materials and support for pharmacy staff. Simple, patient-friendly.",
-      duration: "2 days"
+      title: t.integrationProcess.step4.title,
+      description: t.integrationProcess.step4.description,
+      duration: t.integrationProcess.step4.duration
     },
     {
       step: 5,
-      title: "Go Live",
-      description: "Launch rewards program. Start offering Buds to patients. Monitor via dashboard.",
-      duration: "1 day"
+      title: t.integrationProcess.step5.title,
+      description: t.integrationProcess.step5.description,
+      duration: t.integrationProcess.step5.duration
     }
   ]
 
-  const faqs = [
-    { q: "Is this legal for pharmacies in Germany/EU?", a: "Yes. Buds only handles non-prescription wellness products. No Rx data is shared, no prescription rewards. Fully compliant with pharmacy regulations and GDPR/DSGVO." },
-    { q: "Do we need to donate inventory?", a: "No. You can participate purely by offering partner rewards to patients. Donating slow-moving wellness inventory improves your placement, but it's optional." },
-    { q: "How do patients redeem rewards?", a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. We handle fulfillment—either you ship (co-pack) or our 3PL ships (central)." },
-    { q: "What about patient privacy?", a: "Zero patient data sharing. We only track anonymous redemption events. Your patient relationships and data remain 100% private and under your control." },
-    { q: "Can we control which products appear as rewards?", a: "Yes. Full control via pharmacy admin panel. Approve/reject products, set categories, exclude brands, or curate specific collections for your patients." },
-    { q: "What if a product is recalled?", a: "Immediate network-wide removal. We monitor regulatory databases and remove recalled products within hours. Audit trail shows all actions taken." },
-    { q: "How does this work with our existing loyalty program?", a: "Buds integrates alongside your current program. Patients can use both. Think of it as expanding your reward catalog without expanding your costs." },
-    { q: "What's the cost?", a: "Free to join, no monthly fees. You only 'pay' by donating eligible inventory (optional). If you don't donate, you simply offer partner rewards to patients at no cost." }
-  ]
+  const faqs = t.faqs
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
@@ -172,30 +150,30 @@ const PharmaciesPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full mb-8 text-sm font-semibold">
-              💊 Pharmacy Rewards Program 🏥
+              {t.hero.badge}
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-              Turn wellness overstock into<br />
+              {t.hero.headlinePart1}<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
-                patient loyalty rewards
+                {t.hero.headlinePart2}
               </span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Pharmacies can donate non-Rx wellness items, supplements, and health accessories as Buds rewards. Increase patient retention and move slow-moving inventory without public discounting. GDPR-compliant and pharmacy-safe.
+              {t.hero.description}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
+                {t.hero.applyButton} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-cyan-600 text-cyan-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-cyan-50">
-                Compliance Documentation
+                {t.hero.complianceButton}
               </Button>
               <Link to="/partners/dashboard">
                 <Button size="lg" variant="outline" className="border-2 border-blue-600 text-blue-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-blue-50">
-                  Pharmacy Dashboard Demo
+                  {t.hero.dashboardButton}
                 </Button>
               </Link>
             </div>
@@ -206,7 +184,7 @@ const PharmaciesPage = () => {
       {/* Pharmacy Benefits */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Why pharmacies choose Buds</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionBenefits.title}</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {pharmacyBenefits.map((benefit, index) => (
@@ -239,7 +217,7 @@ const PharmaciesPage = () => {
       {/* Eligible Products */}
       <section className="py-20 px-6 bg-gradient-to-br from-cyan-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">What counts as eligible inventory</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.eligibleProducts.title}</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
@@ -252,7 +230,7 @@ const PharmaciesPage = () => {
                 <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                   <Check className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">We Accept</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{t.eligibleProducts.acceptTitle}</h3>
               </div>
 
               <ul className="space-y-3">
@@ -275,7 +253,7 @@ const PharmaciesPage = () => {
                 <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
                   <X className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">We Do Not Accept</h3>
+                <h3 className="text-2xl font-bold text-gray-900">{t.eligibleProducts.notAcceptTitle}</h3>
               </div>
 
               <ul className="space-y-3">
@@ -294,9 +272,9 @@ const PharmaciesPage = () => {
       {/* Compliance Features */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Pharmacy-safe compliance</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">{t.complianceFeatures.title}</h2>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            Built specifically for pharmacy regulatory requirements
+            {t.complianceFeatures.description}
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -327,7 +305,7 @@ const PharmaciesPage = () => {
       {/* Pharmacy Examples */}
       <section className="py-20 px-6 bg-gradient-to-br from-cyan-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Pharmacy success stories</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.pharmacyExamples.title}</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {pharmacyExamples.map((example, index) => (
@@ -342,13 +320,13 @@ const PharmaciesPage = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{example.chain}</h3>
                 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-gray-500 mb-1">Challenge:</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-1">{t.pharmacyExamples.labels.challenge}</p>
                   <p className="text-sm text-gray-700 mb-3">{example.challenge}</p>
                   
-                  <p className="text-sm font-semibold text-cyan-600 mb-1">Solution:</p>
+                  <p className="text-sm font-semibold text-cyan-600 mb-1">{t.pharmacyExamples.labels.solution}</p>
                   <p className="text-sm text-gray-700 mb-3">{example.solution}</p>
                   
-                  <p className="text-sm font-semibold text-gray-500 mb-1">Result:</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-1">{t.pharmacyExamples.labels.result}</p>
                   <p className="text-sm text-gray-700">{example.result}</p>
                 </div>
 
@@ -364,7 +342,7 @@ const PharmaciesPage = () => {
       {/* Integration Process */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">How to get started</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.integrationProcess.title}</h2>
 
           <div className="space-y-6">
             {integrationProcess.map((step, index) => (
@@ -391,9 +369,9 @@ const PharmaciesPage = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-gray-600 mb-6">Total time to launch: <span className="font-bold text-cyan-600">2-3 weeks</span></p>
+            <p className="text-lg text-gray-600 mb-6">{t.integrationProcess.totalTime} <span className="font-bold text-cyan-600">{t.integrationProcess.totalTimeValue}</span></p>
             <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-6 text-lg rounded-lg font-bold">
-              Start Application <ArrowRight className="ml-2 w-5 h-5" />
+              {t.integrationProcess.startButton} <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
         </div>
@@ -402,7 +380,7 @@ const PharmaciesPage = () => {
       {/* FAQ */}
       <section className="py-20 px-6 bg-gradient-to-br from-cyan-50 to-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Pharmacy FAQ</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.faq.title}</h2>
 
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -429,18 +407,18 @@ const PharmaciesPage = () => {
       <section className="py-20 px-6 bg-gradient-to-br from-cyan-600 to-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready to enhance patient loyalty?
+            {t.finalCta.headline}
           </h2>
           <p className="text-xl text-cyan-100 mb-10">
-            Join pharmacy chains using Buds to increase retention and move wellness inventory
+            {t.finalCta.description}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
+              {t.finalCta.applyButton} <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Link to="/partners/dashboard">
               <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
-                View Dashboard Demo
+                {t.finalCta.dashboardButton}
               </Button>
             </Link>
           </div>
@@ -451,4 +429,3 @@ const PharmaciesPage = () => {
 }
 
 export default PharmaciesPage
-

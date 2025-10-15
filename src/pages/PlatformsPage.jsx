@@ -18,151 +18,131 @@ import {
   Globe
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useLanguage } from '../contexts/LanguageContext';
+import { allTranslations } from '../data/allTranslations';
 
 const PlatformsPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
+  const { language } = useLanguage();
+  const t = allTranslations.platforms[language];
 
   const platformBenefits = [
     {
       icon: TrendingUp,
-      title: "Increase Marketplace GMV",
-      description: "Sellers using Buds see 23% higher AOV. More revenue per transaction = more platform fees for you.",
-      metric: "+23% AOV"
+      title: t.sectionBenefits.benefits[0].title,
+      description: t.sectionBenefits.benefits[0].description,
+      metric: t.sectionBenefits.benefits[0].metric
     },
     {
       icon: Store,
-      title: "Attract & Retain Sellers",
-      description: "Offer a ready-made loyalty solution. Sellers get enterprise-grade rewards without building it themselves.",
-      metric: "Seller USP"
+      title: t.sectionBenefits.benefits[1].title,
+      description: t.sectionBenefits.benefits[1].description,
+      metric: t.sectionBenefits.benefits[1].metric
     },
     {
       icon: Users,
-      title: "Cross-Seller Discovery",
-      description: "Customers redeeming rewards from Seller A discover Seller B. Network effects drive marketplace growth.",
-      metric: "Network Effect"
+      title: t.sectionBenefits.benefits[2].title,
+      description: t.sectionBenefits.benefits[2].description,
+      metric: t.sectionBenefits.benefits[2].metric
     },
     {
       icon: Shield,
-      title: "No Platform Liability",
-      description: "Buds handles all reward fulfillment, customer service, and compliance. Zero operational burden on your platform.",
-      metric: "Zero Ops"
+      title: t.sectionBenefits.benefits[3].title,
+      description: t.sectionBenefits.benefits[3].description,
+      metric: t.sectionBenefits.benefits[3].metric
     }
   ]
 
   const integrationOptions = [
     {
-      title: "White-Label Integration",
-      description: "Buds runs under your platform brand",
-      features: [
-        "Your branding throughout",
-        "Seamless UX in your checkout",
-        "Platform-controlled reward catalog",
-        "Custom commission structure"
-      ],
-      bestFor: "Large marketplaces with strong brand"
+      title: t.sectionIntegration.options[0].title,
+      description: t.sectionIntegration.options[0].description,
+      features: t.sectionIntegration.options[0].features,
+      bestFor: t.sectionIntegration.options[0].bestFor
     },
     {
-      title: "Co-Branded Integration",
-      description: "Powered by Buds, featured on your platform",
-      features: [
-        "Buds + Your brand together",
-        "Shared marketing materials",
-        "Standard reward catalog",
-        "Revenue share model"
-      ],
-      bestFor: "Growing marketplaces seeking quick value"
+      title: t.sectionIntegration.options[1].title,
+      description: t.sectionIntegration.options[1].description,
+      features: t.sectionIntegration.options[1].features,
+      bestFor: t.sectionIntegration.options[1].bestFor
     },
     {
-      title: "API-Only Integration",
-      description: "Build your own UI on Buds infrastructure",
-      features: [
-        "Full API access",
-        "Custom frontend implementation",
-        "Flexible reward logic",
-        "Developer-friendly docs"
-      ],
-      bestFor: "Technical platforms with custom needs"
+      title: t.sectionIntegration.options[2].title,
+      description: t.sectionIntegration.options[2].description,
+      features: t.sectionIntegration.options[2].features,
+      bestFor: t.sectionIntegration.options[2].bestFor
     }
   ]
 
   const revenueModels = [
     {
-      model: "Commission on Redemptions",
-      description: "Earn % of reward value when customers redeem",
-      example: "Customer redeems €50 reward → Platform earns €5 (10%)",
-      pros: ["Performance-based", "No upfront cost", "Scales with usage"]
+      model: t.sectionRevenue.models[0].model,
+      description: t.sectionRevenue.models[0].description,
+      example: t.sectionRevenue.models[0].example,
+      pros: t.sectionRevenue.models[0].pros
     },
     {
-      model: "Seller Subscription Upsell",
-      description: "Charge sellers for Buds access as premium feature",
-      example: "€49/month for Buds integration in Pro plan",
-      pros: ["Recurring revenue", "Increases plan value", "Predictable income"]
+      model: t.sectionRevenue.models[1].model,
+      description: t.sectionRevenue.models[1].description,
+      example: t.sectionRevenue.models[1].example,
+      pros: t.sectionRevenue.models[1].pros
     },
     {
-      model: "Hybrid Model",
-      description: "Base subscription + commission on high-value redemptions",
-      example: "€29/month + 5% on rewards >€100",
-      pros: ["Balanced risk/reward", "Multiple revenue streams", "Flexible pricing"]
+      model: t.sectionRevenue.models[2].model,
+      description: t.sectionRevenue.models[2].description,
+      example: t.sectionRevenue.models[2].example,
+      pros: t.sectionRevenue.models[2].pros
     }
   ]
 
   const platformExamples = [
     {
-      platform: "Multi-Vendor Fashion Marketplace",
-      sellers: "450 sellers",
-      integration: "Co-Branded",
-      result: "Sellers using Buds had 31% higher repeat purchase rate. Platform GMV increased 18% with zero additional marketing spend.",
-      metric: "+18% GMV"
+      platform: t.sectionExamples.examples[0].platform,
+      sellers: t.sectionExamples.examples[0].sellers,
+      integration: t.sectionExamples.examples[0].integration,
+      result: t.sectionExamples.examples[0].result,
+      metric: t.sectionExamples.examples[0].metric
     },
     {
-      platform: "Wellness & CBD Platform",
-      sellers: "120 sellers",
-      integration: "White-Label",
-      result: "Positioned as platform-exclusive benefit. Seller churn reduced 40%, new seller signups increased 55%.",
-      metric: "-40% churn"
+      platform: t.sectionExamples.examples[1].platform,
+      sellers: t.sectionExamples.examples[1].sellers,
+      integration: t.sectionExamples.examples[1].integration,
+      result: t.sectionExamples.examples[1].result,
+      metric: t.sectionExamples.examples[1].metric
     },
     {
-      platform: "Local Delivery Network",
-      sellers: "280 sellers",
-      integration: "API-Only",
-      result: "Built custom reward tiers by delivery zone. Cross-seller discovery up 67%, average basket size +€12.",
-      metric: "+€12 basket"
+      platform: t.sectionExamples.examples[2].platform,
+      sellers: t.sectionExamples.examples[2].sellers,
+      integration: t.sectionExamples.examples[2].integration,
+      result: t.sectionExamples.examples[2].result,
+      metric: t.sectionExamples.examples[2].metric
     }
   ]
 
   const technicalSpecs = [
     {
-      category: "Authentication",
-      details: "OAuth 2.0, JWT tokens, Webhook support for real-time events"
+      category: t.sectionTechnical.specs[0].category,
+      details: t.sectionTechnical.specs[0].details
     },
     {
-      category: "Reward Catalog API",
-      details: "Filter by category, value, seller, geography. Real-time inventory updates"
+      category: t.sectionTechnical.specs[1].category,
+      details: t.sectionTechnical.specs[1].details
     },
     {
-      category: "Redemption Flow",
-      details: "Checkout widget embed or API-driven custom UI. Co-pack or central fulfillment"
+      category: t.sectionTechnical.specs[2].category,
+      details: t.sectionTechnical.specs[2].details
     },
     {
-      category: "Analytics & Reporting",
-      details: "Platform dashboard, seller dashboards, CSV exports, custom reporting API"
+      category: t.sectionTechnical.specs[3].category,
+      details: t.sectionTechnical.specs[3].details
     },
     {
-      category: "Compliance",
-      details: "GDPR/DSGVO compliant, age verification hooks, geo-restriction support"
+      category: t.sectionTechnical.specs[4].category,
+      details: t.sectionTechnical.specs[4].details
     }
   ]
 
-  const faqs = [
-    { q: "Do our sellers need to donate inventory?", a: "No. Sellers can participate purely by offering partner rewards to their customers. Donating inventory improves their reward placement, but it's optional." },
-    { q: "How do we control which rewards appear on our platform?", a: "Full control via platform admin panel. Approve/reject rewards, set categories, filter by value range, restrict by geography, or curate specific collections." },
-    { q: "What's our revenue share?", a: "Flexible based on integration type. Typical range: 10-20% commission on redemptions, or seller subscription model (€29-99/month). Custom deals for large platforms." },
-    { q: "How does fulfillment work?", a: "Buds handles it. Either co-pack (seller ships directly) or central (our 3PL ships). Your platform has zero fulfillment burden or customer service load." },
-    { q: "Can we white-label this completely?", a: "Yes, for white-label integration. Buds branding is removed, replaced with yours. Requires minimum platform GMV threshold." },
-    { q: "What if a seller leaves our platform?", a: "Their donated inventory stays in the Buds network but stops appearing on your platform. No impact on other sellers or customers." },
-    { q: "How long does integration take?", a: "Co-branded: 1-2 weeks. White-label: 4-6 weeks. API-only: Depends on your dev team, typically 2-4 weeks with our support." },
-    { q: "Do you compete with our platform?", a: "Never. Buds is B2B infrastructure only. We don't operate consumer-facing marketplaces. You're our customer, not our competitor." }
-  ]
+  const faqs = t.sectionFaq.faqs
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
@@ -175,30 +155,30 @@ const PlatformsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full mb-8 text-sm font-semibold">
-              🚀 Platform Integration Program 🌐
+              {t.hero.badge}
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-              Power your marketplace with<br />
+              {t.hero.headlinePart1}<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
-                Buds loyalty rewards
+                {t.hero.headlinePart2}
               </span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting.
+              {t.hero.description}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                View Integration Options <ArrowRight className="ml-2 w-5 h-5" />
+                {t.hero.buttons.viewIntegrationOptions} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-purple-600 text-purple-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-purple-50">
-                API Documentation
+                {t.hero.buttons.apiDocumentation}
               </Button>
               <Link to="/partners/dashboard">
                 <Button size="lg" variant="outline" className="border-2 border-indigo-600 text-indigo-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-indigo-50">
-                  Platform Demo
+                  {t.hero.buttons.platformDemo}
                 </Button>
               </Link>
             </div>
@@ -209,7 +189,7 @@ const PlatformsPage = () => {
       {/* Platform Benefits */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Why platforms choose Buds</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionBenefits.title}</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {platformBenefits.map((benefit, index) => (
@@ -242,7 +222,7 @@ const PlatformsPage = () => {
       {/* Integration Options */}
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Choose your integration model</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionIntegration.title}</h2>
 
           <div className="grid lg:grid-cols-3 gap-8">
             {integrationOptions.map((option, index) => (
@@ -267,7 +247,7 @@ const PlatformsPage = () => {
                 </ul>
 
                 <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                  <p className="text-xs font-semibold text-purple-700 mb-1">Best for:</p>
+                  <p className="text-xs font-semibold text-purple-700 mb-1">{t.sectionIntegration.bestForLabel}</p>
                   <p className="text-sm text-purple-900">{option.bestFor}</p>
                 </div>
               </motion.div>
@@ -279,9 +259,9 @@ const PlatformsPage = () => {
       {/* Revenue Models */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Monetize Buds on your platform</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">{t.sectionRevenue.title}</h2>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            Multiple revenue models to fit your business strategy
+            {t.sectionRevenue.description}
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -318,7 +298,7 @@ const PlatformsPage = () => {
       {/* Platform Examples */}
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-indigo-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Platform success stories</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionExamples.title}</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {platformExamples.map((example, index) => (
@@ -333,7 +313,7 @@ const PlatformsPage = () => {
                 <div className="mb-4">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{example.platform}</h3>
                   <p className="text-sm text-gray-500 mb-1">{example.sellers}</p>
-                  <p className="text-sm text-purple-600 font-semibold">Integration: {example.integration}</p>
+                  <p className="text-sm text-purple-600 font-semibold">{t.sectionExamples.integrationLabel}: {example.integration}</p>
                 </div>
 
                 <p className="text-gray-700 mb-4">{example.result}</p>
@@ -350,7 +330,7 @@ const PlatformsPage = () => {
       {/* Technical Specs */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Technical specifications</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionTechnical.title}</h2>
 
           <div className="space-y-6">
             {technicalSpecs.map((spec, index) => (
@@ -370,7 +350,7 @@ const PlatformsPage = () => {
 
           <div className="mt-12 text-center">
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-10 py-6 text-lg rounded-lg font-bold">
-              Access API Documentation <ArrowRight className="ml-2 w-5 h-5" />
+              {t.sectionTechnical.apiButton} <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
         </div>
@@ -379,7 +359,7 @@ const PlatformsPage = () => {
       {/* FAQ */}
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Platform FAQ</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{t.sectionFaq.title}</h2>
 
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -406,18 +386,18 @@ const PlatformsPage = () => {
       <section className="py-20 px-6 bg-gradient-to-br from-purple-600 to-indigo-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready to power your marketplace?
+            {t.sectionFinalCta.headline}
           </h2>
           <p className="text-xl text-purple-100 mb-10">
-            Join leading platforms offering Buds to their sellers
+            {t.sectionFinalCta.description}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Schedule Platform Demo <ArrowRight className="ml-2 w-5 h-5" />
+              {t.sectionFinalCta.buttons.scheduleDemo} <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Link to="/partners/dashboard">
               <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
-                View Dashboard Demo
+                {t.sectionFinalCta.buttons.viewDashboard}
               </Button>
             </Link>
           </div>
@@ -428,4 +408,3 @@ const PlatformsPage = () => {
 }
 
 export default PlatformsPage
-
