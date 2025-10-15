@@ -21,136 +21,24 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import PartnerTypeNav from '../components/PartnerTypeNav'
-import LanguageNotice from '../components/LanguageNotice'
+import { useTranslation } from '../hooks/useTranslation'
 import dualLoyaltyCheckout from '../assets/dual-loyalty-checkout.png'
 
 const ExistingLoyaltyPage = () => {
+  const { t, tArray } = useTranslation('existingLoyaltyPage')
   const [openFaq, setOpenFaq] = useState(null)
 
-  const objections = [
-    {
-      icon: X,
-      objection: "We already have a loyalty program",
-      solution: "Buds doesn't replace it—we enhance it",
-      details: "Your existing points, tiers, and rewards stay exactly as they are. Buds runs alongside as a supplementary reward layer, giving your customers more value without changing your current system."
-    },
-    {
-      icon: DollarSign,
-      objection: "We can't afford another loyalty program",
-      solution: "Buds costs you nothing",
-      details: "Zero setup fees, zero monthly costs, zero per-transaction fees. Partners donate overstock inventory—you simply integrate the widget. Your customers get more rewards, you pay nothing extra."
-    },
-    {
-      icon: Users,
-      objection: "Our customers are already engaged",
-      solution: "Make them even more engaged",
-      details: "Buds adds 23% higher AOV and increases redemption rates by offering exclusive rewards from partner brands. Your engaged customers become super-engaged with access to a wider reward catalog."
-    },
-    {
-      icon: Layers,
-      objection: "Integration will be too complex",
-      solution: "5-minute plugin installation",
-      details: "Our Shopify/WooCommerce plugin installs in minutes and works alongside your existing loyalty platform. No API conflicts, no data migration, no technical headaches."
-    },
-    {
-      icon: Shield,
-      objection: "We don't want to share customer data",
-      solution: "Your data stays yours",
-      details: "Buds is GDPR-compliant and never accesses your customer data. We only track widget engagement (anonymous). Your customer relationships and data remain 100% under your control."
-    },
-    {
-      icon: BarChart3,
-      objection: "Our program already drives results",
-      solution: "Stack the results even higher",
-      details: "Keep your current ROI and add Buds on top. Partners see average 15% increase in checkout conversion when Buds rewards are available alongside their existing program."
-    }
-  ]
+  const objections = tArray('objections')
+  const integrationModes = tArray('integrationModes')
+  const comparisonData = tArray('comparisonTable.features')
+  const useCases = tArray('useCases')
+  const faqs = tArray('faqs')
 
-  const integrationModes = [
-    {
-      title: "Parallel Mode (Recommended)",
-      description: "Buds runs alongside your existing program",
-      features: [
-        "Your points system stays unchanged",
-        "Buds rewards appear as bonus options",
-        "Customers can use both programs",
-        "Zero conflict, maximum value"
-      ],
-      example: "Customer earns your points + can redeem Buds rewards"
-    },
-    {
-      title: "Hybrid Mode",
-      description: "Convert your points to Buds credits",
-      features: [
-        "Optional points conversion at checkout",
-        "Expand your reward catalog instantly",
-        "Maintain your point economy",
-        "Buds handles fulfillment"
-      ],
-      example: "1000 your points = 100 Buds credits for partner rewards"
-    },
-    {
-      title: "Augmented Mode",
-      description: "Buds rewards unlock at higher tiers",
-      features: [
-        "Reserve Buds for VIP/top tiers",
-        "Create aspirational tier benefits",
-        "Incentivize tier progression",
-        "Exclusive partner brand access"
-      ],
-      example: "Gold tier+ members get access to Buds reward catalog"
-    }
-  ]
-
-  const comparisonData = [
-    { feature: "Your existing points", yours: true, buds: false, together: true },
-    { feature: "Your existing rewards", yours: true, buds: false, together: true },
-    { feature: "Your tier system", yours: true, buds: false, together: true },
-    { feature: "Your customer data", yours: true, buds: false, together: true },
-    { feature: "Partner brand rewards", yours: false, buds: true, together: true },
-    { feature: "Zero-cost reward expansion", yours: false, buds: true, together: true },
-    { feature: "Overstock relief for you", yours: false, buds: true, together: true },
-    { feature: "Network effect benefits", yours: false, buds: true, together: true }
-  ]
-
-  const useCases = [
-    {
-      brand: "Fashion Retailer",
-      existing: "Points-based program with tier system",
-      integration: "Parallel Mode",
-      result: "Added VIBES™ accessories as bonus rewards. 18% increase in AOV, zero cannibalization of existing point redemptions.",
-      metric: "+18% AOV"
-    },
-    {
-      brand: "Wellness Platform",
-      existing: "Subscription-based rewards",
-      integration: "Augmented Mode",
-      result: "Reserved Buds rewards for Premium tier members. Tier upgrade rate increased 34%, member retention up 22%.",
-      metric: "+34% upgrades"
-    },
-    {
-      brand: "Multi-brand Marketplace",
-      existing: "Cashback program",
-      integration: "Hybrid Mode",
-      result: "Allowed cashback conversion to Buds credits. Expanded reward catalog 10x without inventory cost.",
-      metric: "10x catalog"
-    }
-  ]
-
-  const faqs = [
-    { q: "Will Buds confuse our customers?", a: "No. Buds appears as a clearly labeled 'bonus reward' option. Customers understand it's an additional benefit, not a replacement. Our UX is designed to complement, not compete." },
-    { q: "Can we control which Buds rewards appear?", a: "Yes. You have full control over which partner rewards display to your customers. Filter by category, brand, value, or exclude entirely." },
-    { q: "What if we want to stop using Buds?", a: "Simply uninstall the plugin. No contracts, no penalties, no data migration needed. Your existing program continues unchanged." },
-    { q: "Do we need to donate inventory to use Buds?", a: "No. You can integrate Buds purely to offer partner rewards to your customers. Donating inventory gets you better placement, but it's optional." },
-    { q: "How do customers redeem Buds rewards?", a: "At checkout, they see available Buds rewards alongside your existing options. One click adds it to their order. We handle fulfillment (co-pack or central)." },
-    { q: "Will this cannibalize our existing reward redemptions?", a: "Data shows no cannibalization. Buds rewards are additive—customers redeem both. Think of it as expanding your reward catalog without expanding your costs." },
-    { q: "Can we white-label Buds?", a: "Not currently, but Buds branding is minimal. The widget clearly shows it's a partner reward network, which customers appreciate as added value." },
-    { q: "What platforms does this work with?", a: "Shopify, WooCommerce, and most major loyalty platforms (Smile.io, LoyaltyLion, Yotpo, etc.). We integrate via checkout widget, not direct platform integration." }
-  ]
+  const iconMap = {
+    X, DollarSign, Users, Layers, Shield, BarChart3
+  }
 
   return (
-    <>
-      <LanguageNotice />
     <div className="min-h-screen">
       <PartnerTypeNav />
       <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
@@ -163,26 +51,26 @@ const ExistingLoyaltyPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full mb-8 text-sm font-semibold">
-              🔄 Loyalty Augmentation Program ✨
+              {t('hero.badge')}
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-              Already have a loyalty program?<br />
+              {t('hero.title')}<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                Don't replace it. Supercharge it.
+                {t('hero.subtitle')}
               </span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Buds integrates alongside your existing loyalty program to offer additional rewards from partner brands. Your customers get more value, you get more engagement, zero extra cost.
+              {t('hero.description')}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                See Integration Options <ArrowRight className="ml-2 w-5 h-5" />
+                {t('cta.seeIntegrationButton')} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-purple-600 text-purple-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-purple-50">
-                Talk to Integration Expert
+                {t('cta.talkToExpertButton')}
               </Button>
             </div>
           </motion.div>
@@ -193,30 +81,33 @@ const ExistingLoyaltyPage = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
-            We hear you: "We already have a loyalty program"
+            {t('objections_section.title')}
           </h2>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            That's exactly why Buds exists. We don't compete with your program—we make it better.
+            {t('objections_section.subtitle')}
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {objections.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200"
-              >
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.objection}</h3>
-                <p className="text-purple-600 font-semibold mb-3">✓ {item.solution}</p>
-                <p className="text-sm text-gray-600">{item.details}</p>
-              </motion.div>
-            ))}
+            {objections.map((item, index) => {
+              const IconComponent = iconMap[item.icon] || X
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200"
+                >
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                    <IconComponent className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.objection}</h3>
+                  <p className="text-purple-600 font-semibold mb-3">✓ {item.solution}</p>
+                  <p className="text-sm text-gray-600">{item.details}</p>
+                </motion.div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -225,7 +116,7 @@ const ExistingLoyaltyPage = () => {
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-16">
-            How Buds works with your existing program
+            {t('integration_modes.title')}
           </h2>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -250,132 +141,113 @@ const ExistingLoyaltyPage = () => {
                   ))}
                 </ul>
 
-                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                  <p className="text-xs font-semibold text-purple-700 mb-1">Example:</p>
-                  <p className="text-sm text-purple-900">{mode.example}</p>
+                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                  <p className="text-sm text-purple-700 font-medium">{t('integration_modes.exampleLabel')}</p>
+                  <p className="text-sm text-gray-700 mt-1">{mode.example}</p>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Checkout Experience Example */}
-          <div className="mt-20">
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-4">
-              See it in action: Dual loyalty at checkout
+          {/* Dual Loyalty Checkout Visual */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl p-8 border-2 border-purple-300"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              {t('dual_loyalty.title')}
             </h3>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-              Here's how both programs appear side-by-side in your checkout. Customers see their existing points progress AND have the option to use Buds rewards—maximum flexibility, zero confusion.
+            <p className="text-gray-600 mb-6 text-center max-w-2xl mx-auto">
+              {t('dual_loyalty.description')}
             </p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-purple-200"
-            >
-              <img 
-                src={dualLoyaltyCheckout} 
-                alt="Dual loyalty checkout experience showing both store points and Buds rewards"
-                className="w-full"
-              />
-            </motion.div>
-
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
-              <div className="bg-purple-50 border border-purple-200 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
-                    <Target className="w-5 h-5 text-white" />
-                  </div>
-                  <h4 className="font-bold text-gray-900">Your Existing Program</h4>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Shows customer's current points balance (850 points), progress to next reward, and tier status. Completely unchanged from your current implementation.
-                </p>
-              </div>
-
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                    <Sparkles className="w-5 h-5 text-white" />
-                  </div>
-                  <h4 className="font-bold text-gray-900">Buds Rewards</h4>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Appears as a separate section showing available Buds credits (120 credits = €15 value) with a simple toggle to apply at checkout. Optional and non-intrusive.
-                </p>
-              </div>
-            </div>
-          </div>
+            <img 
+              src={dualLoyaltyCheckout} 
+              alt={t('dual_loyalty.imageAlt')}
+              className="w-full rounded-xl shadow-lg"
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Comparison Table */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">
-            Your program + Buds = Best of both worlds
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
+            {t('comparison.title')}
           </h2>
-
-          <div className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
-            <div className="grid grid-cols-4 bg-gray-50 border-b border-gray-200">
-              <div className="p-4 font-bold text-gray-900">Feature</div>
-              <div className="p-4 font-bold text-gray-900 text-center">Your Program</div>
-              <div className="p-4 font-bold text-purple-600 text-center">Buds Alone</div>
-              <div className="p-4 font-bold text-green-600 text-center">Together ✨</div>
-            </div>
-
-            {comparisonData.map((row, index) => (
-              <div key={index} className={`grid grid-cols-4 border-b border-gray-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-                <div className="p-4 text-gray-700">{row.feature}</div>
-                <div className="p-4 text-center">
-                  {row.yours ? <Check className="w-5 h-5 text-green-600 mx-auto" /> : <X className="w-5 h-5 text-gray-300 mx-auto" />}
-                </div>
-                <div className="p-4 text-center">
-                  {row.buds ? <Check className="w-5 h-5 text-purple-600 mx-auto" /> : <X className="w-5 h-5 text-gray-300 mx-auto" />}
-                </div>
-                <div className="p-4 text-center">
-                  {row.together ? <Check className="w-5 h-5 text-green-600 mx-auto" /> : <X className="w-5 h-5 text-gray-300 mx-auto" />}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-gray-600 mt-8 text-lg">
-            Keep everything you have. Add everything Buds offers. <span className="font-bold text-purple-600">Zero compromise.</span>
+          <p className="text-xl text-gray-600 text-center mb-16">
+            {t('comparison.subtitle')}
           </p>
+
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-purple-200">
+                    <th className="text-left py-4 px-4 font-bold text-gray-900">{t('comparison.featureColumn')}</th>
+                    <th className="text-center py-4 px-4 font-bold text-gray-900">{t('comparison.yoursColumn')}</th>
+                    <th className="text-center py-4 px-4 font-bold text-purple-600">Buds</th>
+                    <th className="text-center py-4 px-4 font-bold text-green-600">{t('comparison.togetherColumn')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonData.map((row, index) => (
+                    <tr key={index} className="border-b border-purple-100">
+                      <td className="py-4 px-4 text-gray-700">{row.feature}</td>
+                      <td className="text-center py-4 px-4">
+                        {row.yours ? <Check className="w-6 h-6 text-gray-600 mx-auto" /> : <X className="w-6 h-6 text-gray-300 mx-auto" />}
+                      </td>
+                      <td className="text-center py-4 px-4">
+                        {row.buds ? <Check className="w-6 h-6 text-purple-600 mx-auto" /> : <X className="w-6 h-6 text-gray-300 mx-auto" />}
+                      </td>
+                      <td className="text-center py-4 px-4">
+                        {row.together ? <Check className="w-6 h-6 text-green-600 mx-auto" /> : <X className="w-6 h-6 text-gray-300 mx-auto" />}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Real Examples */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-pink-50">
+      {/* Use Cases */}
+      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
-            Real brands, real results
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">
+            {t('use_cases.title')}
           </h2>
-          <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            See how brands with existing loyalty programs successfully integrated Buds
-          </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-8">
             {useCases.map((useCase, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-8 border border-purple-200"
               >
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{useCase.brand}</h3>
-                  <p className="text-sm text-gray-500 mb-1">Existing: {useCase.existing}</p>
-                  <p className="text-sm text-purple-600 font-semibold">Mode: {useCase.integration}</p>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">{useCase.brand}</h3>
+                    <p className="text-gray-600">{t('use_cases.existingLabel')}: {useCase.existing}</p>
+                  </div>
+                  <span className="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-bold">
+                    {useCase.metric}
+                  </span>
                 </div>
-
-                <p className="text-gray-700 mb-4">{useCase.result}</p>
-
-                <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-4">
-                  <p className="text-2xl font-black text-purple-600">{useCase.metric}</p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-sm font-semibold text-purple-600 mb-2">{t('use_cases.integrationLabel')}: {useCase.integration}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-500 mb-2">{t('use_cases.resultLabel')}</p>
+                    <p className="text-gray-700">{useCase.result}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -383,136 +255,69 @@ const ExistingLoyaltyPage = () => {
         </div>
       </section>
 
-      {/* Technical Integration */}
+      {/* FAQs */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-16">
-            Works with your existing tech stack
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 border border-purple-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Compatible Platforms</h3>
-              <ul className="space-y-3">
-                {[
-                  'Smile.io',
-                  'LoyaltyLion',
-                  'Yotpo',
-                  'Stamped.io',
-                  'Growave',
-                  'S Loyalty',
-                  'Custom-built programs',
-                  'Any points/tier system'
-                ].map((platform, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-purple-600" />
-                    <span className="text-gray-700">{platform}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 border border-pink-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Integration Method</h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Install Buds widget</p>
-                    <p className="text-sm text-gray-600">Shopify/WooCommerce plugin</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Choose integration mode</p>
-                    <p className="text-sm text-gray-600">Parallel, Hybrid, or Augmented</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Configure display rules</p>
-                    <p className="text-sm text-gray-600">Control when/how Buds appears</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Go live</p>
-                    <p className="text-sm text-gray-600">Both programs work together</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-green-50 border-2 border-green-400 rounded-2xl p-8 text-center">
-            <Sparkles className="w-12 h-12 text-green-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
-              Zero conflict guarantee
-            </h3>
-            <p className="text-gray-700 max-w-2xl mx-auto">
-              Buds is designed to coexist. We've integrated with hundreds of existing loyalty programs without a single technical conflict or data issue. If we can't integrate cleanly, we don't integrate at all.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">
-            Questions from brands like yours
+            {t('faqs.title')}
           </h2>
 
           <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl border border-purple-200 overflow-hidden">
+            {faqs.map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-gradient-to-br from-purple-50 to-white rounded-xl border border-purple-200 overflow-hidden"
+              >
                 <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-purple-50 transition-colors"
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-purple-50 transition-colors"
                 >
-                  <span className="font-semibold text-gray-900">{faq.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === i ? 'rotate-180' : ''}`} />
+                  <span className="font-semibold text-gray-900 pr-8">{faq.question || faq.q}</span>
+                  <ChevronDown 
+                    className={`w-5 h-5 text-purple-600 transition-transform flex-shrink-0 ${openFaq === index ? 'rotate-180' : ''}`}
+                  />
                 </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-4 text-gray-600">
-                    {faq.a}
+                {openFaq === index && (
+                  <div className="px-6 pb-5 text-gray-600">
+                    {faq.answer || faq.a}
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-600 to-pink-600">
+      {/* CTA */}
+      <section className="py-20 px-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready to supercharge your loyalty program?
+          <h2 className="text-4xl md:text-5xl font-black mb-6">
+            {t('cta.title')}
           </h2>
-          <p className="text-xl text-purple-100 mb-10">
-            Join 500+ brands who enhanced their existing programs with Buds
+          <p className="text-xl mb-10 text-purple-100">
+            {t('cta.subtitle')}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Schedule Integration Call <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link to="/partners/login">
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-6 text-lg font-bold">
+                {t('cta.applyButton')} <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Link to="/partners/dashboard">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
-                View Sample Dashboard
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-purple-700 px-8 py-6 text-lg font-bold">
+                {t('cta.dashboardButton')}
               </Button>
             </Link>
           </div>
         </div>
       </section>
+      </div>
     </div>
-    </div>
-    </>
   )
 }
 
 export default ExistingLoyaltyPage
-

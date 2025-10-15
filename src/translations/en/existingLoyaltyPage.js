@@ -3,48 +3,66 @@ export const existingLoyaltyPage = {
   hero: {
     badge: "🔄 Loyalty Augmentation Program ✨",
     title: "Already have a loyalty program?",
-    subtitle: "Buds enhances your existing rewards",
+    subtitle: "Don't replace it. Supercharge it.",
     description:
-      "Add partner brand rewards as a bonus layer without replacing your current system. Increase customer engagement, expand your catalog, and boost checkout conversion—all at zero cost."
+      "Buds integrates alongside your existing loyalty program to offer additional rewards from partner brands. Your customers get more value, you get more engagement, zero extra cost."
   },
+  
+  objections_section: {
+    title: "We hear you: \"We already have a loyalty program\"",
+    subtitle: "That's exactly why Buds exists. We don't compete with your program—we make it better."
+  },
+  
   objections: [
     {
+      icon: "X",
       objection: "We already have a loyalty program",
       solution: "Buds doesn't replace it—we enhance it",
       details:
         "Your existing points, tiers, and rewards stay exactly as they are. Buds runs alongside as a supplementary reward layer, giving your customers more value without changing your current system."
     },
     {
+      icon: "DollarSign",
       objection: "We can't afford another loyalty program",
       solution: "Buds costs you nothing",
       details:
         "Zero setup fees, zero monthly costs, zero per-transaction fees. Partners donate overstock inventory—you simply integrate the widget. Your customers get more rewards, you pay nothing extra."
     },
     {
+      icon: "Users",
       objection: "Our customers are already engaged",
       solution: "Make them even more engaged",
       details:
         "Buds adds 23% higher AOV and increases redemption rates by offering exclusive rewards from partner brands. Your engaged customers become super-engaged with access to a wider reward catalog."
     },
     {
+      icon: "Layers",
       objection: "Integration will be too complex",
       solution: "5-minute plugin installation",
       details:
         "Our Shopify/WooCommerce plugin installs in minutes and works alongside your existing loyalty platform. No API conflicts, no data migration, no technical headaches."
     },
     {
+      icon: "Shield",
       objection: "We don't want to share customer data",
       solution: "Your data stays yours",
       details:
         "Buds is GDPR-compliant and never accesses your customer data. We only track widget engagement (anonymous). Your customer relationships and data remain 100% under your control."
     },
     {
+      icon: "BarChart3",
       objection: "Our program already drives results",
       solution: "Stack the results even higher",
       details:
         "Keep your current ROI and add Buds on top. Partners see average 15% increase in checkout conversion when Buds rewards are available alongside their existing program."
     }
   ],
+  
+  integration_modes: {
+    title: "How Buds works with your existing program",
+    exampleLabel: "Example"
+  },
+  
   integrationModes: [
     {
       title: "Parallel Mode (Recommended)",
@@ -80,6 +98,21 @@ export const existingLoyaltyPage = {
       example: "Gold tier+ members get access to Buds reward catalog"
     }
   ],
+  
+  dual_loyalty: {
+    title: "See it in action: Dual loyalty at checkout",
+    description: "Customers see both your rewards and Buds rewards side-by-side. No confusion, just more value.",
+    imageAlt: "Dual loyalty checkout experience showing both store points and Buds rewards"
+  },
+  
+  comparison: {
+    title: "Your program + Buds = Better together",
+    subtitle: "Keep everything you have, add what Buds brings",
+    featureColumn: "Feature",
+    yoursColumn: "Your Program",
+    togetherColumn: "Together"
+  },
+  
   comparisonTable: {
     features: [
       { feature: "Your existing points", yours: true, buds: false, together: true },
@@ -92,6 +125,14 @@ export const existingLoyaltyPage = {
       { feature: "Network effect benefits", yours: false, buds: true, together: true }
     ]
   },
+  
+  use_cases: {
+    title: "Real brands, real results",
+    existingLabel: "Existing program",
+    integrationLabel: "Integration",
+    resultLabel: "Result"
+  },
+  
   useCases: [
     {
       brand: "Fashion Retailer",
@@ -118,46 +159,61 @@ export const existingLoyaltyPage = {
       metric: "10x catalog"
     }
   ],
+  
+  faqs: {
+    title: "Frequently Asked Questions"
+  },
+  
   faqs: [
     {
-      question: "Will Buds confuse our customers?",
-      answer:
+      q: "Will Buds confuse our customers?",
+      a:
         "No. Buds appears as a clearly labeled 'bonus reward' option. Customers understand it's an additional benefit, not a replacement. Our UX is designed to complement, not compete."
     },
     {
-      question: "Can we control which Buds rewards appear?",
-      answer:
+      q: "Can we control which Buds rewards appear?",
+      a:
         "Yes. You have full control over which partner rewards display to your customers. Filter by category, brand, value, or exclude entirely."
     },
     {
-      question: "What if we want to stop using Buds?",
-      answer:
+      q: "What if we want to stop using Buds?",
+      a:
         "Simply uninstall the plugin. No contracts, no penalties, no data migration needed. Your existing program continues unchanged."
     },
     {
-      question: "Do we need to donate inventory to use Buds?",
-      answer:
+      q: "Do we need to donate inventory to use Buds?",
+      a:
         "No. You can integrate Buds purely to offer partner rewards to your customers. Donating inventory gets you better placement, but it's optional."
     },
     {
-      question: "How do customers redeem Buds rewards?",
-      answer:
+      q: "How do customers redeem Buds rewards?",
+      a:
         "At checkout, they see available Buds rewards alongside your existing options. One click adds it to their order. We handle fulfillment (co-pack or central)."
     },
     {
-      question: "Will this cannibalize our existing reward redemptions?",
-      answer:
+      q: "Will this cannibalize our existing reward redemptions?",
+      a:
         "Data shows no cannibalization. Buds rewards are additive—customers redeem both. Think of it as expanding your reward catalog without expanding your costs."
     },
     {
-      question: "Can we white-label Buds?",
-      answer:
+      q: "Can we white-label Buds?",
+      a:
         "Not currently, but Buds branding is minimal. The widget clearly shows it's a partner reward network, which customers appreciate as added value."
     },
     {
-      question: "What platforms does this work with?",
-      answer:
+      q: "What platforms does this work with?",
+      a:
         "Shopify, WooCommerce, and most major loyalty platforms (Smile.io, LoyaltyLion, Yotpo, etc.). We integrate via checkout widget, not direct platform integration."
     }
-  ]
+  ],
+  
+  cta: {
+    title: "Ready to supercharge your loyalty program?",
+    subtitle: "Join leading brands using Buds to increase engagement and AOV",
+    seeIntegrationButton: "See Integration Options",
+    talkToExpertButton: "Talk to Integration Expert",
+    applyButton: "Apply Now",
+    dashboardButton: "View Sample Dashboard"
+  }
 }
+
