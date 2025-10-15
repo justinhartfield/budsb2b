@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { useLanguage } from '../contexts/LanguageContext';
-import { allTranslations } from '../data/allTranslations';
 import { 
   Factory,
   TrendingUp,
@@ -18,11 +16,8 @@ import {
   Zap
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import heroImage from '../assets/manufacturer-hero.png'
 
 const ManufacturersPage = () => {
-  const { language } = useLanguage();
-  const t = allTranslations.manufacturers[language];
   const [openFaq, setOpenFaq] = useState(null)
 
   const manufacturerBenefits = [
