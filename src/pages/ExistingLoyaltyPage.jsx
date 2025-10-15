@@ -23,6 +23,7 @@ import { Button } from '@/components/ui/button'
 import PartnerTypeNav from '../components/PartnerTypeNav'
 import { useTranslation } from '../hooks/useTranslation'
 import dualLoyaltyCheckout from '../assets/dual-loyalty-checkout.png'
+import BrandLogo from '../components/BrandLogo'
 
 const ExistingLoyaltyPage = () => {
   const { t, tArray } = useTranslation('existingLoyaltyPage')
@@ -157,6 +158,13 @@ const ExistingLoyaltyPage = () => {
                 <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                   <p className="text-sm text-green-700 font-medium">Example</p>
                   <p className="text-sm text-gray-700 mt-1">{choice.example}</p>
+                  {index === 1 && (
+                    <div className="flex items-center gap-3 mt-3 pt-3 border-t border-green-200">
+                      <span className="text-xs text-gray-500">Featured brands:</span>
+                      <BrandLogo brand="vibes" size="sm" />
+                      <BrandLogo brand="cookies" size="sm" />
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

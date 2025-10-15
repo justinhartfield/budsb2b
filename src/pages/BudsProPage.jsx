@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import budsProBadge from '../assets/budspro-badge.png'
 import { useTranslation } from '../hooks/useTranslation'
 import VideoBackground from '@/components/VideoBackground'
+import BrandLogo from '@/components/BrandLogo'
 
 const BudsProPage = () => {
   const { t, tArray } = useTranslation('budsProPage')
@@ -112,6 +113,45 @@ const BudsProPage = () => {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Partner Brands Showcase */}
+      <section className="py-16 px-6 bg-black border-y border-yellow-500/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-yellow-400 mb-2">Partner Brands</h3>
+            <p className="text-gray-400">Access exclusive rewards from premium cannabis brands</p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
+            >
+              <BrandLogo brand="cookies" size="xl" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
+            >
+              <BrandLogo brand="vibes" size="xl" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
+            >
+              <BrandLogo brand="weedmaps" size="xl" />
+            </motion.div>
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-8">+ 40 more premium cannabis brands and platforms</p>
         </div>
       </section>
 
