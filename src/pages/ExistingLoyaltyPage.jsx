@@ -34,7 +34,7 @@ const ExistingLoyaltyPage = () => {
   const integrationModes = tArray('integrationModes')
   const comparisonData = tArray('comparisonTable.features')
   const useCases = tArray('useCases')
-  const faqs = tArray('faqs')
+  const faqs = tArray('faqs.items')
 
   const iconMap = {
     X, DollarSign, Users, Layers, Shield, BarChart3

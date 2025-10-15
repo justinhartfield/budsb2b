@@ -201,10 +201,8 @@ export const existingLoyaltyPage = {
   ],
   
   faqs: {
-    title: "Frequently Asked Questions"
-  },
-  
-  faqs: [
+    title: "Frequently Asked Questions",
+    items: [
     {
       q: "Will Buds confuse our customers?",
       a:
@@ -245,7 +243,8 @@ export const existingLoyaltyPage = {
       a:
         "No. Buds is its own brand and we're proud of it. When customers see the Buds name, they know they're getting access to a premium reward network. Our brand recognition adds value to your business, not detracts from it."
     }
-  ],
+    ]
+  },
   
   cta: {
     title: "Ready to supercharge your loyalty program?",

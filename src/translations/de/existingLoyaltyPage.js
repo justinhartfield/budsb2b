@@ -201,10 +201,8 @@ export const existingLoyaltyPage = {
   ],
   
   faqs: {
-    title: "Häufig gestellte Fragen"
-  },
-  
-  faqs: [
+    title: "Häufig gestellte Fragen",
+    items: [
     {
       q: "Verwirrt Buds unsere Kunden?",
       a:
@@ -245,7 +243,8 @@ export const existingLoyaltyPage = {
       a:
         "Nein. Buds ist eine eigenständige Marke und wir sind stolz darauf. Wenn Kunden den Namen Buds sehen, wissen sie, dass sie Zugang zu einem Premium-Belohnungsnetzwerk erhalten. Unsere Markenbekanntheit bringt Ihrem Unternehmen Mehrwert, nicht Abzug."
     }
-  ],
+    ]
+  },
   
   cta: {
     title: "Bereit, Ihr Treueprogramm zu verstärken?",
