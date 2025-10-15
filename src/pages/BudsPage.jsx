@@ -20,7 +20,6 @@ import {
 import { Button } from '@/components/ui/button'
 import { partnerContent, sectionContent } from '../data/partnerContent'
 import partnerHero from '../assets/partner-hero.png'
-import VideoBackground from '@/components/VideoBackground'
 
 const BudsPage = () => {
   const navigate = useNavigate()
@@ -171,9 +170,8 @@ const BudsPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative pt-32 md:pt-48 pb-12 md:pb-20 px-4 md:px-6 overflow-hidden">
-        <VideoBackground opacity={0.12} />
-        <div className="max-w-6xl mx-auto text-center relative z-10">
+      <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-4 md:px-6">
+        <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
