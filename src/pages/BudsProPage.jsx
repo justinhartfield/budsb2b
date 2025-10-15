@@ -12,43 +12,43 @@ const BudsProPage = () => {
   const benefits = [
     {
       icon: Calendar,
-      title: t.benefits.backdatedBuds.title,
-      description: t.benefits.backdatedBuds.description
+      title: t.sectionPerks.perks[0].title,
+      description: t.sectionPerks.perks[0].description
     },
     {
       icon: Zap,
-      title: t.benefits.plusOnePerks.title,
-      description: t.benefits.plusOnePerks.description
+      title: t.sectionPerks.perks[1].title,
+      description: t.sectionPerks.perks[1].description
     },
     {
       icon: ArrowRight,
-      title: t.benefits.earlyAccess.title,
-      description: t.benefits.earlyAccess.description
+      title: t.sectionPerks.perks[2].title,
+      description: t.sectionPerks.perks[2].description
     },
     {
       icon: CreditCard,
-      title: t.benefits.uniqueNfcCard.title,
-      description: t.benefits.uniqueNfcCard.description
+      title: t.sectionPerks.perks[3].title,
+      description: t.sectionPerks.perks[3].description
     },
     {
       icon: Tag,
-      title: t.benefits.preferentialPrices.title,
-      description: t.benefits.preferentialPrices.description
+      title: t.sectionPerks.perks[4].title,
+      description: t.sectionPerks.perks[4].description
     },
     {
       icon: Sticker,
-      title: t.benefits.stickerPacksAndEmojis.title,
-      description: t.benefits.stickerPacksAndEmojis.description
+      title: t.sectionPerks.perks[5].title,
+      description: t.sectionPerks.perks[5].description
     },
     {
       icon: Gift,
-      title: t.benefits.proRewards.title,
-      description: t.benefits.proRewards.description
+      title: t.sectionPerks.perks[6].title,
+      description: t.sectionPerks.perks[6].description
     },
     {
       icon: Lock,
-      title: t.benefits.inviteOnlyExperiences.title,
-      description: t.benefits.inviteOnlyExperiences.description
+      title: t.sectionPerks.perks[7].title,
+      description: t.sectionPerks.perks[7].description
     }
   ]
 
