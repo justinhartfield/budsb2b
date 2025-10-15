@@ -21,6 +21,7 @@ import { Button } from '@/components/ui/button'
 import { partnerContent, sectionContent } from '../data/partnerContent'
 import partnerHero from '../assets/partner-hero.png'
 import RewardsShowcase from '@/components/RewardsShowcase'
+import TextWithBrandLogo from '../components/TextWithBrandLogo'
 
 const BudsPage = () => {
   const navigate = useNavigate()
@@ -410,7 +411,7 @@ const BudsPage = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Checkout Integration</h2>
           <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            See how Buds Rewards appears naturally in real Shopify and WooCommerce checkout flows, featuring exclusive VIBES™ branded products and seamless user experience.
+            <TextWithBrandLogo text="See how Buds Rewards appears naturally in real Shopify and WooCommerce checkout flows, featuring exclusive [VIBES] branded products and seamless user experience." logoSize="sm" />
           </p>
 
           {/* Checkout Mockups */}
@@ -524,7 +525,7 @@ const BudsPage = () => {
                   </div>
                   <p className="text-xs text-gray-600 mb-3 flex items-center gap-1">
                     <Check className="w-3 h-3 text-green-600" />
-                    Exclusive access to VIBES™ branded products & your favorite brands
+                    <TextWithBrandLogo text="Exclusive access to [VIBES] branded products & your favorite brands" logoSize="xs" />
                   </p>
                   <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Add Reward</Button>
                 </div>
@@ -540,12 +541,14 @@ const BudsPage = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { title: 'Quick Signup Flow', desc: 'Frictionless registration process during checkout' },
-              { title: 'Instant Rewards', desc: 'Immediate access to exclusive VIBES™ products upon signup' },
+              { title: 'Instant Rewards', desc: 'Immediate access to exclusive [VIBES] products upon signup', useLogo: true },
               { title: 'Member Status', desc: 'Clear visual indication of membership status and benefits' }
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-xl p-6 border border-gray-200 text-center">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <p className="text-gray-600 text-sm">
+                  {item.useLogo ? <TextWithBrandLogo text={item.desc} logoSize="xs" className="justify-center" /> : item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -567,11 +570,13 @@ const BudsPage = () => {
             {[
               { title: 'Progressive Tiers', desc: 'Multiple reward levels encourage larger purchases' },
               { title: 'Smart Suggestions', desc: 'AI-powered recommendations to reach reward thresholds' },
-              { title: 'Exclusive Access', desc: 'VIBES™ branded products only available through rewards' }
+              { title: 'Exclusive Access', desc: '[VIBES] branded products only available through rewards', useLogo: true }
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <p className="text-gray-600">
+                  {item.useLogo ? <TextWithBrandLogo text={item.desc} logoSize="sm" /> : item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -678,13 +683,13 @@ const BudsPage = () => {
                     
                     <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
                       <p className="text-xs font-semibold text-yellow-800">SPONSORED CONTENT</p>
-                      <p className="text-xs text-yellow-700">This content is sponsored by VIBES™ - Premium tobacco accessories</p>
+                      <p className="text-xs text-yellow-700"><TextWithBrandLogo text="This content is sponsored by [VIBES] - Premium tobacco accessories" logoSize="xs" /></p>
                     </div>
                     
                     <div className="bg-white rounded-lg p-4 mb-4">
                       <p className="text-xs font-semibold text-purple-600 mb-2">FEATURED ADVERTISER PARTNER</p>
-                      <h6 className="font-bold text-gray-900 mb-2">VIBES™ Signature Series</h6>
-                      <p className="text-xs text-gray-600 mb-3">Our advertising partner VIBES™ is offering exclusive rolling papers and accessories as Buds rewards.</p>
+                      <h6 className="font-bold text-gray-900 mb-2"><TextWithBrandLogo text="[VIBES] Signature Series" logoSize="sm" /></h6>
+                      <p className="text-xs text-gray-600 mb-3"><TextWithBrandLogo text="Our advertising partner [VIBES] is offering exclusive rolling papers and accessories as Buds rewards." logoSize="xs" /></p>
                       
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <p className="text-xs font-semibold text-green-800">Advertiser Exclusive Offer</p>
@@ -734,7 +739,7 @@ const BudsPage = () => {
                     <span className="text-xs font-semibold text-yellow-800">Top Placement</span>
                     <span className="text-xs font-bold text-yellow-900">Score: 1.5+</span>
                   </div>
-                  <h5 className="font-bold text-gray-900 mb-2">VIBES™ Signature Series Kit</h5>
+                  <h5 className="font-bold text-gray-900 mb-2"><TextWithBrandLogo text="[VIBES] Signature Series Kit" logoSize="sm" /></h5>
                   <div className="space-y-1">
                     <p className="text-xs text-gray-700 flex items-center gap-1">
                       <Check className="w-3 h-3 text-green-600" /> First position in widget
