@@ -18,156 +18,21 @@ import {
   Globe
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import LanguageNotice from '../components/LanguageNotice'
+import { useTranslation } from '../hooks/useTranslation'
+import platformHero from '../assets/platform-hero.png'
 
 const PlatformsPage = () => {
+  const { t, tArray } = useTranslation('platformsPage')
   const [openFaq, setOpenFaq] = useState(null)
 
-  const platformBenefits = [
-    {
-      icon: TrendingUp,
-      title: "Increase Marketplace GMV",
-      description: "Sellers using Buds see 23% higher AOV. More revenue per transaction = more platform fees for you.",
-      metric: "+23% AOV"
-    },
-    {
-      icon: Store,
-      title: "Attract & Retain Sellers",
-      description: "Offer a ready-made loyalty solution. Sellers get enterprise-grade rewards without building it themselves.",
-      metric: "Seller USP"
-    },
-    {
-      icon: Users,
-      title: "Cross-Seller Discovery",
-      description: "Customers redeeming rewards from Seller A discover Seller B. Network effects drive marketplace growth.",
-      metric: "Network Effect"
-    },
-    {
-      icon: Shield,
-      title: "No Platform Liability",
-      description: "Buds handles all reward fulfillment, customer service, and compliance. Zero operational burden on your platform.",
-      metric: "Zero Ops"
-    }
-  ]
-
-  const integrationOptions = [
-    {
-      title: "White-Label Integration",
-      description: "Buds runs under your platform brand",
-      features: [
-        "Your branding throughout",
-        "Seamless UX in your checkout",
-        "Platform-controlled reward catalog",
-        "Custom commission structure"
-      ],
-      bestFor: "Large marketplaces with strong brand"
-    },
-    {
-      title: "Co-Branded Integration",
-      description: "Powered by Buds, featured on your platform",
-      features: [
-        "Buds + Your brand together",
-        "Shared marketing materials",
-        "Standard reward catalog",
-        "Revenue share model"
-      ],
-      bestFor: "Growing marketplaces seeking quick value"
-    },
-    {
-      title: "API-Only Integration",
-      description: "Build your own UI on Buds infrastructure",
-      features: [
-        "Full API access",
-        "Custom frontend implementation",
-        "Flexible reward logic",
-        "Developer-friendly docs"
-      ],
-      bestFor: "Technical platforms with custom needs"
-    }
-  ]
-
-  const revenueModels = [
-    {
-      model: "Commission on Redemptions",
-      description: "Earn % of reward value when customers redeem",
-      example: "Customer redeems €50 reward → Platform earns €5 (10%)",
-      pros: ["Performance-based", "No upfront cost", "Scales with usage"]
-    },
-    {
-      model: "Seller Subscription Upsell",
-      description: "Charge sellers for Buds access as premium feature",
-      example: "€49/month for Buds integration in Pro plan",
-      pros: ["Recurring revenue", "Increases plan value", "Predictable income"]
-    },
-    {
-      model: "Hybrid Model",
-      description: "Base subscription + commission on high-value redemptions",
-      example: "€29/month + 5% on rewards >€100",
-      pros: ["Balanced risk/reward", "Multiple revenue streams", "Flexible pricing"]
-    }
-  ]
-
-  const platformExamples = [
-    {
-      platform: "Multi-Vendor Fashion Marketplace",
-      sellers: "450 sellers",
-      integration: "Co-Branded",
-      result: "Sellers using Buds had 31% higher repeat purchase rate. Platform GMV increased 18% with zero additional marketing spend.",
-      metric: "+18% GMV"
-    },
-    {
-      platform: "Wellness & CBD Platform",
-      sellers: "120 sellers",
-      integration: "White-Label",
-      result: "Positioned as platform-exclusive benefit. Seller churn reduced 40%, new seller signups increased 55%.",
-      metric: "-40% churn"
-    },
-    {
-      platform: "Local Delivery Network",
-      sellers: "280 sellers",
-      integration: "API-Only",
-      result: "Built custom reward tiers by delivery zone. Cross-seller discovery up 67%, average basket size +€12.",
-      metric: "+€12 basket"
-    }
-  ]
-
-  const technicalSpecs = [
-    {
-      category: "Authentication",
-      details: "OAuth 2.0, JWT tokens, Webhook support for real-time events"
-    },
-    {
-      category: "Reward Catalog API",
-      details: "Filter by category, value, seller, geography. Real-time inventory updates"
-    },
-    {
-      category: "Redemption Flow",
-      details: "Checkout widget embed or API-driven custom UI. Co-pack or central fulfillment"
-    },
-    {
-      category: "Analytics & Reporting",
-      details: "Platform dashboard, seller dashboards, CSV exports, custom reporting API"
-    },
-    {
-      category: "Compliance",
-      details: "GDPR/DSGVO compliant, age verification hooks, geo-restriction support"
-    }
-  ]
-
-  const faqs = [
-    { q: "Do our sellers need to donate inventory?", a: "No. Sellers can participate purely by offering partner rewards to their customers. Donating inventory improves their reward placement, but it's optional." },
-    { q: "How do we control which rewards appear on our platform?", a: "Full control via platform admin panel. Approve/reject rewards, set categories, filter by value range, restrict by geography, or curate specific collections." },
-    { q: "What's our revenue share?", a: "Flexible based on integration type. Typical range: 10-20% commission on redemptions, or seller subscription model (€29-99/month). Custom deals for large platforms." },
-    { q: "How does fulfillment work?", a: "Buds handles it. Either co-pack (seller ships directly) or central (our 3PL ships). Your platform has zero fulfillment burden or customer service load." },
-    { q: "Can we white-label this completely?", a: "Yes, for white-label integration. Buds branding is removed, replaced with yours. Requires minimum platform GMV threshold." },
-    { q: "What if a seller leaves our platform?", a: "Their donated inventory stays in the Buds network but stops appearing on your platform. No impact on other sellers or customers." },
-    { q: "How long does integration take?", a: "Co-branded: 1-2 weeks. White-label: 4-6 weeks. API-only: Depends on your dev team, typically 2-4 weeks with our support." },
-    { q: "Do you compete with our platform?", a: "Never. Buds is B2B infrastructure only. We don't operate consumer-facing marketplaces. You're our customer, not our competitor." }
-  ]
+  const iconMap = {
+    0: TrendingUp,
+    1: Store,
+    2: Users,
+    3: Shield
+  }
 
   return (
-    <>
-      <LanguageNotice />
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -178,33 +43,39 @@ const PlatformsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full mb-8 text-sm font-semibold">
-              🚀 Platform Integration Program 🌐
+              {t('hero.badge')}
             </div>
-
+            
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-              Power your marketplace with<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
-                Buds loyalty rewards
-              </span>
+              {t('hero.title')}
             </h1>
-
-            <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting.
+            
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              {t('hero.subtitle')}
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                View Integration Options <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-purple-600 text-purple-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-purple-50">
-                API Documentation
-              </Button>
+            <p className="text-lg text-gray-700 mb-12 max-w-4xl mx-auto">
+              {t('hero.description')}
+            </p>
+
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Link to="/partners/login">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                  {t('cta.applyButton')} <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
               <Link to="/partners/dashboard">
-                <Button size="lg" variant="outline" className="border-2 border-indigo-600 text-indigo-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-indigo-50">
-                  Platform Demo
+                <Button size="lg" variant="outline" className="border-purple-300 text-purple-700 hover:bg-purple-50">
+                  {t('cta.dashboardButton')}
                 </Button>
               </Link>
             </div>
+
+            <img 
+              src={platformHero} 
+              alt="Platform Integration" 
+              className="mt-16 rounded-2xl shadow-2xl mx-auto max-w-4xl w-full"
+            />
           </motion.div>
         </div>
       </section>
@@ -212,66 +83,71 @@ const PlatformsPage = () => {
       {/* Platform Benefits */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Why platforms choose Buds</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">{t('benefits.title')}</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {platformBenefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 border border-purple-200"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <benefit.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
-                    <p className="text-gray-600 mb-3">{benefit.description}</p>
-                    <div className="inline-block bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      {benefit.metric}
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
+            {tArray('benefits.items').map((benefit, index) => {
+              const Icon = iconMap[index]
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="p-8 rounded-xl border-2 border-purple-100 hover:border-purple-300 hover:shadow-lg transition-all"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-purple-100 rounded-lg">
+                      <Icon className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-xl font-bold">{benefit.title}</h3>
+                        <span className="text-sm font-semibold text-purple-600 bg-purple-50 px-3 py-1 rounded-full">
+                          {benefit.metric}
+                        </span>
+                      </div>
+                      <p className="text-gray-600">{benefit.description}</p>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* Integration Options */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Choose your integration model</h2>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {integrationOptions.map((option, index) => (
+          <h2 className="text-4xl font-bold text-center mb-4">{t('integrationOptions.title')}</h2>
+          <p className="text-xl text-gray-600 text-center mb-12">{t('integrationOptions.subtitle')}</p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {tArray('integrationOptions.items').map((option, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 border-2 border-purple-200 hover:border-purple-400 transition-colors"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{option.title}</h3>
+                <h3 className="text-2xl font-bold mb-3">{option.title}</h3>
                 <p className="text-gray-600 mb-6">{option.description}</p>
                 
-                <ul className="space-y-3 mb-6">
-                  {option.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                <div className="space-y-3 mb-6">
+                  {option.features.map((feature, fIndex) => (
+                    <div key={fIndex} className="flex items-start gap-2">
+                      <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">{feature}</span>
-                    </li>
+                    </div>
                   ))}
-                </ul>
-
-                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                  <p className="text-xs font-semibold text-purple-700 mb-1">Best for:</p>
-                  <p className="text-sm text-purple-900">{option.bestFor}</p>
+                </div>
+                
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="text-sm text-gray-500">
+                    <strong>Best for:</strong> {option.bestFor}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -282,31 +158,32 @@ const PlatformsPage = () => {
       {/* Revenue Models */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Monetize Buds on your platform</h2>
-          <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-            Multiple revenue models to fit your business strategy
-          </p>
-
+          <h2 className="text-4xl font-bold text-center mb-4">{t('revenueModels.title')}</h2>
+          <p className="text-xl text-gray-600 text-center mb-12">{t('revenueModels.subtitle')}</p>
+          
           <div className="grid md:grid-cols-3 gap-8">
-            {revenueModels.map((model, index) => (
+            {tArray('revenueModels.items').map((model, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200"
+                className="p-8 rounded-xl border-2 border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{model.model}</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <DollarSign className="w-8 h-8 text-green-600" />
+                  <h3 className="text-xl font-bold">{model.model}</h3>
+                </div>
+                
                 <p className="text-gray-600 mb-4">{model.description}</p>
                 
-                <div className="bg-white border border-green-200 rounded-lg p-4 mb-4">
-                  <p className="text-sm text-gray-700">{model.example}</p>
+                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-gray-700 font-mono">{model.example}</p>
                 </div>
-
+                
                 <div className="space-y-2">
-                  {model.pros.map((pro, i) => (
-                    <div key={i} className="flex items-center gap-2">
+                  {model.pros.map((pro, pIndex) => (
+                    <div key={pIndex} className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-green-600" />
                       <span className="text-sm text-gray-700">{pro}</span>
                     </div>
@@ -318,31 +195,36 @@ const PlatformsPage = () => {
         </div>
       </section>
 
-      {/* Platform Examples */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-indigo-50">
+      {/* Success Stories */}
+      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Platform success stories</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {platformExamples.map((example, index) => (
+          <h2 className="text-4xl font-bold text-center mb-12">{t('examples.title')}</h2>
+          
+          <div className="space-y-8">
+            {tArray('examples.items').map((example, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 border border-purple-200"
+                className="bg-white p-8 rounded-xl shadow-lg"
               >
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{example.platform}</h3>
-                  <p className="text-sm text-gray-500 mb-1">{example.sellers}</p>
-                  <p className="text-sm text-purple-600 font-semibold">Integration: {example.integration}</p>
-                </div>
-
-                <p className="text-gray-700 mb-4">{example.result}</p>
-
-                <div className="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-4">
-                  <p className="text-2xl font-black text-purple-600">{example.metric}</p>
+                <div className="flex items-start justify-between gap-4 flex-wrap">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-3">
+                      <h3 className="text-2xl font-bold">{example.platform}</h3>
+                      <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                        {example.sellers}
+                      </span>
+                      <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
+                        {example.integration}
+                      </span>
+                    </div>
+                    <p className="text-gray-700">{example.result}</p>
+                  </div>
+                  <div className="text-3xl font-black text-green-600">
+                    {example.metric}
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -352,82 +234,91 @@ const PlatformsPage = () => {
 
       {/* Technical Specs */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Technical specifications</h2>
-
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">{t('technicalSpecs.title')}</h2>
+          <p className="text-xl text-gray-600 text-center mb-12">{t('technicalSpecs.subtitle')}</p>
+          
           <div className="space-y-6">
-            {technicalSpecs.map((spec, index) => (
+            {tArray('technicalSpecs.items').map((spec, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-xl p-6 border border-gray-200"
+                className="p-6 rounded-xl border-2 border-gray-200 hover:border-purple-300 transition-all"
               >
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{spec.category}</h3>
-                <p className="text-gray-600">{spec.details}</p>
+                <div className="flex items-start gap-4">
+                  <div className="p-2 bg-purple-100 rounded-lg">
+                    <BarChart3 className="w-5 h-5 text-purple-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold mb-2">{spec.category}</h3>
+                    <p className="text-gray-600">{spec.details}</p>
+                  </div>
+                </div>
               </motion.div>
             ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-10 py-6 text-lg rounded-lg font-bold">
-              Access API Documentation <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
+      {/* FAQs */}
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">Platform FAQ</h2>
-
+          <h2 className="text-4xl font-bold text-center mb-12">{t('faqs.title')}</h2>
+          
           <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-xl border border-purple-200 overflow-hidden">
+            {tArray('faqs.items').map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-white rounded-xl shadow-sm overflow-hidden"
+              >
                 <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-purple-50 transition-colors"
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
-                  <span className="font-semibold text-gray-900">{faq.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === i ? 'rotate-180' : ''}`} />
+                  <span className="font-semibold text-lg pr-4">{faq.q}</span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform ${
+                      openFaq === index ? 'transform rotate-180' : ''
+                    }`}
+                  />
                 </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-4 text-gray-600">
-                    {faq.a}
+                {openFaq === index && (
+                  <div className="px-6 pb-6">
+                    <p className="text-gray-600">{faq.a}</p>
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-600 to-indigo-600">
+      <section className="py-20 px-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready to power your marketplace?
-          </h2>
-          <p className="text-xl text-purple-100 mb-10">
-            Join leading platforms offering Buds to their sellers
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Schedule Platform Demo <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+          <h2 className="text-4xl font-bold mb-4">{t('cta.title')}</h2>
+          <p className="text-xl mb-8 opacity-90">{t('cta.subtitle')}</p>
+          
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link to="/partners/login">
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
+                {t('cta.applyButton')} <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Link to="/partners/dashboard">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
-                View Dashboard Demo
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                {t('cta.dashboardButton')}
               </Button>
             </Link>
           </div>
         </div>
       </section>
     </div>
-    </>
   )
 }
 

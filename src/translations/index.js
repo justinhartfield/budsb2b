@@ -4,15 +4,19 @@ import { budsProPage as budsProPageEn } from './en/budsProPage'
 
 import { common as commonDe } from './de/common'
 import { budsProPage as budsProPageDe } from './de/budsProPage'
+import { platformsPage as platformsPageEn } from './en/platformsPage'
+import { platformsPage as platformsPageDe } from './de/platformsPage'
 
 export const translations = {
   en: {
     common: commonEn,
-    budsProPage: budsProPageEn
+    budsProPage: budsProPageEn,
+    platformsPage: platformsPageEn
   },
   de: {
     common: commonDe,
-    budsProPage: budsProPageDe
+    budsProPage: budsProPageDe,
+    platformsPage: platformsPageDe
   }
 }
 
