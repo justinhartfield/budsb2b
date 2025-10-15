@@ -19,6 +19,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { partnerContent, sectionContent } from '../data/partnerContent'
+import partnerHero from '../assets/partner-hero.png'
 
 const BudsPage = () => {
   const navigate = useNavigate()
@@ -187,6 +188,10 @@ const BudsPage = () => {
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
               {currentContent.description}
             </p>
+
+            <div className="mb-10">
+              <img src={partnerHero} alt="Partner Network" className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl" />
+            </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-lg font-bold">

@@ -20,6 +20,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '../contexts/LanguageContext';
 import { allTranslations } from '../data/allTranslations';
+import heroImage from '../assets/platform-hero.png'
 
 const PlatformsPage = () => {
   const [openFaq, setOpenFaq] = useState(null)

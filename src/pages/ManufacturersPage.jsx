@@ -18,6 +18,7 @@ import {
   Zap
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import heroImage from '../assets/manufacturer-hero.png'
 
 const ManufacturersPage = () => {
   const { language } = useLanguage();

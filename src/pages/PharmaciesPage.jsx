@@ -18,6 +18,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '../contexts/LanguageContext';
 import { allTranslations } from '../data/allTranslations';
+import heroImage from '../assets/pharmacy-hero.png'
 
 const PharmaciesPage = () => {
   const { language } = useLanguage();
