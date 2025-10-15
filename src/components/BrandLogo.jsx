@@ -10,11 +10,11 @@ const brandLogos = {
 
 const BrandLogo = ({ brand, size = 'md', showTM = true, className = '' }) => {
   const sizeClasses = {
-    xs: 'h-4',
-    sm: 'h-6',
-    md: 'h-8',
-    lg: 'h-12',
-    xl: 'h-16'
+    xs: 'h-8',
+    sm: 'h-12',
+    md: 'h-16',
+    lg: 'h-24',
+    xl: 'h-32'
   }
 
   const brandNames = {
