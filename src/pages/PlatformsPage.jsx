@@ -18,6 +18,7 @@ import {
   Globe
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import LanguageNotice from '../components/LanguageNotice'
 
 const PlatformsPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
@@ -165,6 +166,8 @@ const PlatformsPage = () => {
   ]
 
   return (
+    <>
+      <LanguageNotice />
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -424,6 +427,7 @@ const PlatformsPage = () => {
         </div>
       </section>
     </div>
+    </>
   )
 }
 

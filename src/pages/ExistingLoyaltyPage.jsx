@@ -20,6 +20,7 @@ import {
   RefreshCw
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import LanguageNotice from '../components/LanguageNotice'
 
 const ExistingLoyaltyPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
@@ -146,6 +147,8 @@ const ExistingLoyaltyPage = () => {
   ]
 
   return (
+    <>
+      <LanguageNotice />
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -453,6 +456,7 @@ const ExistingLoyaltyPage = () => {
         </div>
       </section>
     </div>
+    </>
   )
 }
 

@@ -16,6 +16,7 @@ import {
   Lock
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import LanguageNotice from '../components/LanguageNotice'
 
 const PharmaciesPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
@@ -162,6 +163,8 @@ const PharmaciesPage = () => {
   ]
 
   return (
+    <>
+      <LanguageNotice />
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -447,6 +450,7 @@ const PharmaciesPage = () => {
         </div>
       </section>
     </div>
+    </>
   )
 }
 
