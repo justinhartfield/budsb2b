@@ -19,6 +19,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useTranslation } from '../hooks/useTranslation'
+import PartnerTypeNav from '../components/PartnerTypeNav'
 import platformHero from '../assets/platform-hero.png'
 
 const PlatformsPage = () => {
@@ -33,7 +34,9 @@ const PlatformsPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen">
+      <PartnerTypeNav />
+      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
@@ -318,6 +321,7 @@ const PlatformsPage = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }

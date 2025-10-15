@@ -20,6 +20,7 @@ import {
   RefreshCw
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import PartnerTypeNav from '../components/PartnerTypeNav'
 import LanguageNotice from '../components/LanguageNotice'
 
 const ExistingLoyaltyPage = () => {
@@ -149,7 +150,9 @@ const ExistingLoyaltyPage = () => {
   return (
     <>
       <LanguageNotice />
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+    <div className="min-h-screen">
+      <PartnerTypeNav />
+      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
@@ -455,6 +458,7 @@ const ExistingLoyaltyPage = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
     </>
   )
