@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import budsLogo from '../assets/buds-logo.png'
+import { useTranslation } from '../hooks/useTranslation'
 
 const Navigation = () => {
   const location = useLocation()
   const isProPage = location.pathname === '/budspro'
+  const { t } = useTranslation('common')
 
   return (
     <motion.nav
@@ -28,7 +30,7 @@ const Navigation = () => {
                 : 'text-gray-800 hover:text-green-600'
             }`}
           >
-            Buds
+            {t('navigation.buds', 'Buds')}
           </Link>
           
           <Link
@@ -39,7 +41,7 @@ const Navigation = () => {
                 : 'text-gray-800 hover:text-yellow-600'
             }`}
           >
-            BudsPro
+            {t('navigation.budsPro', 'BudsPro')}
             {isProPage && (
               <motion.div
                 layoutId="activeTab"
