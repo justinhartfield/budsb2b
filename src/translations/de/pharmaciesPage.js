@@ -4,7 +4,7 @@ export const pharmaciesPage = {
     badge: "💊 Apotheken-Bonusprogramm 🏥",
     title: "Verwandeln Sie Wellness-Überbestände in\nPatientenbindungsprämien",
     subtitle:
-      "Apotheken können nicht verschreibungspflichtige Wellness-Artikel, Nahrungsergänzungsmittel und Gesundheitszubehör als Buds-Prämien spenden. Steigern Sie die Patientenbindung und reduzieren Sie langsam drehende Bestände ohne öffentliche Rabattaktionen. DSGVO-konform und apothekensicher."
+      "Apotheken können nicht verschreibungspflichtige Wellnessartikel, Nahrungsergänzungsmittel und Gesundheitsaccessoires als Buds-Prämien spenden. Steigern Sie die Patientenbindung und reduzieren Sie langsam drehende Bestände ohne öffentliche Rabattaktionen. DSGVO-konform und apothekensicher."
   },
   benefits: {
     title: "Was Apotheken erhalten"
@@ -14,27 +14,27 @@ export const pharmaciesPage = {
       icon: "Heart",
       title: "Patientenbindung & Loyalität",
       description:
-        "Verwandeln Sie langsam drehende Wellness-Bestände in Patientenprämien. Erhöhen Sie Wiederholungsbesuche ohne Margenverluste bei verschreibungspflichtigen Medikamenten.",
-      metric: "+34 % Bindung"
+        "Verwandeln Sie langsam drehende Wellnessbestände in Patientenprämien. Erhöhen Sie Wiederholungsbesuche ohne Margenverlust bei Rezepten.",
+      metric: "+34% Bindung"
     },
     {
       icon: "TrendingUp",
-      title: "Bewegung von Nicht-Rx-Beständen",
+      title: "Nicht verschreibungspflichtige Bestände bewegen",
       description:
-        "Vitamine, Nahrungsergänzungsmittel und OTC-Wellnessprodukte werden zu wertvollen Prämien. Schaffen Sie Platz im Regal und erhalten Sie Ihre Margen.",
+        "Vitamine, Nahrungsergänzungsmittel, OTC-Wellnessartikel werden wertvolle Prämien. Schaffen Sie Regalplatz und erhalten Sie Margen.",
       metric: "Kein Abfall"
     },
     {
       icon: "Shield",
       title: "Apothekensichere Compliance",
       description:
-        "DSGVO-konform, keine Weitergabe von Rx-Daten, integrierte Altersverifikation. Entwickelt für apothekenrechtliche Anforderungen.",
-      metric: "100 % konform"
+        "DSGVO-konform, keine Weitergabe von Rezeptdaten, integrierte Altersverifikation. Entwickelt für apothekenrechtliche Anforderungen.",
+      metric: "100% konform"
     },
     {
-      title: "Cross-Chain-Netzwerk",
+      title: "Kettenübergreifendes Netzwerk",
       description:
-        "Treten Sie dem Apothekennetzwerk bei. Ihre Patienten können Prämien bei Partner-Wellnessmarken einlösen. Erweitern Sie Ihren Mehrwert ohne Lagerbestand.",
+        "Treten Sie dem Apothekennetzwerk bei. Ihre Patienten können Prämien bei Partner-Wellnessmarken einlösen. Erweitern Sie den Wert ohne Lagerbestand.",
       metric: "Netzwerkeffekt",
       icon: "Users"
     }
@@ -48,8 +48,8 @@ export const pharmaciesPage = {
       "Vitamine & Nahrungsergänzungsmittel",
       "OTC-Wellnessprodukte",
       "Gesundheits- & Schönheitsartikel",
-      "Medizinisches Zubehör (nicht verschreibungspflichtig)",
-      "Fitness- & Regenerationsprodukte",
+      "Medizinische Zubehörteile (nicht verschreibungspflichtig)",
+      "Fitness- & Erholungsprodukte",
       "Aromatherapie & ätherische Öle",
       "Naturheilmittel & Homöopathie",
       "Gesundheitsüberwachungsgeräte"
@@ -58,8 +58,8 @@ export const pharmaciesPage = {
       "Verschreibungspflichtige Medikamente",
       "Betäubungsmittel",
       "Abgelaufene Produkte",
-      "Zurückgerufene Artikel",
-      "Medizinische Geräte mit Verschreibungspflicht",
+      "Rückgerufene Artikel",
+      "Medizinische Geräte mit Rezeptpflicht",
       "Produkte mit Patientendaten",
       "Rezepturmedikamente",
       "Gekühlte Biologika"
@@ -71,21 +71,21 @@ export const pharmaciesPage = {
   },
   complianceFeatures: [
     {
-      title: "DSGVO-Konformität",
+      title: "DSGVO/GDPR-Konformität",
       description:
-        "Keine Weitergabe von Patientendaten. Nur anonyme Nachverfolgung der Einlösung. Volle Datenhoheit.",
+        "Keine Weitergabe von Patientendaten. Nur anonyme Nachverfolgung von Einlösungen. Volle Datenhoheit.",
       icon: "Lock"
     },
     {
       title: "Altersverifikation",
       description:
-        "Integrierte Alterskontrollen für 18+ Produkte. Konfigurierbar nach Produktkategorie und lokalen Vorschriften.",
+        "Integrierte Altersprüfungen für 18+ Produkte. Konfigurierbar nach Produktkategorie und lokalen Vorschriften.",
       icon: "FileCheck"
     },
     {
-      title: "Apothekenlizenzprüfung",
+      title: "Apotheken-Lizenzprüfung",
       description:
-        "Nur lizenzierte Apotheken können teilnehmen. Verifizierungsprozess gewährleistet Netzwerkintegrität.",
+        "Nur lizenzierte Apotheken können teilnehmen. Verifizierungsprozess sichert die Integrität des Netzwerks.",
       icon: "Shield"
     },
     {
@@ -96,7 +96,7 @@ export const pharmaciesPage = {
     }
   ],
   examples: {
-    title: "Erfolgsgeschichten aus Apotheken",
+    title: "Erfolgsgeschichten von Apotheken",
     challengeLabel: "Herausforderung",
     solutionLabel: "Lösung",
     resultLabel: "Ergebnis"
@@ -105,19 +105,19 @@ export const pharmaciesPage = {
     {
       chain: "Regionale Apothekenkette (45 Standorte)",
       challenge:
-        "€120.000 an langsam drehenden Vitaminbeständen, Patientenabwanderung zu Online-Wettbewerbern",
+        "€120K an langsam drehenden Vitaminbeständen, Patientenabwanderung zu Online-Konkurrenten",
       solution:
         "Vitamine als Buds-Prämien gespendet, als exklusiver Patientenvorteil positioniert",
       result:
-        "80 % des langsamen Bestands in 3 Monaten abgebaut. Patientenbindung um 34 % gesteigert. Neue Patientenzugänge +22 %.",
-      metric: "+34 % Bindung"
+        "80% des langsamen Bestands in 3 Monaten abgebaut. Patientenbindung um 34% gesteigert. Neue Patientenzugänge +22%.",
+      metric: "+34% Bindung"
     },
     {
       chain: "Unabhängige Apothekengruppe (8 Standorte)",
       challenge:
-        "Wettbewerb mit großen Einzelhändlern bei Wellnessprodukten, geringe Margen",
+        "Konkurrenz zu großen Einzelhändlern bei Wellnessprodukten, geringe Margen",
       solution:
-        "Buds genutzt, um Partnerprämien ohne Lagerinvestition anzubieten",
+        "Buds genutzt, um Partner-Markenprämien ohne Lagerinvestition anzubieten",
       result:
         "Als Wellness-Destination positioniert. Durchschnittlicher Transaktionswert +€18. Keine zusätzlichen Lagerkosten.",
       metric: "+€18 ATV"
@@ -125,52 +125,52 @@ export const pharmaciesPage = {
     {
       chain: "Wellness-orientierte Apotheke (3 Standorte)",
       challenge:
-        "Premium-Positionierung, Abgrenzung zu Discount-Apotheken erforderlich",
+        "Premium-Positionierung, Differenzierung von Discount-Apotheken erforderlich",
       solution:
-        "Premium-Wellnessprämien von Partnern kuratiert, VIP-Patientenprogramm",
+        "Ausgewählte Premium-Wellnessprämien von Partnern, VIP-Patientenprogramm",
       result:
-        "Premium-Patientenstufe wuchs um 156 %. Bekannt für exklusiven Wellness-Zugang.",
-      metric: "+156 % VIP-Stufe"
+        "Premium-Patientenstufe wuchs um 156%. Bekannt für exklusiven Wellnesszugang.",
+      metric: "+156% VIP-Stufe"
     }
   ],
   integration: {
     title: "Integrationsprozess",
-    subtitle: "Von der Bewerbung bis zum Live-Gang in 2-3 Wochen"
+    subtitle: "Von der Bewerbung bis zum Livegang in 2-3 Wochen"
   },
   integrationProcess: [
     {
       step: 1,
       title: "Lizenzprüfung",
       description:
-        "Reichen Sie Apothekenlizenz und regulatorische Dokumente ein. Wir prüfen innerhalb von 48 Stunden.",
+        "Apothekenlizenz und regulatorische Dokumente einreichen. Wir prüfen innerhalb von 48 Stunden.",
       duration: "2 Tage"
     },
     {
       step: 2,
       title: "Bestandsbewertung",
       description:
-        "Optional: Wir helfen bei der Identifikation geeigneter nicht verschreibungspflichtiger Produkte für Spenden. Keine Verpflichtung.",
+        "Optional: Wir helfen bei der Identifikation geeigneter nicht verschreibungspflichtiger Spendenprodukte. Keine Verpflichtung.",
       duration: "1 Woche"
     },
     {
       step: 3,
       title: "Systemintegration",
       description:
-        "Installation des Buds-Checkout-Widgets, das mit Ihrem bestehenden Apothekenverwaltungssystem kompatibel ist.",
+        "Installation des Buds-Checkout-Widgets, kompatibel mit Ihrem bestehenden Apothekenmanagementsystem.",
       duration: "3-5 Tage"
     },
     {
       step: 4,
       title: "Mitarbeiterschulung",
       description:
-        "Wir stellen Schulungsmaterialien und Support für Ihr Apothekenpersonal bereit. Einfach und patientenfreundlich.",
+        "Wir stellen Schulungsmaterialien und Support für Apothekenpersonal bereit. Einfach und patientenfreundlich.",
       duration: "2 Tage"
     },
     {
       step: 5,
-      title: "Live-Gang",
+      title: "Livegang",
       description:
-        "Start des Bonusprogramms. Beginnen Sie, Buds-Prämien an Patienten anzubieten. Überwachung über Dashboard.",
+        "Start des Bonusprogramms. Beginnen Sie, Buds an Patienten anzubieten. Überwachung über Dashboard.",
       duration: "1 Tag"
     }
   ],
@@ -179,24 +179,24 @@ export const pharmaciesPage = {
   },
   faqItems: [
     {
-      q: "Ist das für Apotheken in Deutschland/EU legal?",
+      q: "Ist das für Apotheken legal?",
       a:
-        "Ja. Buds verarbeitet ausschließlich nicht verschreibungspflichtige Wellnessprodukte. Es werden keine Rx-Daten geteilt und keine Prämien für Verschreibungen vergeben. Vollständig konform mit Apothekenvorschriften und DSGVO."
+        "Ja. Buds verarbeitet ausschließlich nicht verschreibungspflichtige Wellnessprodukte. Es werden keine Rezeptdaten geteilt, keine Belohnungen für verschreibungspflichtige Medikamente vergeben. Vollständig konform mit Apothekenvorschriften und Datenschutzgesetzen in allen unterstützten Märkten."
     },
     {
-      q: "Müssen wir Inventar spenden?",
+      q: "Müssen wir Lagerbestände spenden?",
       a:
-        "Nein. Sie können auch ausschließlich Partnerprämien für Patienten anbieten. Die Spende von langsam drehendem Wellness-Inventar verbessert Ihre Positionierung, ist aber optional."
+        "Nein. Sie können allein durch das Anbieten von Partnerprämien für Patienten teilnehmen. Die Spende von langsam drehenden Wellnessbeständen verbessert Ihre Positionierung, ist aber optional."
     },
     {
       q: "Wie lösen Patienten Prämien ein?",
       a:
-        "Beim Checkout (im Geschäft oder online) sehen sie verfügbare Prämien. Ein Klick fügt die Prämie zur Bestellung hinzu. Wir übernehmen die Abwicklung – entweder versenden Sie (Co-Packing) oder unser 3PL versendet zentral."
+        "An der Kasse (im Geschäft oder online) sehen sie verfügbare Prämien. Ein Klick fügt die Prämie zur Bestellung hinzu. Wir übernehmen die Erfüllung – entweder versenden Sie (Co-Pack) oder unser 3PL versendet (zentral)."
     },
     {
       q: "Wie steht es um den Datenschutz der Patienten?",
       a:
-        "Es erfolgt keine Weitergabe von Patientendaten. Wir verfolgen nur anonyme Einlöseereignisse. Ihre Patientenbeziehungen und Daten bleiben zu 100 % privat und unter Ihrer Kontrolle."
+        "Es erfolgt keine Weitergabe von Patientendaten. Wir erfassen nur anonyme Einlösungsereignisse. Ihre Patientenbeziehungen und Daten bleiben zu 100% privat und unter Ihrer Kontrolle."
     },
     {
       q: "Können wir steuern, welche Produkte als Prämien erscheinen?",
@@ -211,12 +211,12 @@ export const pharmaciesPage = {
     {
       q: "Wie funktioniert das mit unserem bestehenden Bonusprogramm?",
       a:
-        "Buds lässt sich parallel zu Ihrem aktuellen Programm integrieren. Patienten können beide nutzen. Betrachten Sie es als Erweiterung Ihres Prämienkatalogs ohne zusätzliche Kosten."
+        "Buds integriert sich ergänzend zu Ihrem aktuellen Programm. Patienten können beide nutzen. Betrachten Sie es als Erweiterung Ihres Prämienkatalogs ohne zusätzliche Kosten."
     },
     {
       q: "Was kostet das?",
       a:
-        "Die Teilnahme ist kostenfrei, ohne monatliche Gebühren. Sie 'bezahlen' nur durch optionale Spenden geeigneter Bestände. Wenn Sie nicht spenden, bieten Sie einfach Partnerprämien ohne Kosten an."
+        "Die Teilnahme ist kostenlos, keine monatlichen Gebühren. Sie 'bezahlen' nur durch die optionale Spende geeigneter Bestände. Wenn Sie nicht spenden, bieten Sie einfach Partnerprämien für Patienten kostenfrei an."
     }
   ],
   cta: {

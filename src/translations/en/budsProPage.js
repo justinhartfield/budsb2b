@@ -3,7 +3,7 @@ export const budsProPage = {
   hero: {
     badge: "👑 Invite-Only Partner Network",
     title: "Buds Pro",
-    subtitle: "Access Europe's Top 10% Cannabis Spenders",
+    subtitle: "Access the Top 10% Cannabis Spenders",
     tagline: "Premium Partners. Premium Customers. Premium Revenue.",
     description: "Buds Pro connects licensed cannabis retailers to verified high-value consumers across WeedMaps, Weed.de, BlueDream.com, Weed.cz, and 40+ platforms. Average member transaction: €180+. Zero acquisition cost. Incremental revenue for your business."
   },
@@ -19,7 +19,7 @@ export const budsProPage = {
       },
       {
         title: "Top 10% Verified Spenders",
-        description: "Pre-qualified premium customers from Europe's leading cannabis platforms"
+        description: "Pre-qualified premium customers from leading cannabis platforms across multiple markets"
       },
       {
         title: "Zero Acquisition Cost",
@@ -70,7 +70,7 @@ export const budsProPage = {
   
   exclusive: {
     title: "What Buds Pro Partners Get",
-    subtitle: "Join Europe's most exclusive cannabis retail network and access benefits unavailable anywhere else",
+    subtitle: "Join the most exclusive cannabis retail network and access benefits unavailable anywhere else",
     features: [
       "Access to 10,000+ verified high-value cannabis consumers (€180+ AOV)",
       "Partner dashboard with real-time member analytics and revenue tracking",
@@ -84,7 +84,7 @@ export const budsProPage = {
   },
   
   cta: {
-    title: "Ready to Join Europe's Premier Cannabis Retail Network?",
+    title: "Ready to Join the Premier Cannabis Retail Network?",
     subtitle: "Applications reviewed monthly. Average partner adds €45K-€120K incremental annual revenue from Buds Pro members.",
     button: "Apply for Partnership",
     secondaryButton: "View Partner Dashboard Demo"

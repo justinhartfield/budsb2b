@@ -36,7 +36,7 @@ export const common = {
     contact: "Contact",
     email: "hello@budsrewards.com",
     phone: "+49 30 1234 5678",
-    address: "Buds GmbH, Friedrichstraße 123, 10117 Berlin, Germany",
+    address: "Buds Rewards Inc.",
     
     disclaimer: "Buds is a B2B loyalty rewards platform. All customer data remains with partner businesses. GDPR-compliant and privacy-first.",
     copyright: "© 2025 Buds. All rights reserved."

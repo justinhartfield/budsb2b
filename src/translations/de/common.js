@@ -26,19 +26,19 @@ export const common = {
     aboutUs: "Über uns",
     careers: "Karriere",
     blog: "Blog",
-    pressKit: "Pressemappe",
+    pressKit: "Pressekit",
     
     legal: "Rechtliches",
     privacy: "Datenschutzrichtlinie",
     terms: "Nutzungsbedingungen",
-    gdpr: "DSGVO-Konformität",
+    gdpr: "GDPR-Konformität",
     
     contact: "Kontakt",
     email: "hello@budsrewards.com",
     phone: "+49 30 1234 5678",
-    address: "Buds GmbH, Friedrichstraße 123, 10117 Berlin, Germany",
+    address: "Buds Rewards Inc.",
     
-    disclaimer: "Buds ist eine B2B-Loyalty-Rewards-Plattform. Alle Kundendaten verbleiben bei den Partnerunternehmen. DSGVO-konform und datenschutzorientiert.",
+    disclaimer: "Buds ist eine B2B-Loyalty-Plattform. Alle Kundendaten verbleiben bei den Partnerunternehmen. DSGVO-konform und datenschutzorientiert.",
     copyright: "© 2025 Buds. Alle Rechte vorbehalten."
   },
   

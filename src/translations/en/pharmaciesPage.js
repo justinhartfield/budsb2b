@@ -178,9 +178,9 @@ export const pharmaciesPage = {
   },
   faqItems: [
     {
-      q: "Is this legal for pharmacies in Germany/EU?",
+      q: "Is this legal for pharmacies?",
       a:
-        "Yes. Buds only handles non-prescription wellness products. No Rx data is shared, no prescription rewards. Fully compliant with pharmacy regulations and GDPR/DSGVO."
+        "Yes. Buds only handles non-prescription wellness products. No Rx data is shared, no prescription rewards. Fully compliant with pharmacy regulations and privacy laws in all supported markets."
     },
     {
       q: "Do we need to donate inventory?",

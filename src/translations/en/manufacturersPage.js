@@ -183,7 +183,7 @@ export const manufacturersPage = {
       {
         brand: "Premium CBD Manufacturer",
         challenge:
-          "New market entry in Germany, zero brand awareness, retail hesitant to stock unknown brand",
+          "New market entry, zero brand awareness, retail hesitant to stock unknown brand",
         solution:
           "Distributed 5,000 sample products via Buds network, targeted wellness-conscious consumers",
         result:
@@ -238,7 +238,7 @@ export const manufacturersPage = {
       {
         question: "How does fulfillment work?",
         answer:
-          "Two options: (1) Co-pack - you ship directly to consumers when redeemed. (2) Central - send inventory to our EU 3PL, we handle all fulfillment."
+          "Two options: (1) Co-pack - you ship directly to consumers when redeemed. (2) Central - send inventory to our regional fulfillment centers, we handle all fulfillment."
       },
       {
         question: "What if products don't get redeemed?",
@@ -253,7 +253,7 @@ export const manufacturersPage = {
       {
         question: "Do you work with international manufacturers?",
         answer:
-          "Yes, if you can fulfill to EU addresses. Many international brands successfully use Buds to reach European consumers."
+          "Yes, if you can fulfill to our supported markets. Many international brands successfully use Buds to reach cannabis consumers across multiple regions."
       }
     ]
   },
