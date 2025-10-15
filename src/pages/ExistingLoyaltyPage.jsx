@@ -22,6 +22,7 @@ import {
 import { Button } from '@/components/ui/button'
 import PartnerTypeNav from '../components/PartnerTypeNav'
 import LanguageNotice from '../components/LanguageNotice'
+import dualLoyaltyCheckout from '../assets/dual-loyalty-checkout.png'
 
 const ExistingLoyaltyPage = () => {
   const [openFaq, setOpenFaq] = useState(null)
@@ -255,6 +256,55 @@ const ExistingLoyaltyPage = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Checkout Experience Example */}
+          <div className="mt-20">
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-4">
+              See it in action: Dual loyalty at checkout
+            </h3>
+            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+              Here's how both programs appear side-by-side in your checkout. Customers see their existing points progress AND have the option to use Buds rewards—maximum flexibility, zero confusion.
+            </p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-purple-200"
+            >
+              <img 
+                src={dualLoyaltyCheckout} 
+                alt="Dual loyalty checkout experience showing both store points and Buds rewards"
+                className="w-full"
+              />
+            </motion.div>
+
+            <div className="mt-8 grid md:grid-cols-2 gap-6">
+              <div className="bg-purple-50 border border-purple-200 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
+                    <Target className="w-5 h-5 text-white" />
+                  </div>
+                  <h4 className="font-bold text-gray-900">Your Existing Program</h4>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Shows customer's current points balance (850 points), progress to next reward, and tier status. Completely unchanged from your current implementation.
+                </p>
+              </div>
+
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                    <Sparkles className="w-5 h-5 text-white" />
+                  </div>
+                  <h4 className="font-bold text-gray-900">Buds Rewards</h4>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Appears as a separate section showing available Buds credits (120 credits = €15 value) with a simple toggle to apply at checkout. Optional and non-intrusive.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
