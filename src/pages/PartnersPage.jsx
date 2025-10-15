@@ -3,6 +3,7 @@ import { Building2, TrendingUp, Users, BarChart3, Shield, Zap, ArrowRight } from
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import VideoBackground from '@/components/VideoBackground'
+import RewardsShowcase from '@/components/RewardsShowcase'
 
 const PartnersPage = () => {
   const features = [
@@ -115,6 +116,16 @@ const PartnersPage = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Rewards Showcase */}
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-900 to-black">
+        <div className="max-w-7xl mx-auto">
+          <RewardsShowcase 
+            title="Diverse Reward Catalog"
+            subtitle="Give your customers access to thousands of premium rewards across multiple categories"
+          />
         </div>
       </section>
 

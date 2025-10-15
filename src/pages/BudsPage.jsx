@@ -20,6 +20,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { partnerContent, sectionContent } from '../data/partnerContent'
 import partnerHero from '../assets/partner-hero.png'
+import RewardsShowcase from '@/components/RewardsShowcase'
 
 const BudsPage = () => {
   const navigate = useNavigate()
@@ -238,6 +239,16 @@ const BudsPage = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Rewards Showcase */}
+      <section className="py-20 px-6 bg-gradient-to-br from-green-50 to-cyan-50">
+        <div className="max-w-7xl mx-auto">
+          <RewardsShowcase 
+            title="Premium Rewards Your Customers Will Love"
+            subtitle="Travel experiences, event tickets, merchandise, cannabis products, and more"
+          />
         </div>
       </section>
 
