@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import budsLogo from '../assets/buds-logo.png'
+import budsLogo from '../assets/buds-logo-new.png'
 import { useTranslation } from '../hooks/useTranslation'
 
 const Navigation = () => {

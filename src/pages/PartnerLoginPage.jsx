@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Building2, Lock, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
-import budsLogo from '../assets/buds-logo.png'
+import budsLogo from '../assets/buds-logo-new.png'
 
 const PartnerLoginPage = () => {
   const [email, setEmail] = useState('demo@greenvallley.com')

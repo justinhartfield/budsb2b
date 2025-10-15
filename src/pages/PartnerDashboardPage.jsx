@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
-import budsLogo from '../assets/buds-logo.png'
+import budsLogo from '../assets/buds-logo-new.png'
 
 const PartnerDashboardPage = () => {
   const navigate = useNavigate()
