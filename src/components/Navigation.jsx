@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import budsLogo from '../assets/buds-logo-new.png'
 import { useTranslation } from '../hooks/useTranslation'
 
@@ -7,11 +8,39 @@ const Navigation = () => {
   const location = useLocation()
   const isProPage = location.pathname === '/budspro'
   const { t } = useTranslation('common')
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      // Only hide on mobile (screens smaller than 768px)
+      if (window.innerWidth < 768) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          // Scrolling down & past 100px
+          setIsVisible(false)
+        } else {
+          // Scrolling up
+          setIsVisible(true)
+        }
+      } else {
+        // Always visible on desktop
+        setIsVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   return (
     <motion.nav
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      animate={{ y: isVisible ? 0 : -100 }}
+      transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-500 ${
         isProPage ? 'bg-black/90 backdrop-blur-xl' : 'bg-white/80 backdrop-blur-xl'
       }`}

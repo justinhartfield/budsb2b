@@ -1,10 +1,38 @@
 import { useNavigate, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 const PartnerTypeNav = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const { language, setLanguage } = useLanguage()
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      // Only hide on mobile (screens smaller than 768px)
+      if (window.innerWidth < 768) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          // Scrolling down & past 100px
+          setIsVisible(false)
+        } else {
+          // Scrolling up
+          setIsVisible(true)
+        }
+      } else {
+        // Always visible on desktop
+        setIsVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   const getActiveTab = () => {
     const path = location.pathname
@@ -33,7 +61,13 @@ const PartnerTypeNav = () => {
   }
 
   return (
-    <div className="fixed top-20 left-0 right-0 bg-white border-b border-gray-200 z-40">
+    <div 
+      className="fixed left-0 right-0 bg-white border-b border-gray-200 z-40 transition-transform duration-300"
+      style={{ 
+        top: isVisible ? '5rem' : '-10rem',
+        transform: isVisible ? 'translateY(0)' : 'translateY(-100%)'
+      }}
+    >
       <div className="max-w-6xl mx-auto px-3 md:px-6 py-2 md:py-4">
         <div className="flex items-center justify-between flex-wrap gap-2 md:gap-4">
           {/* Navigation Tabs */}
