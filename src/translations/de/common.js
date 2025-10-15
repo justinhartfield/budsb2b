@@ -1,4 +1,4 @@
-// Common translations used across multiple pages (German)
+// Common translations used across multiple pages
 export const common = {
   navigation: {
     buds: "Buds",
@@ -6,14 +6,14 @@ export const common = {
   },
   
   buttons: {
-    applyToPartner: "Als Partner bewerben",
+    applyToPartner: "Partner werden",
     integrationDocs: "Integrationsdokumentation",
     contactSales: "Vertrieb kontaktieren",
     viewSampleDashboard: "Beispiel-Dashboard ansehen",
     partnerLogin: "Partner-Login",
     learnMore: "Mehr erfahren",
-    getStarted: "Jetzt starten",
-    scheduleCall: "Gespräch vereinbaren"
+    getStarted: "Loslegen",
+    scheduleCall: "Termin vereinbaren"
   },
   
   footer: {
@@ -21,25 +21,24 @@ export const common = {
     partnerPortal: "Partner-Portal",
     supportCenter: "Support-Center",
     documentation: "Dokumentation",
-    apiReference: "API-Referenz",
     
     company: "Unternehmen",
     aboutUs: "Über uns",
     careers: "Karriere",
     blog: "Blog",
-    pressKit: "Pressekit",
+    pressKit: "Pressemappe",
     
     legal: "Rechtliches",
-    privacy: "Datenschutz",
+    privacy: "Datenschutzrichtlinie",
     terms: "Nutzungsbedingungen",
     gdpr: "DSGVO-Konformität",
     
     contact: "Kontakt",
-    email: "hallo@budsrewards.com",
+    email: "hello@budsrewards.com",
     phone: "+49 30 1234 5678",
-    address: "Buds GmbH, Friedrichstraße 123, 10117 Berlin, Deutschland",
+    address: "Buds GmbH, Friedrichstraße 123, 10117 Berlin, Germany",
     
-    disclaimer: "Buds ist eine B2B-Treueprämien-Plattform. Alle Kundendaten verbleiben bei Partnerunternehmen. DSGVO-konform und datenschutzorientiert.",
+    disclaimer: "Buds ist eine B2B-Loyalty-Rewards-Plattform. Alle Kundendaten verbleiben bei den Partnerunternehmen. DSGVO-konform und datenschutzorientiert.",
     copyright: "© 2025 Buds. Alle Rechte vorbehalten."
   },
   
@@ -48,4 +47,3 @@ export const common = {
     german: "Deutsch"
   }
 }
-

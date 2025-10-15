@@ -34,41 +34,42 @@ export const platformsPage = {
   },
   
   integrationOptions: {
-    title: "Integration options",
-    subtitle: "Choose the model that fits your platform",
+    title: "How Buds Integrates",
+    subtitle: "Co-branded partnership model for all platforms",
+    description: "Buds is a recognized brand in the cannabis space. When your customers see Buds, they know they're getting access to a premium reward network. Our brand adds credibility and value to your platform.",
     items: [
       {
-        title: "White-Label Integration",
-        description: "Buds runs under your platform brand",
+        title: "Checkout Widget Integration",
+        description: "Buds rewards appear at checkout alongside your platform's features",
         features: [
-          "Your branding throughout",
-          "Seamless UX in your checkout",
-          "Platform-controlled reward catalog",
-          "Custom commission structure"
-        ],
-        bestFor: "Large marketplaces with strong brand"
-      },
-      {
-        title: "Co-Branded Integration",
-        description: "Powered by Buds, featured on your platform",
-        features: [
-          "Buds + Your brand together",
-          "Shared marketing materials",
+          "Buds-branded reward display",
+          "Seamless checkout experience",
           "Standard reward catalog",
-          "Revenue share model"
+          "Quick 1-2 week implementation"
         ],
-        bestFor: "Growing marketplaces seeking quick value"
+        bestFor: "Most platforms - fast, proven, effective"
       },
       {
-        title: "API-Only Integration",
-        description: "Build your own UI on Buds infrastructure",
+        title: "Deep Platform Integration",
+        description: "Buds rewards integrated throughout your user experience",
         features: [
-          "Full API access",
-          "Custom frontend implementation",
-          "Flexible reward logic",
-          "Developer-friendly docs"
+          "Buds rewards in product pages",
+          "Member dashboard integration",
+          "Enhanced reward discovery",
+          "Co-marketing opportunities"
         ],
-        bestFor: "Technical platforms with custom needs"
+        bestFor: "Platforms wanting maximum engagement"
+      },
+      {
+        title: "Custom Implementation",
+        description: "Work with our team for unique platform requirements",
+        features: [
+          "Tailored integration approach",
+          "Dedicated technical support",
+          "Flexible implementation timeline",
+          "Buds brand maintained throughout"
+        ],
+        bestFor: "Platforms with specific technical needs"
       }
     ]
   },
@@ -111,15 +112,15 @@ export const platformsPage = {
       {
         platform: "Wellness & CBD Platform",
         sellers: "120 sellers",
-        integration: "White-Label",
-        result: "Positioned as platform-exclusive benefit. Seller churn reduced 40%, new seller signups increased 55%.",
+        integration: "Deep Integration",
+        result: "Buds rewards featured throughout platform experience. Seller churn reduced 40%, new seller signups increased 55%.",
         metric: "-40% churn"
       },
       {
         platform: "Local Delivery Network",
         sellers: "280 sellers",
-        integration: "API-Only",
-        result: "Built custom reward tiers by delivery zone. Cross-seller discovery up 67%, average basket size +€12.",
+        integration: "Checkout Widget",
+        result: "Buds rewards at checkout drove cross-seller discovery. Discovery up 67%, average basket size +€12.",
         metric: "+€12 basket"
       }
     ]
@@ -134,16 +135,16 @@ export const platformsPage = {
         details: "OAuth 2.0, JWT tokens, Webhook support for real-time events"
       },
       {
-        category: "Reward Catalog API",
-        details: "Filter by category, value, seller, geography. Real-time inventory updates"
+        category: "Reward Catalog",
+        details: "Filter by category, value, seller, geography. Real-time inventory updates via Buds dashboard"
       },
       {
         category: "Redemption Flow",
-        details: "Checkout widget embed or API-driven custom UI. Co-pack or central fulfillment"
+        details: "Buds-branded checkout widget or deeper platform integration. Co-pack or central fulfillment"
       },
       {
         category: "Analytics & Reporting",
-        details: "Platform dashboard, seller dashboards, CSV exports, custom reporting API"
+        details: "Platform dashboard, seller dashboards, CSV exports, comprehensive reporting tools"
       },
       {
         category: "Compliance",
@@ -172,8 +173,8 @@ export const platformsPage = {
         a: "Buds handles it. Either co-pack (seller ships directly) or central (our 3PL ships). Your platform has zero fulfillment burden or customer service load."
       },
       {
-        q: "Can we white-label this completely?",
-        a: "Yes, for white-label integration. Buds branding is removed, replaced with yours. Requires minimum platform GMV threshold."
+        q: "Is Buds a white-label solution?",
+        a: "No. Buds is a recognized brand in the cannabis space. When your customers see Buds, they know they're accessing a premium reward network. Our brand recognition adds credibility and value to your platform."
       },
       {
         q: "What if a seller leaves our platform?",
@@ -181,7 +182,7 @@ export const platformsPage = {
       },
       {
         q: "How long does integration take?",
-        a: "Co-branded: 1-2 weeks. White-label: 4-6 weeks. API-only: Depends on your dev team, typically 2-4 weeks with our support."
+        a: "Checkout widget: 1-2 weeks. Deep integration: 3-4 weeks. Custom implementation: 4-6 weeks with dedicated support from our team."
       },
       {
         q: "Do you compete with our platform?",

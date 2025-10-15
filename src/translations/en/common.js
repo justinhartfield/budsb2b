@@ -21,7 +21,6 @@ export const common = {
     partnerPortal: "Partner Portal",
     supportCenter: "Support Center",
     documentation: "Documentation",
-    apiReference: "API Reference",
     
     company: "Company",
     aboutUs: "About Us",

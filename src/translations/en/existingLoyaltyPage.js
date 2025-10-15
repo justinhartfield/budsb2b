@@ -236,14 +236,14 @@ export const existingLoyaltyPage = {
         "Data shows no cannibalization. Buds rewards are additive—customers redeem both. Think of it as expanding your reward catalog without expanding your costs."
     },
     {
-      q: "Can we white-label Buds?",
-      a:
-        "Not currently, but Buds branding is minimal. The widget clearly shows it's a partner reward network, which customers appreciate as added value."
-    },
-    {
       q: "What platforms does this work with?",
       a:
-        "Shopify, WooCommerce, and most major loyalty platforms (Smile.io, LoyaltyLion, Yotpo, etc.). We integrate via checkout widget, not direct platform integration."
+        "Shopify, WooCommerce, and most major e-commerce platforms. Buds integrates via checkout widget that works alongside your existing setup."
+    },
+    {
+      q: "Is Buds a white-label solution?",
+      a:
+        "No. Buds is its own brand and we're proud of it. When customers see the Buds name, they know they're getting access to a premium reward network. Our brand recognition adds value to your business, not detracts from it."
     }
   ],
   

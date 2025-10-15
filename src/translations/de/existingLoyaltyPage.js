@@ -9,8 +9,8 @@ export const existingLoyaltyPage = {
   },
   
   objections_section: {
-    title: "Wir hören Sie: „Wir haben bereits ein Treueprogramm“",
-    subtitle: "Genau dafür gibt es Buds. Wir konkurrieren nicht mit Ihrem Programm – wir machen es besser."
+    title: "Wir verstehen Sie: „Wir haben bereits ein Treueprogramm“",
+    subtitle: "Genau deshalb gibt es Buds. Wir konkurrieren nicht mit Ihrem Programm – wir machen es besser."
   },
   
   objections: [
@@ -26,35 +26,35 @@ export const existingLoyaltyPage = {
       objection: "Wir können uns kein weiteres Treueprogramm leisten",
       solution: "Buds kostet Sie nichts",
       details:
-        "Keine Einrichtungsgebühren, keine monatlichen Kosten, keine Transaktionsgebühren. Partner spenden Überbestände – Sie integrieren einfach das Widget. Ihre Kunden erhalten mehr Belohnungen, Sie zahlen keinen Aufpreis."
+        "Keine Einrichtungsgebühren, keine monatlichen Kosten, keine Transaktionsgebühren. Partner spenden Überbestände – Sie integrieren einfach das Widget. Ihre Kunden erhalten mehr Belohnungen, Sie zahlen keinen Cent extra."
     },
     {
       icon: "Users",
       objection: "Unsere Kunden sind bereits engagiert",
       solution: "Machen Sie sie noch engagierter",
       details:
-        "Buds erhöht den durchschnittlichen Bestellwert (AOV) um 23 % und steigert die Einlösungsraten, indem exklusive Belohnungen von Partner-Marken angeboten werden. Ihre engagierten Kunden werden super-engagiert mit Zugang zu einem erweiterten Belohnungskatalog."
+        "Buds steigert den durchschnittlichen Bestellwert um 23 % und erhöht die Einlösungsraten, indem exklusive Belohnungen von Partner-Marken angeboten werden. Ihre engagierten Kunden werden super-engagiert mit Zugang zu einem erweiterten Belohnungskatalog."
     },
     {
       icon: "Layers",
       objection: "Die Integration wird zu komplex sein",
       solution: "5-Minuten-Plugin-Installation",
       details:
-        "Unser Shopify-/WooCommerce-Plugin installiert sich in wenigen Minuten und funktioniert parallel zu Ihrer bestehenden Treueplattform. Keine API-Konflikte, keine Datenmigration, keine technischen Kopfschmerzen."
+        "Unser Shopify-/WooCommerce-Plugin installiert sich in wenigen Minuten und arbeitet parallel zu Ihrer bestehenden Treueplattform. Keine API-Konflikte, keine Datenmigration, keine technischen Kopfschmerzen."
     },
     {
       icon: "Shield",
       objection: "Wir möchten keine Kundendaten teilen",
       solution: "Ihre Daten bleiben Ihre Daten",
       details:
-        "Buds ist DSGVO-konform und greift niemals auf Ihre Kundendaten zu. Wir erfassen nur die Widget-Interaktion (anonym). Ihre Kundenbeziehungen und Daten bleiben zu 100 % unter Ihrer Kontrolle."
+        "Buds ist DSGVO-konform und greift niemals auf Ihre Kundendaten zu. Wir erfassen nur die Widget-Interaktionen (anonym). Ihre Kundenbeziehungen und Daten bleiben zu 100 % unter Ihrer Kontrolle."
     },
     {
       icon: "BarChart3",
       objection: "Unser Programm erzielt bereits Ergebnisse",
       solution: "Steigern Sie die Ergebnisse noch weiter",
       details:
-        "Behalten Sie Ihre aktuelle Rendite (ROI) und ergänzen Sie Buds. Partner verzeichnen durchschnittlich 15 % mehr Checkout-Konversion, wenn Buds-Belohnungen neben ihrem bestehenden Programm verfügbar sind."
+        "Behalten Sie Ihre aktuelle Rendite bei und ergänzen Sie sie mit Buds. Partner verzeichnen durchschnittlich 15 % mehr Checkout-Konversion, wenn Buds-Belohnungen neben ihrem bestehenden Programm verfügbar sind."
     }
   ],
   
@@ -64,36 +64,36 @@ export const existingLoyaltyPage = {
     choices: [
       {
         title: "Ihre eigenen Produkte",
-        description: "Präsentieren Sie Ihren eigenen Bestand als Buds-Belohnungen",
+        description: "Präsentieren Sie Ihr eigenes Inventar als Buds-Belohnungen",
         benefits: [
           "Überbestände oder saisonale Artikel abverkaufen",
           "Neue Produkteinführungen bewerben",
-          "Volle Kontrolle darüber, was angeboten wird",
+          "Volle Kontrolle über das Angebot",
           "Kunden in Ihrem Ökosystem halten"
         ],
         example: "Präsentieren Sie Ihre Premium-Produktlinie als exklusive Belohnungen"
       },
       {
         title: "Bestimmte Partner-Marken",
-        description: "Wählen Sie genau aus, welche Partner-Marken Sie präsentieren (VIBES, Cookies etc.)",
+        description: "Wählen Sie genau aus, welche Partner-Marken angezeigt werden (VIBES, Cookies etc.)",
         benefits: [
-          "Belohnungen kuratieren, die zu Ihrer Marke passen",
+          "Belohnungen passend zu Ihrer Marke kuratieren",
           "Komplementäre Produkte präsentieren",
           "Strategische Partnerschaften aufbauen",
           "Markenassoziationen kontrollieren"
         ],
-        example: "Wählen Sie nur VIBES rolling papers und Cookies Merchandise aus"
+        example: "Wählen Sie nur VIBES Rolling Papers und Cookies Merchandise aus"
       },
       {
         title: "Algorithmus-optimiert (Empfohlen)",
-        description: "Lassen Sie Buds’ AI die umsatzstärksten Belohnungen für Ihre Kunden auswählen",
+        description: "Lassen Sie Buds KI die umsatzstärksten Belohnungen für Ihre Kunden auswählen",
         benefits: [
           "Maximieren Sie automatisch die Konversionsraten",
-          "Personalisierte Auswahl für jeden Kunden",
+          "Personalisierung für jeden Kunden",
           "Datengetriebene Belohnungsauswahl",
           "Kontinuierlich optimierte Performance"
         ],
-        example: "AI analysiert Kundenverhalten und zeigt Belohnungen mit höchster Einlöserwahrscheinlichkeit"
+        example: "KI analysiert Kundenverhalten und zeigt Belohnungen mit höchster Einlöserwahrscheinlichkeit"
       }
     ]
   },
@@ -105,23 +105,23 @@ export const existingLoyaltyPage = {
   
   integrationModes: [
     {
-      title: "Parallelmodus (Empfohlen)",
+      title: "Paralleler Modus (Empfohlen)",
       description: "Buds läuft parallel zu Ihrem bestehenden Programm",
       features: [
         "Ihr Punktesystem bleibt unverändert",
         "Buds-Belohnungen erscheinen als Bonusoptionen",
         "Kunden können beide Programme nutzen",
-        "Keine Konflikte, maximaler Wert"
+        "Kein Konflikt, maximaler Wert"
       ],
       example: "Kunde sammelt Ihre Punkte + kann Buds-Belohnungen einlösen"
     },
     {
-      title: "Hybridmodus",
+      title: "Hybrid-Modus",
       description: "Konvertieren Sie Ihre Punkte in Buds-Guthaben",
       features: [
         "Optionale Punkteumwandlung beim Checkout",
         "Erweitern Sie sofort Ihren Belohnungskatalog",
-        "Behalten Sie Ihre Punkteökonomie bei",
+        "Erhalten Sie Ihre Punkteökonomie bei",
         "Buds übernimmt die Erfüllung"
       ],
       example: "1000 Ihre Punkte = 100 Buds-Guthaben für Partner-Belohnungen"
@@ -130,9 +130,9 @@ export const existingLoyaltyPage = {
       title: "Erweiterter Modus",
       description: "Buds-Belohnungen werden in höheren Stufen freigeschaltet",
       features: [
-        "Buds für VIP-/Top-Stufen reservieren",
-        "Attraktive Stufen-Benefits schaffen",
-        "Stufenaufstieg incentivieren",
+        "Reservieren Sie Buds für VIP-/Top-Stufen",
+        "Schaffen Sie erstrebenswerte Stufen-Benefits",
+        "Motivieren Sie zum Stufenaufstieg",
         "Exklusiver Zugang zu Partner-Marken"
       ],
       example: "Gold-Stufe+ Mitglieder erhalten Zugang zum Buds-Belohnungskatalog"
@@ -142,13 +142,13 @@ export const existingLoyaltyPage = {
   dual_loyalty: {
     title: "Sehen Sie es in Aktion: Duales Treueprogramm beim Checkout",
     description: "Kunden sehen Ihre Belohnungen und Buds-Belohnungen nebeneinander. Keine Verwirrung, nur mehr Wert.",
-    imageAlt: "Duales Treueprogramm beim Checkout zeigt sowohl Store-Punkte als auch Buds-Belohnungen"
+    imageAlt: "Duales Treueprogramm Checkout-Erlebnis mit Store-Punkten und Buds-Belohnungen"
   },
   
   comparison: {
     title: "Ihr Programm + Buds = Gemeinsam besser",
-    subtitle: "Behalten Sie alles, was Sie haben, und fügen Sie hinzu, was Buds bringt",
-    featureColumn: "Feature",
+    subtitle: "Behalten Sie alles, was Sie haben, und ergänzen Sie, was Buds bringt",
+    featureColumn: "Merkmal",
     yoursColumn: "Ihr Programm",
     togetherColumn: "Gemeinsam"
   },
@@ -161,7 +161,7 @@ export const existingLoyaltyPage = {
       { feature: "Ihre Kundendaten", yours: true, buds: false, together: true },
       { feature: "Partner-Marken-Belohnungen", yours: false, buds: true, together: true },
       { feature: "Kostenlose Erweiterung des Belohnungsangebots", yours: false, buds: true, together: true },
-      { feature: "Entlastung durch Überbestände für Sie", yours: false, buds: true, together: true },
+      { feature: "Entlastung durch Überbestände", yours: false, buds: true, together: true },
       { feature: "Netzwerkeffekte", yours: false, buds: true, together: true }
     ]
   },
@@ -177,10 +177,10 @@ export const existingLoyaltyPage = {
     {
       brand: "Fashion Retailer",
       existing: "Punktebasiertes Programm mit Stufensystem",
-      integration: "Parallelmodus",
+      integration: "Paralleler Modus",
       result:
-        "VIBES™-Accessoires als Bonusbelohnungen hinzugefügt. 18 % Steigerung des AOV, keine Kannibalisierung bestehender Punkteeinlösungen.",
-      metric: "+18% AOV"
+        "VIBES™ Accessoires als Bonusbelohnungen hinzugefügt. 18 % Steigerung des durchschnittlichen Bestellwerts, keine Kannibalisierung bestehender Punkteeinlösungen.",
+      metric: "+18 % AOV"
     },
     {
       brand: "Wellness Platform",
@@ -188,14 +188,14 @@ export const existingLoyaltyPage = {
       integration: "Erweiterter Modus",
       result:
         "Buds-Belohnungen für Premium-Stufenmitglieder reserviert. Stufenaufstiegsrate um 34 % erhöht, Mitgliederbindung um 22 % gesteigert.",
-      metric: "+34% Upgrades"
+      metric: "+34 % Upgrades"
     },
     {
       brand: "Multi-brand Marketplace",
       existing: "Cashback-Programm",
-      integration: "Hybridmodus",
+      integration: "Hybrid-Modus",
       result:
-        "Cashback-Umwandlung in Buds-Guthaben ermöglicht. Belohnungskatalog 10-fach erweitert ohne Lagerkosten.",
+        "Cashback-Konvertierung in Buds-Guthaben ermöglicht. Belohnungskatalog 10-fach erweitert ohne Lagerkosten.",
       metric: "10x Katalog"
     }
   ],
@@ -208,12 +208,12 @@ export const existingLoyaltyPage = {
     {
       q: "Verwirrt Buds unsere Kunden?",
       a:
-        "Nein. Buds erscheint als klar gekennzeichnete ‚Bonus-Belohnung‘-Option. Kunden verstehen, dass es ein zusätzlicher Vorteil ist, kein Ersatz. Unser UX-Design ergänzt, statt zu konkurrieren."
+        "Nein. Buds erscheint als klar gekennzeichnete 'Bonus-Belohnung'. Kunden verstehen, dass es ein zusätzlicher Vorteil ist, kein Ersatz. Unser UX-Design ergänzt Ihr Programm, ohne zu konkurrieren."
     },
     {
       q: "Können wir steuern, welche Buds-Belohnungen angezeigt werden?",
       a:
-        "Absolut. Sie haben drei Optionen: (1) Nur Ihre eigenen Produkte als Belohnungen anzeigen, (2) Bestimmte Partner-Marken wie VIBES oder Cookies auswählen oder (3) unseren Algorithmus nutzen, der automatisch die umsatzstärksten Belohnungen für jeden Kunden anzeigt. Sie können jederzeit in Ihrem Dashboard zwischen diesen Optionen wechseln."
+        "Absolut. Sie haben drei Optionen: (1) Nur Ihre eigenen Produkte als Belohnungen anzeigen, (2) Bestimmte Partner-Marken wie VIBES oder Cookies auswählen oder (3) unseren Algorithmus nutzen, der automatisch die umsatzstärksten Belohnungen für jeden Kunden anzeigt. Sie können jederzeit im Dashboard wechseln."
     },
     {
       q: "Was, wenn wir Buds nicht mehr nutzen möchten?",
@@ -223,7 +223,7 @@ export const existingLoyaltyPage = {
     {
       q: "Müssen wir Inventar spenden, um Buds zu nutzen?",
       a:
-        "Nein. Sie können Buds ausschließlich zur Bereitstellung von Partner-Belohnungen für Ihre Kunden integrieren. Das Spenden von Inventar verbessert Ihre Platzierung, ist aber optional."
+        "Nein. Sie können Buds ausschließlich zur Bereitstellung von Partner-Belohnungen integrieren. Die Inventarspende verbessert Ihre Platzierung, ist aber optional."
     },
     {
       q: "Wie lösen Kunden Buds-Belohnungen ein?",
@@ -231,25 +231,25 @@ export const existingLoyaltyPage = {
         "Beim Checkout sehen sie verfügbare Buds-Belohnungen neben Ihren bestehenden Optionen. Ein Klick fügt die Belohnung zur Bestellung hinzu. Wir übernehmen die Erfüllung (Co-Pack oder zentral)."
     },
     {
-      q: "Kann das die Einlösung unserer bestehenden Belohnungen kannibalisieren?",
+      q: "Kann das unsere bestehenden Belohnungseinlösungen kannibalisieren?",
       a:
-        "Daten zeigen keine Kannibalisierung. Buds-Belohnungen sind additive Angebote – Kunden lösen beide ein. Betrachten Sie es als Erweiterung Ihres Belohnungskatalogs ohne zusätzliche Kosten."
-    },
-    {
-      q: "Können wir Buds als White-Label anbieten?",
-      a:
-        "Derzeit nicht, aber das Buds-Branding ist minimal. Das Widget zeigt klar, dass es sich um ein Partner-Belohnungsnetzwerk handelt, was Kunden als Mehrwert schätzen."
+        "Daten zeigen keine Kannibalisierung. Buds-Belohnungen sind ergänzend – Kunden lösen beide ein. Betrachten Sie es als Erweiterung Ihres Belohnungskatalogs ohne zusätzliche Kosten."
     },
     {
       q: "Mit welchen Plattformen funktioniert das?",
       a:
-        "Shopify, WooCommerce und die meisten großen Treueplattformen (Smile.io, LoyaltyLion, Yotpo etc.). Wir integrieren über ein Checkout-Widget, nicht über direkte Plattformintegration."
+        "Shopify, WooCommerce und die meisten großen E-Commerce-Plattformen. Buds integriert sich über ein Checkout-Widget, das parallel zu Ihrer bestehenden Lösung arbeitet."
+    },
+    {
+      q: "Ist Buds eine White-Label-Lösung?",
+      a:
+        "Nein. Buds ist eine eigenständige Marke und wir sind stolz darauf. Wenn Kunden den Namen Buds sehen, wissen sie, dass sie Zugang zu einem Premium-Belohnungsnetzwerk erhalten. Unsere Markenbekanntheit bringt Ihrem Unternehmen Mehrwert, nicht Abzug."
     }
   ],
   
   cta: {
     title: "Bereit, Ihr Treueprogramm zu verstärken?",
-    subtitle: "Schließen Sie sich führenden Marken an, die Buds zur Steigerung von Engagement und AOV nutzen",
+    subtitle: "Schließen Sie sich führenden Marken an, die Buds für mehr Engagement und höheren AOV nutzen",
     seeIntegrationButton: "Integrationsoptionen ansehen",
     talkToExpertButton: "Mit Integrations-Experten sprechen",
     applyButton: "Jetzt bewerben",

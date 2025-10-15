@@ -124,7 +124,8 @@ const PlatformsPage = () => {
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">{t('integrationOptions.title')}</h2>
-          <p className="text-xl text-gray-600 text-center mb-12">{t('integrationOptions.subtitle')}</p>
+          <p className="text-xl text-gray-600 text-center mb-6">{t('integrationOptions.subtitle')}</p>
+          <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto">{t('integrationOptions.description')}</p>
           
           <div className="grid md:grid-cols-3 gap-8">
             {tArray('integrationOptions.items').map((option, index) => (

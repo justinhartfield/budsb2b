@@ -155,7 +155,7 @@ export const pharmaciesPage = {
       step: 3,
       title: "System Integration",
       description:
-        "Install checkout widget or integrate via pharmacy management system API.",
+        "Install Buds checkout widget that works with your existing pharmacy management system.",
       duration: "3-5 days"
     },
     {
