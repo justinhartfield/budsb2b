@@ -1,89 +1,92 @@
-// BudsProPage translations (German)
+// BudsProPage translations (German) - B2B Partnernetzwerk Fokus
 export const budsProPage = {
   hero: {
-    badge: "Nur auf Einladung",
+    badge: "👑 Nur auf Einladung: Partnernetzwerk",
     title: "Buds Pro",
-    subtitle: "Werde Pro. Komm näher.",
-    tagline: "Ihre Treue, auf ein neues Level gehoben.",
-    description: "Buds Pro ist unsere exklusive Premium-Stufe nur auf Einladung für echte Cannabis-Kenner. Schalten Sie exklusive Vorteile, frühen Zugang und VIP-Erlebnisse frei."
+    subtitle: "Zugang zu Europas Top 10 % Cannabis-Ausgebern",
+    tagline: "Premium-Partner. Premium-Kunden. Premium-Umsatz.",
+    description: "Buds Pro verbindet lizenzierte Cannabis-Einzelhändler mit verifizierten, wertvollen Konsumenten über WeedMaps, Weed.de, BlueDream.com, Weed.cz und 40+ Plattformen. Durchschnittlicher Transaktionswert pro Mitglied: €180+. Keine Akquisitionskosten. Zusätzliche Umsätze für Ihr Unternehmen."
   },
   
   perks: {
-    title: "Was Buds Pro beinhaltet",
-    subtitle: "Acht exklusive Vorteile für unsere engagiertesten Mitglieder",
+    title: "Warum Top-Einzelhändler Buds Pro beitreten",
+    subtitle: "Acht überzeugende Gründe, warum Premium-Cannabisunternehmen Buds Pro Partner werden",
     
     items: [
       {
-        title: "Rückdatierte Buds",
-        description: "Erhalten Sie Gutschrift für alle vergangenen Käufe, wenn Sie Pro beitreten"
+        title: "€180+ Durchschnittliche Transaktion",
+        description: "Zugang zu verifizierten Großausgebern, die 3-5x über dem Branchendurchschnitt (€45) liegen"
       },
       {
-        title: "+1 Vorteile",
-        description: "Schalten Sie eine zusätzliche Vorteilsstufe über Standardmitglieder hinaus frei"
+        title: "Top 10 % Verifizierte Ausgeber",
+        description: "Vorqualifizierte Premium-Kunden von Europas führenden Cannabis-Plattformen"
       },
       {
-        title: "Früher Zugang",
-        description: "Als Erste neue Produkte und limitierte Drops kaufen"
+        title: "Keine Akquisitionskosten",
+        description: "Keine Mitgliedsgebühren, keine Transaktionsgebühren, keine monatlichen Kosten – reiner Zusatzumsatz"
       },
       {
-        title: "Einzigartige NFC-Karte",
-        description: "Exklusive schwarze Karte mit NFC-Technologie für sofortige Belohnungen"
+        title: "€45K-€120K Zusätzlicher Umsatz",
+        description: "Durchschnittlicher jährlicher Umsatzanstieg allein durch Buds Pro Netzwerkmitglieder"
       },
       {
-        title: "Vorzugspreise",
-        description: "Nur für Mitglieder verfügbare Preise und exklusive Rabatte"
+        title: "Premium Markenpositionierung",
+        description: "Assoziation mit WeedMaps, Weed.de, BlueDream.com hebt Ihre Markenwahrnehmung hervor"
       },
       {
-        title: "Stickerpakete und Emojis",
-        description: "Exklusive digitale Inhalte und physische Stickersammlungen"
+        title: "Vollständiger Datenschutz",
+        description: "DSGVO/GDPR-konform – Mitglieder identifizieren sich selbst, Ihre Kundendaten bleiben 100 % privat"
       },
       {
-        title: "Pro-Belohnungen",
-        description: "Zugang zu exklusiven Pro-Stufen-Belohnungen von Premium-Marken"
+        title: "5-Minuten Integration",
+        description: "Einfache Widget-Installation, keine POS-Änderungen, kein Mitarbeiterschulungsaufwand"
       },
       {
-        title: "Nur-Einladung-Erlebnisse",
-        description: "Private Events, VIP-Erlebnisse und exklusive Zusammenkünfte"
+        title: "Exklusiver Netzwerkzugang",
+        description: "Geschlossenes, nur auf Einladung basierendes Partnernetzwerk – keine Entdeckungsplattform, sondern ein kuratiertes Ökosystem"
       }
     ]
   },
   
   invitation: {
-    title: "Wie Sie eingeladen werden",
-    subtitle: "Buds Pro wird verdient, nicht gekauft. So erhalten Sie eine Einladung:",
+    title: "So werden Sie Buds Pro Partner",
+    subtitle: "Die Buds Pro Partnerschaft ist nur auf Einladung für Premium-Cannabis-Einzelhändler verfügbar. Qualifikationskriterien:",
     
     pathways: [
       {
-        title: "Top-Ausgeber",
-        description: "Automatische Einladung für Kunden mit €1.000+ jährlichen Käufen"
+        title: "Lizenzierter Cannabis-Einzelhandel",
+        description: "Betrieb eines lizenzierten Dispensaries oder Cannabis-Einzelhandels im EU-/legalen Markt mit bestehendem oder geplantem Treueprogramm"
       },
       {
-        title: "Community-Leader",
-        description: "Aktives Engagement, Bewertungen und Beiträge zur Buds-Community"
+        title: "Engagement für Premium-Belohnungen",
+        description: "Bereitschaft, exklusive Produkte, Early Access, VIP-Erlebnisse oder Partner-Marken-Belohnungen für Netzwerkmitglieder anzubieten"
       },
       {
-        title: "Partner-Empfehlungen",
-        description: "Nominierungen von Partner-Apotheken für außergewöhnliche Kunden"
+        title: "Qualitätsstandards",
+        description: "Verifizierte Geschäftsabläufe, exzellenter Kundenservice und Verpflichtung zu einem Premium-Kundenerlebnis"
       }
     ]
   },
   
   exclusive: {
-    title: "Treten Sie dem inneren Kreis bei",
-    subtitle: "Buds Pro-Mitglieder sind Teil einer exklusiven Community von Cannabis-Enthusiasten",
+    title: "Was Buds Pro Partner erhalten",
+    subtitle: "Treten Sie Europas exklusivstem Cannabis-Einzelhandelsnetzwerk bei und profitieren Sie von Vorteilen, die sonst nirgendwo verfügbar sind",
     features: [
-      "Private Discord-Community",
-      "Monatliche Nur-Pro-Produktdrops",
-      "Direkte Linie zu Partnermarken",
-      "Exklusive Grow-Touren und Events",
-      "Pro-Mitglieder-Badge und Anerkennung"
+      "Zugang zu 10.000+ verifizierten, wertvollen Cannabis-Konsumenten (€180+ AOV)",
+      "Partner-Dashboard mit Echtzeit-Analysen zu Mitgliedern und Umsatzverfolgung",
+      "Netzwerk-Mitglieder-Identifikationssystem (app-basiert, datenschutzkonform)",
+      "Co-Marketing-Möglichkeiten mit großen Plattformen (WeedMaps, Weed.de, etc.)",
+      "Exklusive Partner-Events, Messen und Networking-Veranstaltungen",
+      "Priorisierter Support und dedizierter Partnership Success Manager",
+      "Buds Pro Partner-Badge und Premium-Markenpositionierung",
+      "Zugang zum Partner-Belohnungserfüllungsnetzwerk (erweitern Sie Ihren Katalog um das 10-fache)"
     ]
   },
   
   cta: {
-    title: "Interessiert an Buds Pro?",
-    subtitle: "Bleiben Sie mit Buds und unseren Partnern engagiert. Einladungen werden monatlich an qualifizierende Mitglieder gesendet.",
-    button: "Zurück zu Buds"
+    title: "Bereit, Europas führendem Cannabis-Einzelhandelsnetzwerk beizutreten?",
+    subtitle: "Bewerbungen werden monatlich geprüft. Durchschnittlicher Partner erzielt €45K-€120K zusätzlichen Jahresumsatz durch Buds Pro Mitglieder.",
+    button: "Partnerschaft beantragen",
+    secondaryButton: "Partner-Dashboard Demo ansehen"
   }
 }
-
