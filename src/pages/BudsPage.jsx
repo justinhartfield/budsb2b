@@ -102,9 +102,9 @@ const BudsPage = () => {
                     ? 'bg-purple-600 text-white'
                     : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
                 }`}
-              >
-                Platforms
-                <span className="hidden md:block text-xs font-normal">For marketplaces</span>
+               >
+                🌐 Platforms
+                <span className="hidden md:block text-xs font-normal">For marketplaces</span>>
               </button>
               
               <button
@@ -115,7 +115,7 @@ const BudsPage = () => {
                     : 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200'
                 }`}
               >
-                Pharmacies
+                💊 Pharmacies
                 <span className="hidden md:block text-xs font-normal">For pharmacy chains</span>
               </button>
               
@@ -127,7 +127,7 @@ const BudsPage = () => {
                     : 'bg-pink-100 text-pink-700 hover:bg-pink-200'
                 }`}
               >
-                Manufacturers
+                🏭 Manufacturers
                 <span className="hidden md:block text-xs font-normal">For pharma companies</span>
               </button>
               
@@ -139,7 +139,7 @@ const BudsPage = () => {
                     : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
                 }`}
               >
-                Existing Loyalty?
+                🎁 Existing Loyalty?
                 <span className="hidden md:block text-xs font-normal">Augment your program</span>
               </button>
             </div>
@@ -271,7 +271,7 @@ const BudsPage = () => {
               
               <div className="flex items-center gap-3 mb-4">
                 <Truck className="w-6 h-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-900">{currentSections.howDonationsWork.copack.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900">🚚 {currentSections.howDonationsWork.copack.title}</h3>
               </div>
               
               <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.copack.description}</p>
@@ -292,7 +292,7 @@ const BudsPage = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="w-6 h-6 text-blue-600" />
-                <h3 className="text-2xl font-bold text-gray-900">{currentSections.howDonationsWork.central.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900">📦 {currentSections.howDonationsWork.central.title}</h3>
               </div>
               
               <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.central.description}</p>
@@ -312,7 +312,7 @@ const BudsPage = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
-            Monthly target (simple rule of thumb)
+            🎯 Monthly target (simple rule of thumb)
           </h2>
           
           <p className="text-lg text-gray-600 text-center mb-4 max-w-3xl mx-auto">
@@ -409,7 +409,7 @@ const BudsPage = () => {
       {/* Checkout Integration */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Checkout Integration</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">🛍️ Checkout Integration</h2>
           <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             <TextWithBrandLogo text="See how Buds Rewards appears naturally in real Shopify and WooCommerce checkout flows, featuring exclusive [VIBES] branded products and seamless user experience." logoSize="sm" />
           </p>
@@ -449,7 +449,7 @@ const BudsPage = () => {
 
                 <div className="bg-gradient-to-r from-green-50 to-cyan-50 border-2 border-green-400 rounded-xl p-4 mb-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h5 className="font-bold text-gray-900">Unlock Exclusive Rewards</h5>
+                    <h5 className="font-bold text-gray-900">🎁 Unlock Exclusive Rewards</h5>
                     <span className="text-xs text-green-600 font-semibold">- Add as member reward</span>
                   </div>
                   <Button className="w-full bg-green-500 hover:bg-green-600 text-white mb-2">Join Buds - It's Free</Button>
@@ -558,7 +558,7 @@ const BudsPage = () => {
       {/* Smart Encouragement System */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Smart Encouragement System</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">🧠 Smart Encouragement System</h2>
           <p className="text-xl text-gray-600 text-center mb-4 max-w-3xl mx-auto">
             Advanced psychology-driven features that naturally encourage customers to increase their cart value for exclusive rewards.
           </p>
@@ -568,9 +568,9 @@ const BudsPage = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'Progressive Tiers', desc: 'Multiple reward levels encourage larger purchases' },
-              { title: 'Smart Suggestions', desc: 'AI-powered recommendations to reach reward thresholds' },
-              { title: 'Exclusive Access', desc: '[VIBES] branded products only available through rewards', useLogo: true }
+              { title: '📈 Progressive Tiers', desc: 'Multiple reward levels encourage larger purchases' },
+              { title: '🤖 Smart Suggestions', desc: 'AI-powered recommendations to reach reward thresholds' },
+              { title: '⭐ Exclusive Access', desc: '[VIBES] branded products only available through rewards', useLogo: true }
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -586,7 +586,7 @@ const BudsPage = () => {
       {/* Technical Integration */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">Seamless Technical Integration</h2>
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-6">🔧 Seamless Technical Integration</h2>
           <p className="text-xl text-gray-600 text-center mb-4 max-w-3xl mx-auto">
             Enterprise-grade plugin that installs in minutes with zero performance impact on your existing store infrastructure.
           </p>
@@ -678,7 +678,7 @@ const BudsPage = () => {
                   <p className="text-xs text-gray-500 mb-4">To: you@example.com</p>
                   
                   <div className="bg-gradient-to-br from-green-50 to-cyan-50 rounded-xl p-6 mb-4">
-                    <h5 className="text-xl font-black text-gray-900 mb-2">Buds Weekly</h5>
+                    <h5 className="text-xl font-black text-gray-900 mb-2">📧 Buds Weekly</h5>
                     <p className="text-sm text-gray-600 mb-4">Partner Spotlight Edition</p>
                     
                     <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
@@ -698,7 +698,7 @@ const BudsPage = () => {
                     </div>
                     
                     <div className="bg-white rounded-lg p-4">
-                      <p className="text-xs font-semibold text-gray-900 mb-3">This Week's Top Donors</p>
+                      <p className="text-xs font-semibold text-gray-900 mb-3">🏆 This Week's Top Donors</p>
                       <div className="space-y-2">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
@@ -731,12 +731,12 @@ const BudsPage = () => {
 
               {/* Widget Placement Hierarchy */}
               <div className="space-y-4">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">Widget Placement</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-4">🎯 Widget Placement</h4>
                 <p className="text-sm text-gray-600 mb-6">Donor Score Hierarchy</p>
                 
                 <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-yellow-800">Top Placement</span>
+                    <span className="text-xs font-semibold text-yellow-800">🥇 Top Placement</span>
                     <span className="text-xs font-bold text-yellow-900">Score: 1.5+</span>
                   </div>
                   <h5 className="font-bold text-gray-900 mb-2"><TextWithBrandLogo text="[VIBES] Signature Series Kit" logoSize="sm" /></h5>
@@ -755,7 +755,7 @@ const BudsPage = () => {
 
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-blue-800">Mid Placement</span>
+                    <span className="text-xs font-semibold text-blue-800">🥈 Mid Placement</span>
                     <span className="text-xs font-bold text-blue-900">Score: 1.0-1.4</span>
                   </div>
                   <h5 className="font-bold text-gray-900 mb-2">Partner Store B - Premium Accessories</h5>
@@ -771,7 +771,7 @@ const BudsPage = () => {
 
                 <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-gray-700">Standard Placement</span>
+                    <span className="text-xs font-semibold text-gray-700">🥉 Standard Placement</span>
                     <span className="text-xs font-bold text-gray-900">Score: 0.8-0.9</span>
                   </div>
                   <h5 className="font-bold text-gray-900 mb-2">Partner Store C - Basic Rewards</h5>
