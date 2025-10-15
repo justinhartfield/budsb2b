@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { LanguageProvider } from './contexts/LanguageContext'
 import Navigation from './components/Navigation'
 import BudsPage from './pages/BudsPage'
 import BudsProPage from './pages/BudsProPage'
@@ -13,8 +14,9 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen">
+    <LanguageProvider>
+      <Router>
+        <div className="min-h-screen">
         <Routes>
           {/* Main consumer routes with navigation */}
           <Route path="/" element={<><Navigation /><BudsPage /></>} />
@@ -31,6 +33,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </LanguageProvider>
   )
 }
 

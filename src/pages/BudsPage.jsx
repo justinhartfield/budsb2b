@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link, useNavigate } from 'react-router-dom'
+import { useLanguage } from '../contexts/LanguageContext'
 import { 
   TrendingUp, 
   Package, 
@@ -21,10 +22,10 @@ import { partnerContent, sectionContent } from '../data/partnerContent'
 
 const BudsPage = () => {
   const navigate = useNavigate()
+  const { language, setLanguage } = useLanguage()
   const [gmv, setGmv] = useState(100000)
   const [openFaq, setOpenFaq] = useState(null)
   const [activeTab, setActiveTab] = useState('partners')
-  const [language, setLanguage] = useState('en')
 
   const handleTabClick = (tab) => {
     if (tab === 'existing') {
