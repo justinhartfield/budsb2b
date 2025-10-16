@@ -8,7 +8,7 @@ const brandLogos = {
   weedmaps: weedmapsLogo
 }
 
-const BrandLogo = ({ brand, size = 'md', showTM = true, className = '' }) => {
+const BrandLogo = ({ brand, size = 'md', showTM = true, className = '', inline = false }) => {
   const sizeClasses = {
     xs: 'h-8',
     sm: 'h-12',
@@ -23,6 +23,24 @@ const BrandLogo = ({ brand, size = 'md', showTM = true, className = '' }) => {
     weedmaps: 'WeedMaps'
   }
 
+  // For inline rendering, use span and inline-block
+  if (inline) {
+    return (
+      <span className={`inline-flex items-center gap-1 ${className}`} style={{ display: 'inline-flex', verticalAlign: 'middle' }}>
+        <img 
+          src={brandLogos[brand]} 
+          alt={`${brandNames[brand]} logo`}
+          className={`${sizeClasses[size]} w-auto object-contain`}
+          style={{ display: 'inline-block', verticalAlign: 'middle' }}
+        />
+        {showTM && (
+          <span className="text-xs text-gray-400" style={{ verticalAlign: 'super' }}>™</span>
+        )}
+      </span>
+    )
+  }
+
+  // Default block rendering
   return (
     <div className={`inline-flex items-center gap-1 ${className}`}>
       <img 

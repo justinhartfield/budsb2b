@@ -91,7 +91,7 @@ const BudsPage = () => {
                     : 'bg-orange-100 text-orange-700 hover:bg-orange-200'
                 }`}
               >
-                Partners
+                📦 Partners
                 <span className="hidden md:block text-xs font-normal">For retailers & brands</span>
               </button>
               
@@ -104,7 +104,7 @@ const BudsPage = () => {
                 }`}
                >
                 🌐 Platforms
-                <span className="hidden md:block text-xs font-normal">For marketplaces</span>>
+                <span className="hidden md:block text-xs font-normal">For marketplaces</span>
               </button>
               
               <button
@@ -683,13 +683,13 @@ const BudsPage = () => {
                     
                     <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
                       <p className="text-xs font-semibold text-yellow-800">SPONSORED CONTENT</p>
-                      <p className="text-xs text-yellow-700"><TextWithBrandLogo text="This content is sponsored by [VIBES] - Premium tobacco accessories" logoSize="xs" /></p>
+                      <p className="text-xs text-yellow-700">This content is sponsored by premium brand partners</p>
                     </div>
                     
                     <div className="bg-white rounded-lg p-4 mb-4">
                       <p className="text-xs font-semibold text-purple-600 mb-2">FEATURED ADVERTISER PARTNER</p>
-                      <h6 className="font-bold text-gray-900 mb-2"><TextWithBrandLogo text="[VIBES] Signature Series" logoSize="sm" /></h6>
-                      <p className="text-xs text-gray-600 mb-3"><TextWithBrandLogo text="Our advertising partner [VIBES] is offering exclusive rolling papers and accessories as Buds rewards." logoSize="xs" /></p>
+                      <h6 className="font-bold text-gray-900 mb-2">Partner Store A - Signature Series</h6>
+                      <p className="text-xs text-gray-600 mb-3">Our advertising partner is offering exclusive products and accessories as Buds rewards.</p>
                       
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <p className="text-xs font-semibold text-green-800">Advertiser Exclusive Offer</p>
@@ -739,7 +739,7 @@ const BudsPage = () => {
                     <span className="text-xs font-semibold text-yellow-800">🥇 Top Placement</span>
                     <span className="text-xs font-bold text-yellow-900">Score: 1.5+</span>
                   </div>
-                  <h5 className="font-bold text-gray-900 mb-2"><TextWithBrandLogo text="[VIBES] Signature Series Kit" logoSize="sm" /></h5>
+                  <h5 className="font-bold text-gray-900 mb-2">Partner Store A - Signature Series Kit</h5>
                   <div className="space-y-1">
                     <p className="text-xs text-gray-700 flex items-center gap-1">
                       <Check className="w-3 h-3 text-green-600" /> First position in widget

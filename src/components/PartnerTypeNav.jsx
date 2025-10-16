@@ -80,7 +80,7 @@ const PartnerTypeNav = () => {
                   : 'bg-orange-100 text-orange-700 hover:bg-orange-200'
               }`}
             >
-              <div>Partners</div>
+              <div>📦 Partners</div>
               <div className="hidden md:block text-xs font-normal">For retailers & brands</div>
             </button>
             
@@ -92,7 +92,7 @@ const PartnerTypeNav = () => {
                   : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
               }`}
             >
-              <div>Platforms</div>
+              <div>🌐 Platforms</div>
               <div className="hidden md:block text-xs font-normal">For marketplaces</div>
             </button>
             
@@ -104,7 +104,7 @@ const PartnerTypeNav = () => {
                   : 'bg-cyan-100 text-cyan-700 hover:bg-cyan-200'
               }`}
             >
-              <div>Pharmacies</div>
+              <div>💊 Pharmacies</div>
               <div className="hidden md:block text-xs font-normal">For pharmacy chains</div>
             </button>
             
@@ -116,7 +116,7 @@ const PartnerTypeNav = () => {
                   : 'bg-pink-100 text-pink-700 hover:bg-pink-200'
               }`}
             >
-              <div>Manufacturers</div>
+              <div>🏭 Manufacturers</div>
               <div className="hidden md:block text-xs font-normal">For pharma companies</div>
             </button>
             
@@ -128,7 +128,7 @@ const PartnerTypeNav = () => {
                   : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
               }`}
             >
-              <div>Existing Loyalty?</div>
+              <div>🎁 Existing Loyalty?</div>
               <div className="hidden md:block text-xs font-normal">Augment your program</div>
             </button>
           </div>
