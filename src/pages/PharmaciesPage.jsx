@@ -26,13 +26,13 @@ const PharmaciesPage = () => {
     {
       icon: Heart,
       title: "Patient Retention & Loyalty",
-      description: "Transform slow-moving wellness inventory into patient rewards. Increase repeat visits without discounting prescription margins.",
+      description: "Increase patient loyalty and repeat visits by offering a wide range of rewards.",
       metric: "+34% retention"
     },
     {
       icon: TrendingUp,
       title: "Move Non-Rx Inventory",
-      description: "Vitamins, supplements, OTC wellness items become valuable rewards. Clear shelf space, maintain margins.",
+      description: "Offer your patients access to a diverse reward catalog, including standard vouchers and premium products.",
       metric: "Zero waste"
     },
     {
@@ -44,7 +44,7 @@ const PharmaciesPage = () => {
     {
       icon: Users,
       title: "Cross-Chain Network",
-      description: "Join pharmacy network. Your patients can redeem rewards from partner wellness brands. Expand value without inventory.",
+      description: "Join our coalition loyalty program and provide your patients with more value through a shared rewards network.",
       metric: "Network effect"
     }
   ]
@@ -99,21 +99,21 @@ const PharmaciesPage = () => {
     {
       chain: "Regional Pharmacy Chain (45 locations)",
       challenge: "€120K in slow-moving vitamin inventory, patient churn to online competitors",
-      solution: "Donated vitamins as Buds rewards, positioned as exclusive patient benefit",
+      solution: "Offered Buds rewards to patients, increasing engagement and loyalty.",
       result: "Cleared 80% of slow inventory in 3 months. Patient retention increased 34%. New patient signups +22%.",
       metric: "+34% retention"
     },
     {
       chain: "Independent Pharmacy Group (8 locations)",
       challenge: "Competing with big-box stores on wellness products, thin margins",
-      solution: "Used Buds to offer partner brand rewards without inventory investment",
+      solution: "Integrated Buds to provide patients with a wider selection of rewards.",
       result: "Positioned as wellness destination. Average transaction value +€18. Zero additional inventory cost.",
       metric: "+€18 ATV"
     },
     {
       chain: "Wellness-Focused Pharmacy (3 locations)",
       challenge: "Premium positioning, needed to differentiate from discount pharmacies",
-      solution: "Curated premium wellness rewards from partner brands, VIP patient program",
+      solution: "Utilized Buds to create a premium patient experience with exclusive rewards.",
       result: "Premium patient tier grew 156%. Became known for exclusive wellness access.",
       metric: "+156% VIP tier"
     }
@@ -129,7 +129,7 @@ const PharmaciesPage = () => {
     {
       step: 2,
       title: "Inventory Assessment",
-      description: "Optional: We help identify eligible non-Rx products for donation. No obligation.",
+      description: "Choose your membership tier and integrate our loyalty widget.",
       duration: "1 week"
     },
     {
@@ -154,13 +154,13 @@ const PharmaciesPage = () => {
 
   const faqs = [
     { q: "Is this legal for pharmacies in Germany/EU?", a: "Yes. Buds only handles non-prescription wellness products. No Rx data is shared, no prescription rewards. Fully compliant with pharmacy regulations and GDPR/DSGVO." },
-    { q: "Do we need to donate inventory?", a: "No. You can participate purely by offering partner rewards to patients. Donating slow-moving wellness inventory improves your placement, but it's optional." },
+    { q: "Are product donations required?", a: "No, product donations are completely optional and do not affect your membership tier or benefits." },
     { q: "How do patients redeem rewards?", a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. We handle fulfillment—either you ship (co-pack) or our 3PL ships (central)." },
     { q: "What about patient privacy?", a: "Zero patient data sharing. We only track anonymous redemption events. Your patient relationships and data remain 100% private and under your control." },
     { q: "Can we control which products appear as rewards?", a: "Yes. Full control via pharmacy admin panel. Approve/reject products, set categories, exclude brands, or curate specific collections for your patients." },
     { q: "What if a product is recalled?", a: "Immediate network-wide removal. We monitor regulatory databases and remove recalled products within hours. Audit trail shows all actions taken." },
     { q: "How does this work with our existing loyalty program?", a: "Buds integrates alongside your current program. Patients can use both. Think of it as expanding your reward catalog without expanding your costs." },
-    { q: "What's the cost?", a: "Free to join, no monthly fees. You only 'pay' by donating eligible inventory (optional). If you don't donate, you simply offer partner rewards to patients at no cost." }
+    { q: "What are the membership fees?", a: "We offer flexible membership tiers with monthly fees ranging from €500 to €5,000. Choose the plan that best fits your pharmacy's needs." }
   ]
 
   return (

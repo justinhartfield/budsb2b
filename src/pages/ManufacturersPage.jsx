@@ -25,26 +25,26 @@ const ManufacturersPage = () => {
   const manufacturerBenefits = [
     {
       icon: Target,
-      title: "Direct-to-Consumer Access",
-      description: "Reach end consumers directly through the Buds network without undercutting your retail partners. No channel conflict.",
+      title: "Increased Brand Awareness",
+      description: "Get your products in front of a large, engaged audience of cannabis consumers.",
       metric: "Zero conflict"
     },
     {
       icon: Lightbulb,
-      title: "Brand Awareness & Sampling",
-      description: "Distribute product samples and overstock as rewards. Turn excess inventory into brand discovery opportunities.",
+      title: "Optional Product Donations",
+      description: "Optionally donate products to our reward catalog to increase brand visibility. This is tracked manually in Airtable.",
       metric: "New customers"
     },
     {
       icon: BarChart3,
-      title: "Consumer Insights",
-      description: "Gather first-party data on consumer preferences, redemption patterns, and product performance across markets.",
+      title: "Standard Analytics",
+      description: "Access our standard analytics dashboard to track redemption patterns and consumer engagement.",
       metric: "Rich data"
     },
     {
       icon: Package,
-      title: "Overstock Relief",
-      description: "Move excess inventory, seasonal products, or discontinued SKUs without damaging brand perception through public discounting.",
+      title: "Engage with Customers",
+      description: "Connect with your customers through a fun and rewarding loyalty program.",
       metric: "Maintain value"
     }
   ]
@@ -123,22 +123,22 @@ const ManufacturersPage = () => {
 
   const pricingModels = [
     {
-      model: "COGS Credit Model",
-      description: "Donate inventory, earn credit based on COGS",
-      details: "€1 COGS = €1.25 credit (co-pack) or €1.00 credit (central 3PL)",
-      bestFor: "Brands with excess inventory to move"
+      model: "Basic Tier",
+      description: "€500/month",
+      details: "Standard analytics and widget placement.",
+      bestFor: "Getting started with loyalty."
     },
     {
-      model: "Sampling Campaign",
-      description: "Pay per sample distributed",
-      details: "€2-5 per sample (includes fulfillment). Target specific demographics or regions.",
-      bestFor: "New product launches, market testing"
+      model: "Growth Tier",
+      description: "€1,500/month",
+      details: "Enhanced analytics and newsletter features.",
+      bestFor: "Expanding your reach."
     },
     {
-      model: "Sponsored Placement",
-      description: "Pay for premium visibility in Buds network",
-      details: "€500-2000/month for featured placement in newsletters, top widget position",
-      bestFor: "Established brands seeking awareness"
+      model: "Enterprise Tier",
+      description: "€5,000/month",
+      details: "Comprehensive analytics and premium placement.",
+      bestFor: "Large-scale businesses."
     }
   ]
 
@@ -146,21 +146,21 @@ const ManufacturersPage = () => {
     {
       brand: "Premium CBD Manufacturer",
       challenge: "New market entry in Germany, zero brand awareness, retail hesitant to stock unknown brand",
-      solution: "Distributed 5,000 sample products via Buds network, targeted wellness-conscious consumers",
+      solution: "Joined the Buds coalition loyalty program and offered products as rewards.",
       result: "38% sample-to-purchase conversion. 12 retail partners signed based on consumer demand. €180K revenue in 6 months.",
       metric: "€180K revenue"
     },
     {
       brand: "Vitamin & Supplement Brand",
       challenge: "€95K in overstock seasonal vitamins (immunity boosters post-winter)",
-      solution: "Donated overstock as Buds rewards, positioned as 'exclusive wellness bonus'",
+    solution: "Became a partner in the Buds loyalty program and offered products to members.",
       result: "Cleared 100% of inventory in 8 weeks. No brand damage. Acquired 2,400 new customers from redemptions.",
       metric: "2,400 customers"
     },
     {
       brand: "Natural Skincare Manufacturer",
       challenge: "Launching new product line, needed consumer feedback before full retail rollout",
-      solution: "Limited release via Buds (1,000 units), gathered feedback, refined formulation",
+      solution: "Joined the Buds program to gain customer feedback and increase brand engagement.",
       result: "92% positive feedback. Adjusted packaging based on insights. Retail launch exceeded projections by 45%.",
       metric: "+45% vs. plan"
     }
@@ -169,7 +169,7 @@ const ManufacturersPage = () => {
   const faqs = [
     { q: "Will this undercut our retail partners?", a: "No. You control what products appear (samples, overstock, discontinued items only). Geo-restrictions prevent territory conflicts. Many brands require retailer consent before listing products." },
     { q: "How do we get consumer data?", a: "Aggregated, GDPR-compliant analytics via manufacturer dashboard. See redemption patterns, demographics, and conversion rates. No individual consumer PII shared." },
-    { q: "What's the minimum commitment?", a: "None. Start with a small sampling campaign (100 units) or donate overstock as you have it. No contracts, no minimums, no monthly fees." },
+    {q: "What are the membership fees?", a: "We offer flexible membership tiers with monthly fees ranging from €500 to €5,000. Choose the plan that best fits your needs." },
     { q: "Can we target specific consumer segments?", a: "Yes. Target by age, location, purchase history, or loyalty tier. Sampling campaigns can be hyper-targeted to your ideal customer profile." },
     { q: "How does fulfillment work?", a: "Two options: (1) Co-pack - you ship directly to consumers when redeemed. (2) Central - send inventory to our EU 3PL, we handle all fulfillment." },
     { q: "What if products don't get redeemed?", a: "Inventory rotates based on demand. Low-performing products can be withdrawn. For central fulfillment, we return unsold inventory after 90 days (your choice)." },
@@ -203,7 +203,7 @@ const ManufacturersPage = () => {
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Pharma and wellness manufacturers can offer product samples and overstock as rewards to end consumers—without undercutting retail partners. Build brand awareness, gather consumer insights, and move excess inventory through the Buds network.
+              Manufacturers can join our coalition loyalty program to increase brand awareness and customer engagement. Offer your products as rewards and gain valuable insights through our standard analytics.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">

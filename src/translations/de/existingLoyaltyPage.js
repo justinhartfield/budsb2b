@@ -5,7 +5,7 @@ export const existingLoyaltyPage = {
     title: "Haben Sie bereits ein Treueprogramm?",
     subtitle: "Ersetzen Sie es nicht. Verstärken Sie es.",
     description:
-      "Buds integriert sich neben Ihrem bestehenden Treueprogramm, um zusätzliche Belohnungen von Partner-Marken anzubieten. Ihre Kunden erhalten mehr Wert, Sie mehr Engagement – ohne zusätzliche Kosten."
+      "Buds integriert sich in Ihr bestehendes Treueprogramm, um über ein Koalitionsmodell eine breitere Palette von Prämien anzubieten. Ihre Kunden erhalten mehr Wert und Sie mehr Engagement."
   },
   
   objections_section: {
@@ -24,9 +24,9 @@ export const existingLoyaltyPage = {
     {
       icon: "DollarSign",
       objection: "Wir können uns kein weiteres Treueprogramm leisten",
-      solution: "Buds kostet Sie nichts",
+      solution: "Flexible Mitgliedschaftsstufen",
       details:
-        "Keine Einrichtungsgebühren, keine monatlichen Kosten, keine Transaktionsgebühren. Partner spenden Überbestände – Sie integrieren einfach das Widget. Ihre Kunden erhalten mehr Belohnungen, Sie zahlen keinen Cent extra."
+        "Wir bieten eine Reihe von Mitgliedschaftsstufen mit erschwinglichen monatlichen Gebühren von 500 € bis 5.000 €. Wählen Sie den Plan, der zu Ihrem Budget und Ihren Zielen passt."
     },
     {
       icon: "Users",
@@ -219,9 +219,9 @@ export const existingLoyaltyPage = {
         "Deinstallieren Sie einfach das Plugin. Keine Verträge, keine Strafen, keine Datenmigration erforderlich. Ihr bestehendes Programm läuft unverändert weiter."
     },
     {
-      q: "Müssen wir Inventar spenden, um Buds zu nutzen?",
+      q: "Sind Produktspenden erforderlich?",
       a:
-        "Nein. Sie können Buds ausschließlich zur Bereitstellung von Partner-Belohnungen integrieren. Die Inventarspende verbessert Ihre Platzierung, ist aber optional."
+        "Nein, Produktspenden sind völlig optional und haben keinen Einfluss auf Ihre Mitgliedschaftsstufe oder Ihre Vorteile. Partner, die sich für Produktspenden entscheiden, werden manuell in Airtable erfasst."
     },
     {
       q: "Wie lösen Kunden Buds-Belohnungen ein?",

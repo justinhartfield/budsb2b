@@ -5,7 +5,7 @@ export const existingLoyaltyPage = {
     title: "Already have a loyalty program?",
     subtitle: "Don't replace it. Supercharge it.",
     description:
-      "Buds integrates alongside your existing loyalty program to offer additional rewards from partner brands. Your customers get more value, you get more engagement, zero extra cost."
+      "Buds integrates with your existing loyalty program to offer a broader range of rewards through a coalition model. Your customers get more value and you get more engagement."
   },
   
   objections_section: {
@@ -24,9 +24,9 @@ export const existingLoyaltyPage = {
     {
       icon: "DollarSign",
       objection: "We can't afford another loyalty program",
-      solution: "Buds costs you nothing",
+      solution: "Flexible Membership Tiers",
       details:
-        "Zero setup fees, zero monthly costs, zero per-transaction fees. Partners donate overstock inventory—you simply integrate the widget. Your customers get more rewards, you pay nothing extra."
+        "We offer a range of membership tiers with affordable monthly fees, from €500 to €5k. Choose the plan that fits your budget and goals."
     },
     {
       icon: "Users",
@@ -219,9 +219,9 @@ export const existingLoyaltyPage = {
         "Simply uninstall the plugin. No contracts, no penalties, no data migration needed. Your existing program continues unchanged."
     },
     {
-      q: "Do we need to donate inventory to use Buds?",
+      q: "Are product donations required?",
       a:
-        "No. You can integrate Buds purely to offer partner rewards to your customers. Donating inventory gets you better placement, but it's optional."
+        "No, product donations are completely optional and do not affect your membership tier or benefits. Partners who choose to donate products are tracked manually in Airtable."
     },
     {
       q: "How do customers redeem Buds rewards?",

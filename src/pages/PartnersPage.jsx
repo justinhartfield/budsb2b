@@ -9,33 +9,33 @@ const PartnersPage = () => {
   const features = [
     {
       icon: BarChart3,
-      title: 'Real-Time Analytics',
-      description: 'Track customer behavior, purchases, and redemptions with live data dashboards'
+      title: 'Basic',
+      description: 'For businesses getting started with loyalty. €500/month.'
     },
     {
       icon: Users,
-      title: 'Customer Insights',
-      description: 'Understand your customers better with detailed demographics and preferences'
+      title: 'Growth',
+      description: 'For businesses looking to expand their reach. €1,500/month.'
     },
     {
       icon: TrendingUp,
-      title: 'Performance Metrics',
-      description: 'Monitor your ROI, engagement rates, and loyalty program effectiveness'
+      title: 'Enterprise',
+      description: 'For large-scale businesses needing a comprehensive solution. €5,000/month.'
     },
     {
       icon: Shield,
-      title: 'Secure & Compliant',
-      description: 'Enterprise-grade security with full compliance for cannabis industry regulations'
+      title: 'Standard Analytics',
+      description: 'Access to our standard analytics dashboard to track key metrics.'
     },
     {
       icon: Zap,
-      title: 'Easy Integration',
-      description: 'Seamless integration with your existing POS and e-commerce systems'
+      title: 'Newsletter Mentions',
+      description: 'Get featured in our member newsletter to increase your visibility.'
     },
     {
       icon: Building2,
-      title: 'Multi-Location Support',
-      description: 'Manage multiple dispensaries or retail locations from one dashboard'
+      title: 'Optional Product Donations',
+      description: 'Optionally donate products to our reward catalog, tracked manually in Airtable.'
     }
   ]
 
@@ -58,7 +58,7 @@ const PartnersPage = () => {
             </h1>
             
             <p className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Join the cannabis loyalty revolution. Give your customers rewards that hit different and gain powerful insights into their behavior.
+              Join our coalition loyalty program. Offer your customers a wide range of rewards and gain valuable insights with our standard analytics.
             </p>
 
             <motion.div
@@ -96,8 +96,8 @@ const PartnersPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-black text-white mb-4">Partner Portal Features</h2>
-            <p className="text-xl text-gray-400">Everything you need to understand and engage your customers</p>
+            <h2 className="text-5xl font-black text-white mb-4">Membership Tiers</h2>
+            <p className="text-xl text-gray-400">Choose the plan that's right for you. All tiers include our standard loyalty widget and analytics dashboard.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,7 +124,7 @@ const PartnersPage = () => {
         <div className="max-w-7xl mx-auto">
           <RewardsShowcase 
             title="Diverse Reward Catalog"
-            subtitle="Give your customers access to thousands of premium rewards across multiple categories"
+            subtitle="Our catalog features 80% standard vouchers (Amazon, travel, etc.) and 20% premium, curated cannabis products."
           />
         </div>
       </section>
@@ -151,8 +151,8 @@ const PartnersPage = () => {
             <div className="aspect-video bg-gray-950 rounded-xl flex items-center justify-center">
               <div className="text-center">
                 <BarChart3 className="w-24 h-24 text-green-400 mx-auto mb-4" />
-                <p className="text-2xl font-bold text-white">Interactive Dashboard Preview</p>
-                <p className="text-gray-400 mt-2">Track purchases, redemptions, and customer behavior in real-time</p>
+                <p className="text-2xl font-bold text-white">Standard Analytics Dashboard</p>
+                <p className="text-gray-400 mt-2">All partners get access to our standard analytics dashboard to track customer engagement and redemption trends.</p>
                 <Link to="/partners/login">
                   <Button className="mt-6 bg-green-500 hover:bg-green-600 text-white">
                     View Demo Dashboard
@@ -175,14 +175,14 @@ const PartnersPage = () => {
           >
             <h2 className="text-5xl font-black text-white mb-6">Ready to Join?</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Whether you're a dispensary, manufacturer, or cannabis-friendly brand, let's talk about how Buds can help you build lasting customer loyalty.
+              Ready to join our coalition loyalty program? Choose a membership tier and start rewarding your customers today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button 
                 size="lg" 
                 className="bg-white text-black hover:bg-gray-200 text-xl px-12 py-6 rounded-full font-bold"
               >
-                Schedule a Demo
+                Choose a Plan
               </Button>
               <Link to="/partners/login">
                 <Button 

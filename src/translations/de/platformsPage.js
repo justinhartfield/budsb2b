@@ -4,7 +4,7 @@ export const platformsPage = {
     badge: "🚀 Plattform-Integrationsprogramm 🌐",
     title: "Stärken Sie Ihren Marktplatz mit Buds Loyalty Rewards",
     subtitle: "Steigern Sie den GMV, gewinnen Sie Verkäufer, fördern Sie Netzwerkeffekte – ohne operativen Aufwand",
-    description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Loyalty-Lösung anzubieten. Ihre Händler spenden Überbestände, deren Kunden erhalten Prämien, und Sie steigern den Marktplatz-GMV ohne Rabattaktionen."
+    description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Koalitions-Loyalty-Lösung anzubieten. Ihre Händler zahlen eine monatliche Gebühr für die Teilnahme, ihre Kunden erhalten Prämien und Sie steigern den GMV des Marktplatzes."
   },
   
   benefits: {
@@ -12,12 +12,12 @@ export const platformsPage = {
     items: [
       {
         title: "Steigerung des Marktplatz-GMV",
-        description: "Verkäufer, die Buds nutzen, erzielen einen 23 % höheren durchschnittlichen Bestellwert (AOV). Mehr Umsatz pro Transaktion = mehr Plattformgebühren für Sie.",
+        description: "Verkäufer, die am Treueprogramm teilnehmen, verzeichnen einen höheren AOV. Mehr Umsatz pro Transaktion bedeutet mehr Plattformgebühren für Sie.",
         metric: "+23% AOV"
       },
       {
         title: "Gewinnen & Binden von Verkäufern",
-        description: "Bieten Sie eine sofort einsatzbereite Loyalty-Lösung. Verkäufer erhalten Enterprise-Grade Prämien, ohne diese selbst entwickeln zu müssen.",
+        description: "Bieten Sie eine fertige Treueprämienlösung mit erschwinglichen monatlichen Gebühren. Verkäufer erhalten Prämien auf Unternehmensebene, ohne sie selbst entwickeln zu müssen.",
         metric: "Verkäufer-USP"
       },
       {
@@ -27,7 +27,7 @@ export const platformsPage = {
       },
       {
         title: "Keine Haftung für die Plattform",
-        description: "Buds übernimmt die gesamte Prämienabwicklung, den Kundenservice und die Compliance. Kein operativer Aufwand für Ihre Plattform.",
+        description: "Buds übernimmt die gesamte Prämienabwicklung und den Kundenservice. Kein operativer Aufwand für Ihre Plattform.",
         metric: "Kein operativer Aufwand"
       }
     ]
@@ -75,26 +75,26 @@ export const platformsPage = {
   },
   
   revenueModels: {
-    title: "Erlösmodelle",
-    subtitle: "Vielfältige Möglichkeiten, Buds auf Ihrer Plattform zu monetarisieren",
+    title: "Mitgliedschaftsstufen",
+    subtitle: "Einfache Preise für Ihre Verkäufer",
     items: [
       {
-        model: "Provision auf Einlösungen",
-        description: "Verdienen Sie % des Prämienwerts, wenn Kunden Prämien einlösen",
-        example: "Kunde löst €50 Prämie ein → Plattform verdient €5 (10%)",
-        pros: ["Leistungsbasiert", "Keine Vorabkosten", "Skaliert mit Nutzung"]
+        model: "Basic-Stufe",
+        description: "500 €/Monat für Standardanalysen und Widget-Platzierung.",
+        example: "",
+        pros: []
       },
       {
-        model: "Upsell durch Verkäufer-Abonnement",
-        description: "Berechnen Sie Verkäufern für den Buds-Zugang als Premium-Funktion",
-        example: "€49/Monat für Buds-Integration im Pro-Plan",
-        pros: ["Wiederkehrende Einnahmen", "Erhöht den Planwert", "Planbare Einnahmen"]
+        model: "Wachstums-Stufe",
+        description: "1.500 €/Monat für erweiterte Analysen und Newsletter-Funktionen.",
+        example: "",
+        pros: []
       },
       {
-        model: "Hybrides Modell",
-        description: "Basis-Abonnement + Provision auf hochpreisige Einlösungen",
-        example: "€29/Monat + 5 % auf Prämien >€100",
-        pros: ["Ausgewogenes Risiko/Ertrag", "Mehrere Einnahmequellen", "Flexible Preisgestaltung"]
+        model: "Enterprise-Stufe",
+        description: "5.000 €/Monat für umfassende Analysen und Premium-Platzierung.",
+        example: "",
+        pros: []
       }
     ]
   },
@@ -157,16 +157,16 @@ export const platformsPage = {
     title: "Plattform-FAQs",
     items: [
       {
-        q: "Müssen unsere Verkäufer Inventar spenden?",
-        a: "Nein. Verkäufer können ausschließlich durch das Anbieten von Partnerprämien für ihre Kunden teilnehmen. Die Spende von Inventar verbessert deren Prämienplatzierung, ist jedoch optional."
+        q: "Sind Produktspenden für Verkäufer erforderlich?",
+        a: "Nein, Produktspenden sind für Verkäufer völlig optional und haben keinen Einfluss auf ihre Mitgliedschaftsstufe oder ihre Vorteile."
       },
       {
         q: "Wie steuern wir, welche Prämien auf unserer Plattform erscheinen?",
         a: "Volle Kontrolle über das Plattform-Admin-Panel. Prämien genehmigen oder ablehnen, Kategorien festlegen, nach Wertbereich filtern, geografisch einschränken oder spezifische Kollektionen kuratieren."
       },
       {
-        q: "Wie hoch ist unser Umsatzanteil?",
-        a: "Flexibel je nach Integrationstyp. Typischer Bereich: 10-20 % Provision auf Einlösungen oder Verkäufer-Abonnementmodell (€29-99/Monat). Individuelle Vereinbarungen für große Plattformen möglich."
+        q: "Wie erzielt unsere Plattform Einnahmen?",
+        a: "Sie können Verkäufern eine Prämie für den Zugang zur Buds-Integration berechnen und so eine neue Einnahmequelle für Ihre Plattform schaffen."
       },
       {
         q: "Wie funktioniert die Abwicklung?",

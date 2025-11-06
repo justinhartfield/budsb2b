@@ -374,9 +374,9 @@ const PartnerDashboardPage = () => {
               </thead>
               <tbody>
                 {[
-                  { name: 'Sarah Martinez', purchases: '$2,450', buds: '3,240', lastVisit: 'Today', tier: 'Pro' },
-                  { name: 'Mike Thompson', purchases: '$1,890', buds: '2,150', lastVisit: '2 days ago', tier: 'Standard' },
-                  { name: 'Jessica Lee', purchases: '$3,120', buds: '4,680', lastVisit: 'Today', tier: 'Pro' },
+                  { name: 'Sarah Martinez', purchases: '$2,450', buds: '3,240', lastVisit: 'Today', tier: 'Enterprise' },
+                  { name: 'Mike Thompson', purchases: '$1,890', buds: '2,150', lastVisit: '2 days ago', tier: 'Basic' },
+                  { name: 'Jessica Lee', purchases: '$3,120', buds: '4,680', lastVisit: 'Today', tier: 'Enterprise' },
                   { name: 'David Rodriguez', purchases: '$980', buds: '890', lastVisit: '1 week ago', tier: 'Standard' },
                   { name: 'Emma Kim', purchases: '$1,560', buds: '1,920', lastVisit: '3 days ago', tier: 'Standard' }
                 ].map((customer, index) => (
@@ -387,9 +387,9 @@ const PartnerDashboardPage = () => {
                     <td className="py-3 px-4 text-gray-400">{customer.lastVisit}</td>
                     <td className="py-3 px-4">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        customer.tier === 'Pro' 
-                          ? 'bg-yellow-500/20 text-yellow-400' 
-                          : 'bg-gray-700 text-gray-300'
+customer.tier === 'Enterprise' 
+                           ? 'bg-yellow-500/20 text-yellow-400' 
+                           : (customer.tier === 'Growth' ? 'bg-blue-500/20 text-blue-400' : 'bg-gray-700 text-gray-300')
                       }`}>
                         {customer.tier}
                       </span>

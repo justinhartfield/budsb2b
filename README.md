@@ -8,7 +8,7 @@ A comprehensive cannabis loyalty platform with consumer-facing rewards program a
 
 ## 🎯 Overview
 
-Buds is a cannabis loyalty program launching Summer 2026. Customers collect Buds when they purchase cannabis products and redeem them for exclusive rewards, experiences, and merchandise.
+Buds is a standard coalition loyalty program powered by Comarch. Members earn Buds credits on purchases (1 credit per €1 spent) and redeem them for rewards from a standard catalog.
 
 **Tagline:** *Rewards That Hit Different*
 
@@ -16,18 +16,16 @@ Buds is a cannabis loyalty program launching Summer 2026. Customers collect Buds
 
 ### Consumer Experience
 
-- **🏠 Home Dispensary** - Set your favorite dispensary and earn double Buds
-- **💳 NFC Card** - Tap to collect Buds at participating locations
-- **🎁 Rewards Catalog** - Browse and redeem exclusive rewards
-- **⭐ BudsPro Tier** - Invite-only premium membership with exclusive perks
+- **💳 Earn Credits** - Earn 1 Bud credit for every €1 spent at participating partners.
+- **🎁 Redeem Rewards** - Redeem credits for a wide range of rewards.
+- **🛍️ Reward Catalog** - 80% standard vouchers (Amazon, travel, etc.) and 20% premium, curated cannabis products.
 
 ### Partner Portal (B2B)
 
-- **📊 Real-Time Analytics** - Track customer behavior and purchases
-- **👥 Customer Insights** - Demographics, spending patterns, and loyalty metrics
-- **📈 Performance Metrics** - ROI tracking and engagement analytics
-- **🎯 Product Analytics** - Top-selling products and redemption trends
-- **🔒 Secure Access** - Enterprise-grade authentication and data protection
+- ** tiers** - Fixed membership tiers (Basic, Growth, Enterprise) with monthly fees (€500-€5k).
+- **📊 Standard Analytics** - All partners receive access to a standard analytics dashboard.
+- **📰 Newsletter Mentions** - Get featured in our member newsletter.
+- **🛍️ Optional Product Donations** - Partners can optionally donate products to the reward catalog (tracked in Airtable).
 
 ## 🚀 Tech Stack
 
@@ -145,28 +143,9 @@ The site is a standard React SPA and can be deployed to:
 - Background: Dark gray (#1a1a1a) to Black
 - Accent: Blue, Purple, Orange (for metrics)
 
-## 📊 Partner Dashboard Features
 
-The B2B partner portal provides comprehensive analytics:
 
-### Key Metrics
-- Active customer count with growth trends
-- Total purchase revenue
-- Rewards redemption tracking
-- Average customer lifetime value
 
-### Analytics
-- **Purchase Trends** - Daily/weekly/monthly revenue charts
-- **Customer Demographics** - Age distribution and segmentation
-- **Top Products** - Best-selling items with revenue data
-- **Top Redemptions** - Most popular rewards
-- **Recent Activity** - Real-time customer actions
-- **Customer Insights** - Individual customer profiles and behavior
-
-### Export & Reporting
-- Downloadable reports
-- Time range filtering (7d, 30d, 90d, 1y)
-- Search and filter capabilities
 
 ## 🔐 Security
 
@@ -178,18 +157,9 @@ The B2B partner portal provides comprehensive analytics:
   - Role-based access control
   - Data encryption
 
-## 🌟 BudsPro Perks
 
-Invite-only premium tier includes:
 
-1. **Backdated Buds** - Credit for past purchases
-2. **+1 Perks** - Additional benefit tier
-3. **Early Access** - First access to limited drops
-4. **Unique NFC Card** - Exclusive black card
-5. **Preferential Prices** - Member-only discounts
-6. **Sticker Packs & Emojis** - Exclusive digital content
-7. **Pro Rewards** - Exclusive tier rewards
-8. **Invite Only Experiences** - VIP events and tours
+
 
 ## 📝 License
 

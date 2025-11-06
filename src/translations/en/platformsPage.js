@@ -4,7 +4,7 @@ export const platformsPage = {
     badge: "🚀 Platform Integration Program 🌐",
     title: "Power your marketplace with Buds loyalty rewards",
     subtitle: "Increase GMV, attract sellers, drive network effects—without operational burden",
-    description: "Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting."
+    description: "Integrate Buds into your platform to offer sellers a ready-made coalition loyalty solution. Your merchants pay a monthly fee to participate, their customers earn rewards, and you increase marketplace GMV."
   },
   
   benefits: {
@@ -12,12 +12,12 @@ export const platformsPage = {
     items: [
       {
         title: "Increase Marketplace GMV",
-        description: "Sellers using Buds see 23% higher AOV. More revenue per transaction = more platform fees for you.",
+        description: "Sellers participating in the loyalty program see higher AOV. More revenue per transaction means more platform fees for you.",
         metric: "+23% AOV"
       },
       {
         title: "Attract & Retain Sellers",
-        description: "Offer a ready-made loyalty solution. Sellers get enterprise-grade rewards without building it themselves.",
+        description: "Offer a ready-made loyalty solution with affordable monthly fees. Sellers get enterprise-grade rewards without building it themselves.",
         metric: "Seller USP"
       },
       {
@@ -27,7 +27,7 @@ export const platformsPage = {
       },
       {
         title: "No Platform Liability",
-        description: "Buds handles all reward fulfillment, customer service, and compliance. Zero operational burden on your platform.",
+        description: "Buds handles all reward fulfillment and customer service. Zero operational burden on your platform.",
         metric: "Zero Ops"
       }
     ]
@@ -75,26 +75,26 @@ export const platformsPage = {
   },
   
   revenueModels: {
-    title: "Revenue models",
-    subtitle: "Multiple ways to monetize Buds on your platform",
+    title: "Membership Tiers",
+    subtitle: "Simple pricing for your sellers",
     items: [
       {
-        model: "Commission on Redemptions",
-        description: "Earn % of reward value when customers redeem",
-        example: "Customer redeems €50 reward → Platform earns €5 (10%)",
-        pros: ["Performance-based", "No upfront cost", "Scales with usage"]
+        model: "Basic Tier",
+        description: "€500/month for standard analytics and widget placement.",
+        example: "",
+        pros: []
       },
       {
-        model: "Seller Subscription Upsell",
-        description: "Charge sellers for Buds access as premium feature",
-        example: "€49/month for Buds integration in Pro plan",
-        pros: ["Recurring revenue", "Increases plan value", "Predictable income"]
+        model: "Growth Tier",
+        description: "€1,500/month for enhanced analytics and newsletter features.",
+        example: "",
+        pros: []
       },
       {
-        model: "Hybrid Model",
-        description: "Base subscription + commission on high-value redemptions",
-        example: "€29/month + 5% on rewards >€100",
-        pros: ["Balanced risk/reward", "Multiple revenue streams", "Flexible pricing"]
+        model: "Enterprise Tier",
+        description: "€5,000/month for comprehensive analytics and premium placement.",
+        example: "",
+        pros: []
       }
     ]
   },
@@ -157,16 +157,16 @@ export const platformsPage = {
     title: "Platform FAQs",
     items: [
       {
-        q: "Do our sellers need to donate inventory?",
-        a: "No. Sellers can participate purely by offering partner rewards to their customers. Donating inventory improves their reward placement, but it's optional."
+        q: "Are product donations required for sellers?",
+        a: "No, product donations are completely optional for sellers and do not affect their membership tier or benefits."
       },
       {
         q: "How do we control which rewards appear on our platform?",
         a: "Full control via platform admin panel. Approve/reject rewards, set categories, filter by value range, restrict by geography, or curate specific collections."
       },
       {
-        q: "What's our revenue share?",
-        a: "Flexible based on integration type. Typical range: 10-20% commission on redemptions, or seller subscription model (€29-99/month). Custom deals for large platforms."
+        q: "How does our platform earn revenue?",
+        a: "You can charge sellers a premium for access to the Buds integration, creating a new revenue stream for your platform."
       },
       {
         q: "How does fulfillment work?",

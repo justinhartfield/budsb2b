@@ -24,8 +24,8 @@ export const allTranslations = {
         },
         {
           objection: "We can't afford another loyalty program",
-          solution: "Buds costs you nothing",
-          details: "Zero setup fees, zero monthly costs, zero per-transaction fees. Partners donate overstock inventory—you simply integrate the widget. Your customers get more rewards, you pay nothing extra."
+          solution: "Flexible Membership Tiers",
+          details: "We offer a range of membership tiers with affordable monthly fees, from €500 to €5k. Choose the plan that fits your budget and goals."
         },
         {
           objection: "Our customers are already engaged",
@@ -199,8 +199,8 @@ export const allTranslations = {
             a: "Simply uninstall the plugin. No contracts, no penalties, no data migration needed. Your existing program continues unchanged."
           },
           {
-            q: "Do we need to donate inventory to use Buds?",
-            a: "No. You can integrate Buds purely to offer partner rewards to your customers. Donating inventory gets you better placement, but it's optional."
+            q: "Are product donations required?",
+            a: "No, product donations are completely optional and do not affect your membership tier or benefits. Partners who choose to donate products are tracked manually in Airtable."
           },
           {
             q: "How do customers redeem Buds rewards?",
@@ -1895,11 +1895,11 @@ allTranslations.partners = {
 
     sectionPlacement: {
       title: "Placement & Perks",
-      subtitle: "Your Donor Score determines visibility",
+      subtitle: "Your membership tier determines visibility",
       donorScore: {
-        title: "Donor Score Explained",
-        description: "Score = (Credit Earned / Monthly GMV) × 100",
-        example: "Example: €2,500 credit on €50K GMV = Score of 5.0"
+        title: "Membership Tiers Explained",
+        description: "Tiers are based on your monthly membership fee.",
+        
       },
       tiers: [
         {
@@ -2029,16 +2029,16 @@ allTranslations.partners = {
           a: "Yes. You choose exactly which SKUs to list as Buds rewards. Set quantities, expiration dates, and donation windows."
         },
         {
-          q: "What's the Donor Score?",
-          a: "A metric showing your donation level relative to your GMV. Higher scores = better placement in widgets and newsletters. Formula: (Credit Earned / Monthly GMV) × 100."
+          q: "How do the membership tiers work?",
+          a: "We have a fixed tier system (Basic, Growth, Enterprise) with corresponding monthly membership fees. Your tier determines your benefits."
         },
         {
           q: "Do I need to donate every month?",
-          a: "No. Donate when you have overstock. Your Donor Score is calculated monthly, so consistent donations improve placement over time."
+          a: "Our model is based on fixed membership tiers (Basic, Growth, Enterprise). Product donations are optional and tracked separately in Airtable; they do not influence your tier or benefits."
         },
         {
           q: "Can I stop donating anytime?",
-          a: "Yes. No contracts, no commitments. Your placement will adjust based on your current Donor Score, but you can pause or stop anytime."
+          a: "Yes, our contracts are flexible. You can upgrade, downgrade, or cancel your membership according to your business needs."
         },
         {
           q: "How does fulfillment work?",
@@ -2061,8 +2061,8 @@ allTranslations.partners = {
           a: "For co-pack, you handle customer service (it's your product). For central, Buds handles all customer service related to reward fulfillment."
         },
         {
-          q: "How do I track my Donor Score?",
-          a: "Real-time tracking in your partner dashboard. See credit earned, GMV, current score, and placement tier."
+          q: "How do I track my performance?",
+          a: "The partner dashboard provides real-time analytics on customer engagement and redemptions."
         },
         {
           q: "Can I donate products from other brands?",

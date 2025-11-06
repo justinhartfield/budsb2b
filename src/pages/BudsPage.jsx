@@ -59,19 +59,19 @@ const BudsPage = () => {
 
   const faqs = [
     { q: 'What is "Buds‑engaged GMV"?', a: 'Orders where the Buds widget was engaged (opened, reward viewed, or redeemed).' },
-    { q: 'Do we ever pay a fee?', a: 'No. Buds is 100% free to join and use. You only donate overstock inventory.' },
-    { q: 'How is our donation valued?', a: 'Based on your COGS (Cost of Goods Sold). Co-pack gets 1.25x credit, central gets 1.0x credit.' },
-    { q: "What's the difference between co‑pack and central?", a: 'Co-pack: you ship from your facility (1.25x credit). Central: ship to our 3PL (1.0x credit).' },
-    { q: "What if we can't donate every month?", a: 'Your Donor Score will decrease, affecting widget placement. You can catch up the following month.' },
+    { q: 'What are the membership fees?', a: 'We offer flexible membership tiers ranging from €500 to €5,000 per month. Choose the plan that fits your business needs.' },
+    { q: 'Are product donations required?', a: 'No, product donations are completely optional and do not affect your membership tier or benefits. They are tracked manually in Airtable.' },
+    { q: 'What rewards are available?', a: '80% standard vouchers (Amazon, travel, experiences) via Comarch and 20% premium cannabis products (manually curated, limited inventory).' },
+    
     { q: 'Returns & damages?', a: 'Co-pack: you handle. Central: we handle and deduct from your credit balance.' },
     { q: 'Can pharmacies participate?', a: 'Yes! Non-Rx wellness items, supplements, and health accessories are eligible.' },
-    { q: 'What insights do we get?', a: 'Aggregated analytics on engagement, redemptions, and performance. Higher Donor Score = deeper insights.' },
+    { q: 'What insights do we get?', a: 'All partners receive access to a standard analytics dashboard with insights on engagement, redemptions, and performance.' },
     { q: 'What SKUs are ineligible?', a: 'Cannabis/THC products, nicotine/vapes, prescription medicines, and hazardous goods.' },
-    { q: 'How do we get featured in the newsletter?', a: 'Maintain a Donor Score of 1.2+ for priority placement and 1.5+ for top featured spots.' },
-    { q: 'How fast can we go live?', a: '5-minute plugin installation. Start donating and earning Donor Score immediately.' },
+    { q: 'How do we get featured in the newsletter?', a: 'Partners in our Growth and Enterprise tiers get featured in our newsletter.' },
+    { q: 'How fast can we go live?', a: '5-minute plugin installation. Once you select a membership tier, you can go live immediately.' },
     { q: 'Can we limit rewards by geography or product lines?', a: 'Yes, configure targeting in your partner dashboard settings.' },
     { q: 'How do customers see the reward?', a: 'Buds widget appears at checkout when cart value meets threshold. Members can browse and add rewards.' },
-    { q: "What happens to donated stock that doesn't move?", a: 'We rotate inventory and may offer it to other partners or donate to community programs.' },
+    { q: 'How are rewards managed?', a: 'Standard vouchers are managed through Comarch. Premium cannabis products are manually curated with limited inventory.' },
     { q: 'Can platforms (e.g., Weed.de) join?', a: 'Yes! Contact us about platform-specific integration options.' }
   ]
 
@@ -312,97 +312,58 @@ const BudsPage = () => {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
-            🎯 Monthly target (simple rule of thumb)
+            💳 Membership Tiers
           </h2>
           
           <p className="text-lg text-gray-600 text-center mb-4 max-w-3xl mx-auto">
-            Aim to donate COGS ≈ 0.8% of your Buds‑engaged GMV if co‑packing, or ≈ 1.0% if using central fulfillment.
+            Choose the membership tier that fits your business needs. All tiers include our standard loyalty widget and analytics dashboard.
           </p>
           
           <p className="text-sm text-gray-500 text-center mb-12">
-            Buds‑engaged GMV = orders where the Buds widget was engaged (opened, reward viewed, or redeemed).
+            Product donations are optional and do not affect your tier or benefits.
           </p>
 
           <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Interactive Calculator</h3>
-            <p className="text-gray-600 text-center mb-6">Adjust your Buds-engaged GMV to see donation targets</p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Simple Pricing</h3>
+            <p className="text-gray-600 text-center mb-6">Fixed monthly fees based on your business size</p>
             
-            <div className="mb-8">
-              <label className="block text-sm font-semibold text-gray-700 mb-3">
-                Monthly Buds-engaged GMV: {gmv.toLocaleString()} €
-              </label>
-              <input
-                type="range"
-                min="10000"
-                max="500000"
-                step="10000"
-                value={gmv}
-                onChange={(e) => setGmv(Number(e.target.value))}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-500"
-              />
-              <div className="flex justify-between text-xs text-gray-500 mt-2">
-                <span>€10k</span>
-                <span>€250k</span>
-                <span>€500k</span>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-                <h4 className="text-sm font-semibold text-green-700 mb-2">Co-pack Target (0.8%)</h4>
-                <p className="text-3xl font-black text-green-600 mb-1">{Math.round(copackTarget).toLocaleString()} €</p>
-                <p className="text-sm text-green-600">Credit: {Math.round(copackCredit).toLocaleString()} €</p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Basic</h4>
+                <p className="text-3xl font-black text-green-600 mb-1">€500</p>
+                <p className="text-sm text-gray-600 mb-4">per month</p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>✓ Standard analytics dashboard</li>
+                  <li>✓ Loyalty widget</li>
+                  <li>✓ Basic support</li>
+                </ul>
               </div>
 
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-                <h4 className="text-sm font-semibold text-blue-700 mb-2">Central Target (1.0%)</h4>
-                <p className="text-3xl font-black text-blue-600 mb-1">{Math.round(centralTarget).toLocaleString()} €</p>
-                <p className="text-sm text-blue-600">Credit: {Math.round(centralCredit).toLocaleString()} €</p>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Growth</h4>
+                <p className="text-3xl font-black text-blue-600 mb-1">€1,500</p>
+                <p className="text-sm text-gray-600 mb-4">per month</p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>✓ Everything in Basic</li>
+                  <li>✓ Newsletter mentions</li>
+                  <li>✓ Priority support</li>
+                </ul>
+              </div>
+
+              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Enterprise</h4>
+                <p className="text-3xl font-black text-yellow-600 mb-1">€5,000</p>
+                <p className="text-sm text-gray-600 mb-4">per month</p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>✓ Everything in Growth</li>
+                  <li>✓ Premium placement</li>
+                  <li>✓ Dedicated support</li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Static Examples</h3>
-            
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Buds-engaged GMV</p>
-                    <p className="text-2xl font-bold text-gray-900">€50,000</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Co-pack target</p>
-                    <p className="text-lg font-semibold text-green-600">€400 COGS</p>
-                    <p className="text-xs text-gray-500">(e.g., ~40 tees @ €10)</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Central target</p>
-                    <p className="text-lg font-semibold text-blue-600">€500 COGS</p>
-                    <p className="text-xs text-gray-500">(e.g., ~50 tees @ €10)</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Buds-engaged GMV</p>
-                    <p className="text-2xl font-bold text-gray-900">€250,000</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Co-pack target</p>
-                    <p className="text-lg font-semibold text-green-600">€2,000 COGS</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Central target</p>
-                    <p className="text-lg font-semibold text-blue-600">€2,500 COGS</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -634,12 +595,12 @@ const BudsPage = () => {
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Donor Score</h3>
-              <p className="text-gray-600">We compute a monthly Donor Score = (credited donations / target).</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Membership Tiers</h3>
+              <p className="text-gray-600">We offer three simple membership tiers: Basic, Growth, and Enterprise.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Higher Scores</h3>
-              <p className="text-gray-600">Higher Donor Scores → top widget placement, more newsletter slots, and deeper insights.</p>
+              <p className="text-gray-600">Higher tiers unlock more benefits, including better widget placement and newsletter features.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Tiebreakers</h3>
@@ -693,7 +654,7 @@ const BudsPage = () => {
                       
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <p className="text-xs font-semibold text-green-800">Advertiser Exclusive Offer</p>
-                        <p className="text-xs text-green-700">Donor Score 1.2+ gets priority access</p>
+                        <p className="text-xs text-green-700">Growth & Enterprise tiers get priority access</p>
                       </div>
                     </div>
                     
@@ -732,7 +693,7 @@ const BudsPage = () => {
               {/* Widget Placement Hierarchy */}
               <div className="space-y-4">
                 <h4 className="text-xl font-bold text-gray-900 mb-4">🎯 Widget Placement</h4>
-                <p className="text-sm text-gray-600 mb-6">Donor Score Hierarchy</p>
+                <p className="text-sm text-gray-600 mb-6">Membership Tier Benefits</p>
                 
                 <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
@@ -795,7 +756,7 @@ const BudsPage = () => {
                 </div>
 
                 <p className="text-center text-sm font-semibold text-gray-900 mt-6">
-                  Higher Donor Score = Better Placement & More Features
+                  Higher Tier = Better Placement & More Features
                 </p>
               </div>
             </div>
@@ -898,7 +859,7 @@ const BudsPage = () => {
             {[
               { num: '1', title: 'Apply', desc: 'Tell us your catalog + overstock categories' },
               { num: '2', title: 'Install the Buds widget', desc: 'Shopify/Woo plug‑in installation' },
-              { num: '3', title: 'Donate', desc: 'Co‑pack (best) or ship to our EU 3PL. Start earning Donor Score and placement' }
+              { num: '3', title: 'Go Live', desc: 'Select your membership tier and go live. Optional product donations can be managed via Airtable.' }
             ].map((step, i) => (
               <div key={i} className="bg-white rounded-xl p-8 border border-gray-200 text-center">
                 <div className="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-4 mx-auto">
