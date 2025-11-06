@@ -62,7 +62,7 @@ const BudsPage = () => {
     { q: 'Are product donations required?', a: 'No, product donations are completely optional and do not affect your membership tier or benefits. They are tracked manually in Airtable.' },
     { q: 'What rewards are available?', a: '80% standard vouchers (Amazon, travel, experiences) via Comarch and 20% premium cannabis products (manually curated, limited inventory).' },
     
-    { q: 'Returns & damages?', a: 'Co-pack: you handle. Central: we handle and deduct from your credit balance.' },
+    { q: 'Returns & damages?', a: 'For optional product donations, you handle returns. For all other rewards, Buds handles returns and customer service.' },
     { q: 'Can pharmacies participate?', a: 'Yes! Non-Rx wellness items, supplements, and health accessories are eligible.' },
     { q: 'What insights do we get?', a: 'All partners receive access to a standard analytics dashboard with insights on engagement, redemptions, and performance.' },
     { q: 'What SKUs are ineligible?', a: 'Cannabis/THC products, nicotine/vapes, prescription medicines, and hazardous goods.' },

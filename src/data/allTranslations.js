@@ -1895,16 +1895,16 @@ allTranslations.partners = {
 
     sectionPlacement: {
       title: "Placement & Perks",
-      subtitle: "Your membership tier determines visibility",
-      donorScore: {
+      subtitle: "Membership tiers offer different levels of visibility and benefits",
+      membershipTiers: {
         title: "Membership Tiers Explained",
         description: "Tiers are based on your monthly membership fee.",
         
       },
       tiers: [
         {
-          title: "Top Placement",
-          score: "Score 1.5+",
+          title: "Enterprise",
+          title: "Enterprise",
           color: "yellow",
           features: [
             "First position in widget",
@@ -1913,8 +1913,8 @@ allTranslations.partners = {
           ]
         },
         {
-          title: "Mid Placement",
-          score: "Score 1.0-1.4",
+          title: "Growth",
+          title: "Growth",
           color: "blue",
           features: [
             "Standard widget rotation",
@@ -1923,8 +1923,8 @@ allTranslations.partners = {
           ]
         },
         {
-          title: "Standard Placement",
-          score: "Score 0.8-0.9",
+          title: "Basic",
+          title: "Basic",
           color: "gray",
           features: [
             "Rotation-based display",
@@ -1933,7 +1933,7 @@ allTranslations.partners = {
         },
         {
           title: "Below Target",
-          score: "Score <0.8",
+          title: "Below Target",
           color: "red",
           features: [
             "Limited display",
@@ -1942,7 +1942,7 @@ allTranslations.partners = {
         }
       ],
       benefits: {
-        title: "Top Donor Benefits",
+        title: "Membership Benefits",
         items: [
           "Priority widget placement",
           "Featured in weekly newsletter (12K+ subscribers)",
@@ -2270,16 +2270,16 @@ allTranslations.partners = {
 
     sectionPlacement: {
       title: "Platzierung & Vorteile",
-      subtitle: "Ihr Spender-Score bestimmt die Sichtbarkeit",
-      donorScore: {
-        title: "Spender-Score erklärt",
-        description: "Score = (Verdientes Credit / Monatlicher GMV) × 100",
-        example: "Beispiel: €2.500 Credit bei €50K GMV = Score von 5,0"
+      subtitle: "Mitgliedschaftsstufen bieten unterschiedliche Sichtbarkeitsstufen und Vorteile",
+      membershipTiers: {
+        title: "Mitgliedschaftsstufen erklärt",
+        description: "Die Stufen basieren auf Ihrer monatlichen Mitgliedsgebühr.",
+        
       },
       tiers: [
         {
-          title: "Top-Platzierung",
-          score: "Score 1,5+",
+          title: "Enterprise",
+          title: "Enterprise",
           color: "yellow",
           features: [
             "Erste Position im Widget",
@@ -2288,8 +2288,8 @@ allTranslations.partners = {
           ]
         },
         {
-          title: "Mittlere Platzierung",
-          score: "Score 1,0-1,4",
+          title: "Growth",
+          title: "Growth",
           color: "blue",
           features: [
             "Standard-Widget-Rotation",
@@ -2298,8 +2298,8 @@ allTranslations.partners = {
           ]
         },
         {
-          title: "Standard-Platzierung",
-          score: "Score 0,8-0,9",
+          title: "Basic",
+          title: "Basic",
           color: "gray",
           features: [
             "Rotationsbasierte Anzeige",
@@ -2308,7 +2308,7 @@ allTranslations.partners = {
         },
         {
           title: "Unter Ziel",
-          score: "Score <0,8",
+          title: "Below Target",
           color: "red",
           features: [
             "Begrenzte Anzeige",
@@ -2404,16 +2404,13 @@ allTranslations.partners = {
           a: "Ja. Sie wählen genau, welche SKUs Sie als Buds-Prämien auflisten. Mengen, Ablaufdaten und Spendenfenster festlegen."
         },
         {
-          q: "Was ist der Spender-Score?",
-          a: "Eine Metrik, die Ihr Spendenniveau relativ zu Ihrem GMV zeigt. Höhere Scores = bessere Platzierung in Widgets und Newslettern. Formel: (Verdientes Credit / Monatlicher GMV) × 100."
+          q: ."
         },
         {
-          q: "Muss ich jeden Monat spenden?",
-          a: "Nein. Spenden Sie, wenn Sie Überbestände haben. Ihr Spender-Score wird monatlich berechnet, also verbessern konsistente Spenden die Platzierung im Laufe der Zeit."
+          q: ."
         },
         {
-          q: "Kann ich jederzeit aufhören zu spenden?",
-          a: "Ja. Keine Verträge, keine Verpflichtungen. Ihre Platzierung passt sich basierend auf Ihrem aktuellen Spender-Score an, aber Sie können jederzeit pausieren oder stoppen."
+          q:n."
         },
         {
           q: "Wie funktioniert die Erfüllung?",
@@ -2436,8 +2433,7 @@ allTranslations.partners = {
           a: "Für Co-Pack übernehmen Sie den Kundenservice (es ist Ihr Produkt). Für zentral übernimmt Buds allen Kundenservice im Zusammenhang mit Prämienerfüllung."
         },
         {
-          q: "Wie verfolge ich meinen Spender-Score?",
-          a: "Echtzeit-Tracking in Ihrem Partner-Dashboard. Sehen Sie verdientes Credit, GMV, aktuellen Score und Platzierungsstufe."
+          q:e."
         },
         {
           q: "Kann ich Produkte anderer Marken spenden?",

@@ -171,7 +171,7 @@ const ManufacturersPage = () => {
     { q: "How do we get consumer data?", a: "Aggregated, GDPR-compliant analytics via manufacturer dashboard. See redemption patterns, demographics, and conversion rates. No individual consumer PII shared." },
     {q: "What are the membership fees?", a: "We offer flexible membership tiers with monthly fees ranging from €500 to €5,000. Choose the plan that best fits your needs." },
     { q: "Can we target specific consumer segments?", a: "Yes. Target by age, location, purchase history, or loyalty tier. Sampling campaigns can be hyper-targeted to your ideal customer profile." },
-    { q: "How does fulfillment work?", a: "Two options: (1) Co-pack - you ship directly to consumers when redeemed. (2) Central - send inventory to our EU 3PL, we handle all fulfillment." },
+    { q: "How does fulfillment work?", a: "For optional product donations, you can ship directly to consumers or send inventory to our EU 3PL. For all standard rewards, fulfillment is handled by the Buds network." },
     { q: "What if products don't get redeemed?", a: "Inventory rotates based on demand. Low-performing products can be withdrawn. For central fulfillment, we return unsold inventory after 90 days (your choice)." },
     { q: "Can we A/B test products?", a: "Yes. Distribute variant A to one segment, variant B to another. Compare redemption rates and feedback to inform product decisions." },
     { q: "Do you work with international manufacturers?", a: "Yes, if you can fulfill to EU addresses. Many non-EU brands use our central 3PL to handle EU distribution and compliance." }
