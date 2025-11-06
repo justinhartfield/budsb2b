@@ -116,18 +116,7 @@ export const sectionContent = {
       ]
     }
   },
-  howDonationsWork: {
-    en: {
-      title: "How the Coalition Works",
-      ,
-      
-    },
-    de: {
-      title: "Wie die Koalition funktioniert",
-      ,
-      
-    }
-  },
+
   cta: {
     en: {
       applyToPartner: "Apply to Partner",
