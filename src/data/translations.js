@@ -42,8 +42,8 @@ export const translations = {
         },
         {
           objection: "We can't afford another loyalty program",
-          solution: "Buds costs you nothing",
-          details: "Zero setup fees, zero monthly costs, zero per-transaction fees. Partners donate overstock inventory—you simply integrate the widget. Your customers get more rewards, you pay nothing extra."
+          solution: "Flexible Membership Tiers",
+          details: "We offer a range of membership tiers with affordable monthly fees, from €500 to €5k. Choose the plan that fits your budget and goals."
         },
         {
           objection: "Our customers are already engaged",
@@ -139,8 +139,8 @@ export const translations = {
         },
         {
           objection: "Wir können uns kein weiteres Treueprogramm leisten",
-          solution: "Buds kostet Sie nichts",
-          details: "Null Einrichtungsgebühren, null monatliche Kosten, null Transaktionsgebühren. Partner spenden Überbestände – Sie integrieren einfach das Widget. Ihre Kunden erhalten mehr Prämien, Sie zahlen nichts extra."
+          solution: "Flexible Mitgliedschaftsstufen",
+          details: "Wir bieten eine Reihe von Mitgliedschaftsstufen mit erschwinglichen monatlichen Gebühren von 500 € bis 5.000 €. Wählen Sie den Plan, der zu Ihrem Budget und Ihren Zielen passt."
         },
         {
           objection: "Unsere Kunden sind bereits engagiert",
@@ -225,7 +225,7 @@ export const translations = {
       badge: "🚀 Platform Integration Program 🌐",
       headline: "Power your marketplace with",
       subheadline: "Buds loyalty rewards",
-      description: "Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting.",
+      description: "Integrate Buds into your platform to offer sellers a ready-made coalition loyalty solution. Your merchants pay a monthly fee to participate, their customers earn rewards, and you increase marketplace GMV.",
       
       benefitsTitle: "Why platforms choose Buds",
       benefits: [
@@ -264,7 +264,7 @@ export const translations = {
       badge: "🚀 Plattform-Integrationsprogramm 🌐",
       headline: "Stärken Sie Ihren Marktplatz mit",
       subheadline: "Buds-Treueprämien",
-      description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Treueprogramm-Lösung anzubieten. Ihre Händler spenden Überbestände, ihre Kunden verdienen Prämien und Sie steigern den Marktplatz-GMV ohne Rabatte.",
+      description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Koalitions-Loyalty-Lösung anzubieten. Ihre Händler zahlen eine monatliche Gebühr für die Teilnahme, ihre Kunden erhalten Prämien und Sie steigern den GMV des Marktplatzes.",
       
       benefitsTitle: "Warum Plattformen Buds wählen",
       benefits: [
@@ -305,9 +305,9 @@ export const translations = {
   pharmacies: {
     en: {
       badge: "💊 Pharmacy Rewards Program 🏥",
-      headline: "Turn wellness overstock into",
+      headline: "Enhance Patient Loyalty with",
       subheadline: "patient loyalty rewards",
-      description: "Pharmacies can donate non-Rx wellness items, supplements, and health accessories as Buds rewards. Increase patient retention and move slow-moving inventory without public discounting. GDPR-compliant and pharmacy-safe.",
+      description: "Pharmacies can join our coalition loyalty program to increase patient retention and offer a wider range of rewards. Our program is GDPR-compliant and pharmacy-safe.",
       
       benefitsTitle: "Why pharmacies choose Buds",
       eligibleTitle: "What counts as eligible inventory",
@@ -325,9 +325,9 @@ export const translations = {
     },
     de: {
       badge: "💊 Apotheken-Prämienprogramm 🏥",
-      headline: "Verwandeln Sie Wellness-Überbestände in",
+      headline: "Steigern Sie die Patientenbindung mit",
       subheadline: "Patientenbindungsprämien",
-      description: "Apotheken können nicht-verschreibungspflichtige Wellness-Artikel, Nahrungsergänzungsmittel und Gesundheitszubehör als Buds-Prämien spenden. Erhöhen Sie die Patientenbindung und bewegen Sie langsam drehende Bestände ohne öffentliche Rabatte. DSGVO-konform und apothekensicher.",
+      description: "Apotheken können unserem Koalitions-Treueprogramm beitreten, um die Patientenbindung zu erhöhen und eine breitere Palette von Prämien anzubieten. Unser Programm ist DSGVO-konform und apothekensicher.",
       
       benefitsTitle: "Warum Apotheken Buds wählen",
       eligibleTitle: "Was als förderfähiger Bestand gilt",

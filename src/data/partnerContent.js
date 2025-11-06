@@ -2,14 +2,14 @@ export const partnerContent = {
   partners: {
     en: {
       badge: "🎁 Partner Rewards Program 📈",
-      headline: "Free to join. No fees. Donate overstock to power Buds rewards.",
-      description: "Turn excess inventory into conversions—without public discounting. Partners simply donate monthly overstock (co‑pack or send to our 3PL). Top donors get prime widget placement and newsletter features.",
+      headline: "Join the Coalition. Grow Your Brand.",
+      description: "Join our coalition loyalty program and offer your customers a wide range of rewards. Our membership tiers are designed to fit your business needs and help you grow your brand.",
       targetAudience: "Retailers & Brands"
     },
     de: {
       badge: "🎁 Partner-Prämienprogramm 📈",
-      headline: "Kostenlos beitreten. Keine Gebühren. Spenden Sie Überbestände für Buds-Prämien.",
-      description: "Verwandeln Sie überschüssiges Inventar in Conversions – ohne öffentliche Rabatte. Partner spenden einfach monatliche Überbestände (Co-Pack oder an unser 3PL senden). Top-Spender erhalten erstklassige Widget-Platzierung und Newsletter-Features.",
+      headline: "Treten Sie der Koalition bei. Steigern Sie Ihre Marke.",
+      description: "Treten Sie unserem Koalitions-Treueprogramm bei und bieten Sie Ihren Kunden eine breite Palette von Prämien. Unsere Mitgliedschaftsstufen sind auf Ihre Geschäftsanforderungen zugeschnitten und helfen Ihnen, Ihre Marke auszubauen.",
       targetAudience: "Einzelhändler & Marken"
     }
   },
@@ -17,13 +17,13 @@ export const partnerContent = {
     en: {
       badge: "🚀 Platform Integration Program 🌐",
       headline: "Power your marketplace with Buds loyalty rewards.",
-      description: "Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting.",
+      description: "Integrate Buds into your platform to offer sellers a ready-made coalition loyalty solution. Your merchants pay a monthly fee to participate, their customers earn rewards, and you increase marketplace GMV.",
       targetAudience: "Marketplaces & Platforms"
     },
     de: {
       badge: "🚀 Plattform-Integrationsprogramm 🌐",
       headline: "Stärken Sie Ihren Marktplatz mit Buds-Treueprämien.",
-      description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Treueprogramm-Lösung anzubieten. Ihre Händler spenden Überbestände, ihre Kunden verdienen Prämien und Sie steigern den Marktplatz-GMV ohne Rabatte.",
+      description: "Integrieren Sie Buds in Ihre Plattform, um Verkäufern eine fertige Koalitions-Loyalty-Lösung anzubieten. Ihre Händler zahlen eine monatliche Gebühr für die Teilnahme, ihre Kunden erhalten Prämien und Sie steigern den GMV des Marktplatzes.",
       targetAudience: "Marktplätze & Plattformen"
     }
   },
@@ -31,13 +31,13 @@ export const partnerContent = {
     en: {
       badge: "💊 Pharmacy Rewards Program 🏥",
       headline: "Turn wellness overstock into patient loyalty rewards.",
-      description: "Pharmacies can donate non-Rx wellness items, supplements, and health accessories as Buds rewards. Increase patient retention and move slow-moving inventory without public discounting. GDPR-compliant and pharmacy-safe.",
+      description: "Pharmacies can join our coalition loyalty program to increase patient retention and offer a wider range of rewards. Our program is GDPR-compliant and pharmacy-safe.",
       targetAudience: "Pharmacy Chains"
     },
     de: {
       badge: "💊 Apotheken-Prämienprogramm 🏥",
       headline: "Verwandeln Sie Wellness-Überbestände in Patientenbindungsprämien.",
-      description: "Apotheken können nicht-verschreibungspflichtige Wellness-Artikel, Nahrungsergänzungsmittel und Gesundheitszubehör als Buds-Prämien spenden. Erhöhen Sie die Patientenbindung und bewegen Sie langsam drehende Bestände ohne öffentliche Rabatte. DSGVO-konform und apothekensicher.",
+      description: "Apotheken können unserem Koalitions-Treueprogramm beitreten, um die Patientenbindung zu erhöhen und eine breitere Palette von Prämien anzubieten. Unser Programm ist DSGVO-konform und apothekensicher.",
       targetAudience: "Apothekenketten"
     }
   },
@@ -118,30 +118,14 @@ export const sectionContent = {
   },
   howDonationsWork: {
     en: {
-      title: "How donations work",
-      copack: {
-        title: "Co-pack (preferred)",
-        description: "You ship the Reward from your own facility.",
-        credit: "€1 of your COGS = €1.25 of donation credit"
-      },
-      central: {
-        title: "Central (Buds 3PL)",
-        description: "Send stock to our EU 3PL; we fulfill redemptions across the network.",
-        credit: "€1 COGS = €1.00 credit"
-      }
+      title: "How the Coalition Works",
+      ,
+      
     },
     de: {
-      title: "Wie Spenden funktionieren",
-      copack: {
-        title: "Co-Pack (bevorzugt)",
-        description: "Sie versenden die Prämie von Ihrer eigenen Einrichtung.",
-        credit: "1 € Ihrer Herstellungskosten = 1,25 € Spendenguthaben"
-      },
-      central: {
-        title: "Zentral (Buds 3PL)",
-        description: "Senden Sie Bestände an unser EU-3PL; wir erfüllen Einlösungen im gesamten Netzwerk.",
-        credit: "1 € Herstellungskosten = 1,00 € Guthaben"
-      }
+      title: "Wie die Koalition funktioniert",
+      ,
+      
     }
   },
   cta: {

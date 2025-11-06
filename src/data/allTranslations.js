@@ -7,7 +7,7 @@ export const allTranslations = {
       badge: "🔄 Loyalty Augmentation Program ✨",
       headline: "Already have a loyalty program?",
       subheadline: "Don't replace it. Supercharge it.",
-      description: "Buds integrates alongside your existing loyalty program to offer additional rewards from partner brands. Your customers get more value, you get more engagement, zero extra cost.",
+      description: "Buds integrates with your existing loyalty program to offer a broader range of rewards through a coalition model. Your customers get more value and you get more engagement.",
       cta1: "See Integration Options",
       cta2: "Talk to Integration Expert",
       
@@ -204,7 +204,7 @@ export const allTranslations = {
           },
           {
             q: "How do customers redeem Buds rewards?",
-            a: "At checkout, they see available Buds rewards alongside your existing options. One click adds it to their order. We handle fulfillment (co-pack or central)."
+            a: "At checkout, they see available Buds rewards alongside your existing options. One click adds it to their order. Standard voucher rewards are fulfilled by Comarch, and premium cannabis products are fulfilled by us."
           },
           {
             q: "Will this cannibalize our existing reward redemptions?",
@@ -232,7 +232,7 @@ export const allTranslations = {
       badge: "🔄 Treueprogramm-Erweiterungsprogramm ✨",
       headline: "Haben Sie bereits ein Treueprogramm?",
       subheadline: "Ersetzen Sie es nicht. Verstärken Sie es.",
-      description: "Buds integriert sich neben Ihrem bestehenden Treueprogramm, um zusätzliche Prämien von Partnermarken anzubieten. Ihre Kunden erhalten mehr Wert, Sie erhalten mehr Engagement, null zusätzliche Kosten.",
+      description: "Buds integriert sich in Ihr bestehendes Treueprogramm, um über ein Koalitionsmodell eine breitere Palette von Prämien anzubieten. Ihre Kunden erhalten mehr Wert und Sie mehr Engagement.",
       cta1: "Integrationsoptionen anzeigen",
       cta2: "Mit Integrationsexperten sprechen",
       
@@ -249,8 +249,8 @@ export const allTranslations = {
         },
         {
           objection: "Wir können uns kein weiteres Treueprogramm leisten",
-          solution: "Buds kostet Sie nichts",
-          details: "Null Einrichtungsgebühren, null monatliche Kosten, null Transaktionsgebühren. Partner spenden Überbestände – Sie integrieren einfach das Widget. Ihre Kunden erhalten mehr Prämien, Sie zahlen nichts extra."
+          solution: "Flexible Mitgliedschaftsstufen",
+          details: "Wir bieten eine Reihe von Mitgliedschaftsstufen mit erschwinglichen monatlichen Gebühren von 500 € bis 5.000 €. Wählen Sie den Plan, der zu Ihrem Budget und Ihren Zielen passt."
         },
         {
           objection: "Unsere Kunden sind bereits engagiert",
@@ -464,7 +464,7 @@ allTranslations.platforms = {
     badge: "🚀 Platform Integration Program 🌐",
     headline: "Power your marketplace with",
     subheadline: "Buds loyalty rewards",
-    description: "Integrate Buds into your platform to offer sellers a ready-made loyalty solution. Your merchants donate overstock, their customers earn rewards, and you increase marketplace GMV without discounting.",
+    description: "Integrate Buds into your platform to offer sellers a ready-made coalition loyalty solution. Your merchants pay a monthly fee to participate, their customers earn rewards, and you increase marketplace GMV.",
     cta1: "Apply as Platform",
     cta2: "Integration Docs",
     cta3: "Platform Dashboard Demo",
@@ -893,7 +893,7 @@ allTranslations.pharmacies = {
     badge: "💊 Pharmacy Rewards Program 🏥",
     headline: "Turn wellness overstock into",
     subheadline: "patient loyalty rewards",
-    description: "Pharmacies can donate non-Rx wellness items, supplements, and health accessories as Buds rewards. Increase patient retention and move slow-moving inventory without public discounting. GDPR-compliant and pharmacy-safe.",
+    description: "Pharmacies can join our coalition loyalty program to increase patient retention and offer a wider range of rewards. Our program is GDPR-compliant and pharmacy-safe.",
     cta1: "Apply as Pharmacy",
     cta2: "Compliance Documentation",
     cta3: "Pharmacy Dashboard Demo",
@@ -979,7 +979,7 @@ allTranslations.pharmacies = {
         {
           chain: "Regional Pharmacy Chain (45 locations)",
           challenge: "€120K in slow-moving vitamin inventory, patient churn to online competitors",
-          solution: "Donated vitamins as Buds rewards, positioned as exclusive patient benefit",
+          solution: "Offered premium products through the Buds reward catalog, positioned as an exclusive patient benefit",
           result: "Cleared 80% of slow inventory in 3 months. Patient retention increased 34%. New patient signups +22%.",
           metric: "+34% retention"
         },
@@ -1048,11 +1048,11 @@ allTranslations.pharmacies = {
         },
         {
           q: "Do we need to donate inventory?",
-          a: "No. You can participate purely by offering partner rewards to patients. Donating slow-moving wellness inventory improves your placement, but it's optional."
+          a: "No, product donations are optional and do not affect your membership tier. All partners get standard benefits."
         },
         {
           q: "How do patients redeem rewards?",
-          a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. We handle fulfillment—either you ship (co-pack) or our 3PL ships (central)."
+          a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. Reward fulfillment is handled by the Buds network."
         },
         {
           q: "What about patient privacy?",
@@ -1072,7 +1072,7 @@ allTranslations.pharmacies = {
         },
         {
           q: "What's the cost?",
-          a: "Free to join, no monthly fees. You only 'pay' by donating eligible inventory (optional). If you don't donate, you simply offer partner rewards to patients at no cost."
+          a: "We have fixed monthly membership fees. Product donations are entirely optional and separate from the membership."
         }
       ]
     },
@@ -1410,8 +1410,8 @@ allTranslations.manufacturers = {
       models: [
         {
           model: "COGS Credit Model",
-          description: "Donate inventory, earn credit based on COGS",
-          details: "€1 COGS = €1.25 credit (co-pack) or €1.00 credit (central 3PL)",
+          description: "Join a membership tier and get access to the coalition",
+          details: "Membership provides access to the coalition loyalty program and its benefits.",
           bestFor: "Brands with excess inventory to move"
         },
         {
@@ -1442,7 +1442,7 @@ allTranslations.manufacturers = {
         {
           brand: "Vitamin & Supplement Brand",
           challenge: "€95K in overstock seasonal vitamins (immunity boosters post-winter)",
-          solution: "Donated overstock as Buds rewards, positioned as 'exclusive wellness bonus'",
+          solution: "Utilized the Buds coalition program to offer their overstock as premium rewards, positioning it as an 'exclusive wellness bonus'",
           result: "Cleared 100% of inventory in 8 weeks. No brand damage. Acquired 2,400 new customers from redemptions.",
           metric: "2,400 customers"
         },
@@ -1469,7 +1469,7 @@ allTranslations.manufacturers = {
         },
         {
           q: "What's the minimum commitment?",
-          a: "None. Start with a small sampling campaign (100 units) or donate overstock as you have it. No contracts, no minimums, no monthly fees."
+          a: "Our membership contracts are flexible, with options to upgrade, downgrade, or cancel according to your business needs."
         },
         {
           q: "Can we target specific consumer segments?",
@@ -1725,7 +1725,7 @@ allTranslations.manufacturers = {
 allTranslations.partners = {
   en: {
     badge: "🎁 Partner Rewards Program 📈",
-    headline: "Free to join. No fees. Donate overstock to power Buds rewards.",
+    headline: "Join the Coalition. Grow Your Brand.",
     cta1: "Apply to Partner",
     cta2: "Integration Docs",
     cta3: "Contact Sales",
@@ -1784,7 +1784,7 @@ allTranslations.partners = {
 
     sectionCalculator: {
       title: "Monthly Target Calculator",
-      subtitle: "See how much to donate based on your GMV",
+      subtitle: "Our membership tiers are based on your business size and needs",
       gmvLabel: "Monthly GMV:",
       copackTarget: "Co-pack Target",
       centralTarget: "Central Target",
@@ -2003,8 +2003,8 @@ allTranslations.partners = {
         },
         {
           number: 3,
-          title: "Donate",
-          description: "List overstock inventory and start earning credit"
+          title: "Join",
+          description: "Select your membership tier and go live"
         }
       ]
     },
@@ -2014,7 +2014,7 @@ allTranslations.partners = {
       faqs: [
         {
           q: "How much does it cost?",
-          a: "Free to join, no monthly fees, no transaction fees. You 'pay' by donating overstock inventory. The more you donate (relative to your GMV), the better your placement."
+          a: "We have fixed monthly membership fees. Product donations are optional and do not affect your tier or benefits."
         },
         {
           q: "What if I don't have overstock?",
@@ -2022,11 +2022,10 @@ allTranslations.partners = {
         },
         {
           q: "How do customers redeem rewards?",
-          a: "At checkout, they see available Buds rewards. One click adds it to their order. For co-pack, you fulfill it. For central, our 3PL handles it."
-        },
+          a: "At checkout, they see available Buds rewards. One click adds it to their ordera: "Reward fulfillment is handled by the Buds network. Optional product donations are fulfilled by the partner."       },
         {
           q: "Can I control which products I donate?",
-          a: "Yes. You choose exactly which SKUs to list as Buds rewards. Set quantities, expiration dates, and donation windows."
+          a: "Yes, for optional product donations, you can choose which SKUs to list as rewards and set quantities. This is managed in Airtable."
         },
         {
           q: "How do the membership tiers work?",
@@ -2058,7 +2057,7 @@ allTranslations.partners = {
         },
         {
           q: "What if a customer has an issue with a reward?",
-          a: "For co-pack, you handle customer service (it's your product). For central, Buds handles all customer service related to reward fulfillment."
+          a: "For optional product donations, you handle customer service. For all other rewards, Buds handles customer service."
         },
         {
           q: "How do I track my performance?",
@@ -2066,7 +2065,7 @@ allTranslations.partners = {
         },
         {
           q: "Can I donate products from other brands?",
-          a: "No. Only donate products you manufacture or have distribution rights for. We verify product ownership during onboarding."
+          a: "For optional product donations, you can only list products you manufacture or have distribution rights for. We verify this during onboarding."
         },
         {
           q: "What happens to unsold inventory (central)?",
