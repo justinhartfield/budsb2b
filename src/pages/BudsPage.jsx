@@ -48,7 +48,6 @@ const BudsPage = () => {
   const currentContent = partnerContent[activeTab][language]
   const currentSections = {
     whatYouGet: sectionContent.whatYouGet[language],
-    howDonationsWork: sectionContent.howDonationsWork[language],
     cta: sectionContent.cta[language]
   }
 
@@ -253,60 +252,7 @@ const BudsPage = () => {
         </div>
       </section>
 
-      {/* How Donations Work */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-16">{currentSections.howDonationsWork.title}</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-white border-2 border-green-400 rounded-2xl p-8 relative"
-            >
-              <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                Recommended
-              </div>
-              
-              <div className="flex items-center gap-3 mb-4">
-                <Truck className="w-6 h-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-900">🚚 {currentSections.howDonationsWork.copack.title}</h3>
-              </div>
-              
-              <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.copack.description}</p>
-              
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
-                <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-green-800 font-semibold">
-                  {currentSections.howDonationsWork.copack.credit}
-                </p>
-              </div>
-            </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-white border-2 border-blue-300 rounded-2xl p-8"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <FileText className="w-6 h-6 text-blue-600" />
-                <h3 className="text-2xl font-bold text-gray-900">📦 {currentSections.howDonationsWork.central.title}</h3>
-              </div>
-              
-              <p className="text-gray-600 mb-6">{currentSections.howDonationsWork.central.description}</p>
-              
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-start gap-3">
-                <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-blue-800 font-semibold">
-                  {currentSections.howDonationsWork.central.credit}
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Monthly Target Calculator */}
       <section className="py-20 px-6 bg-white">
