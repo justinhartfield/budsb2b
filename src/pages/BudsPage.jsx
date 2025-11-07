@@ -256,62 +256,55 @@ const BudsPage = () => {
 
 
 
-      {/* Monthly Target Calculator */}
+      {/* 80/20 Model Section */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 text-center mb-6">
-            💳 Membership Tiers
+            The 80/20 Split: Standard vs. Premium Rewards
           </h2>
           
-          <p className="text-lg text-gray-600 text-center mb-4 max-w-3xl mx-auto">
-            Our revenue is primarily generated through brand sponsorships for placement in our premium reward catalog. This allows us to offer a powerful loyalty solution to our partners at a low cost.
-          </p>
-          
-          <p className="text-sm text-gray-500 text-center mb-12">
-            Product donations are optional and do not affect your tier or benefits.
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+            Our hybrid model combines a standard coalition loyalty program with a premium, high-margin revenue stream powered by brand sponsorships.
           </p>
 
-          <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Membership Tiers</h3>
-            <p className="text-gray-600 text-center mb-6">Affordable monthly fees for our coalition partners</p>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Basic</h4>
-                <p className="text-3xl font-black text-green-600 mb-1">€500</p>
-                <p className="text-sm text-gray-600 mb-4">per month</p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>✓ Standard analytics dashboard</li>
-                  <li>✓ Loyalty widget</li>
-                  <li>✓ Basic support</li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Growth</h4>
-                <p className="text-3xl font-black text-blue-600 mb-1">€1,500</p>
-                <p className="text-sm text-gray-600 mb-4">per month</p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>✓ Everything in Basic</li>
-                  <li>✓ Newsletter mentions</li>
-                  <li>✓ Priority support</li>
-                </ul>
-              </div>
-
-              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Enterprise</h4>
-                <p className="text-3xl font-black text-yellow-600 mb-1">€5,000</p>
-                <p className="text-sm text-gray-600 mb-4">per month</p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>✓ Everything in Growth</li>
-                  <li>✓ Premium placement</li>
-                  <li>✓ Dedicated support</li>
-                </ul>
-              </div>
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Standard Buds (80% of Catalog)</h3>
+              <p className="text-gray-600 mb-6">The foundation of our loyalty program is a standard coalition model where partners contribute to a shared reward pool. This allows us to offer a wide variety of rewards to all Buds members at no cost to the platform.</p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="font-bold text-green-500 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Funding Source:</span> Partner-donated inventory (overstock and promotional items)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-green-500 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Availability:</span> All Buds members</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-green-500 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Economics:</span> 100% margin (cost to Buds is €0)</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-lg shadow-md border border-yellow-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Buds Pro Exclusives (20% of Catalog)</h3>
+              <p className="text-gray-600 mb-6">The premium tier of our program, Buds Pro, offers exclusive access to high-end products and experiences. This is where we generate the majority of our revenue and provide a unique value proposition for our top members and brand partners.</p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="font-bold text-yellow-600 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Funding Source:</span> Brand sponsorships and Buds procurement</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-yellow-600 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Availability:</span> Only Buds Pro members (Our Top 10% of Customers)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-bold text-yellow-600 mr-2 text-xl">✓</span>
+                  <span><span className="font-bold">Economics:</span> Variable margin, high profitability</span>
+                </li>
+              </ul>
             </div>
           </div>
-
-          
         </div>
       </section>
 
