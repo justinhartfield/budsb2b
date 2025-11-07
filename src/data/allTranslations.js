@@ -1845,11 +1845,11 @@ allTranslations.partners = {
       features: [
         {
           title: "Progressive Tiers",
-          description: "Bronze → Silver → Gold → Platinum tiers with increasing benefits"
+          description: "Multiple reward levels encourage larger purchases and unlock access to more valuable rewards"
         },
         {
-          title: "AI Recommendations",
-          description: "Personalized reward suggestions based on purchase history"
+          title: "Smart Suggestions",
+          description: "AI-powered recommendations to reach reward thresholds and unlock premium rewards"
         },
         {
           title: "Premium Rewards",
