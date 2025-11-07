@@ -1852,8 +1852,8 @@ allTranslations.partners = {
           description: "Personalized reward suggestions based on purchase history"
         },
         {
-          title: "Exclusive Access",
-          description: "Higher tiers unlock premium partner rewards and early access"
+          title: "Premium Rewards",
+          description: "Access to exclusive products and experiences from top brands"
         }
       ]
     },

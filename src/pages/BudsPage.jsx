@@ -464,7 +464,7 @@ const BudsPage = () => {
             {[
               { title: '📈 Progressive Tiers', desc: 'Multiple reward levels encourage larger purchases' },
               { title: '🤖 Smart Suggestions', desc: 'AI-powered recommendations to reach reward thresholds' },
-              { title: '⭐ Exclusive Access', desc: '[VIBES] branded products only available through rewards', useLogo: true }
+              { title: '🎁 Premium Rewards', desc: 'Access to exclusive products and experiences from top brands' }
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
