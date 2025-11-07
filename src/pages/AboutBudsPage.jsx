@@ -51,7 +51,7 @@ const AboutBudsPage = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-green-500 mr-2">✓</span>
-                  <span><span className="font-bold">Availability:</span> Only Buds Pro members (€1,000+ annual spend)</span>
+                  <span><span className="font-bold">Availability:</span> Only Buds Pro members (Our Top 10% of Customers)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-green-500 mr-2">✓</span>
@@ -64,45 +64,17 @@ const AboutBudsPage = () => {
 
         <div className="mt-12 lg:mt-16">
           <h3 className="text-2xl font-bold text-gray-900 text-center">Revenue Streams</h3>
-          <div className="mt-6 grid gap-8 md:grid-cols-3">
+          <div className="mt-6 grid gap-8 md:grid-cols-2">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h4 className="text-xl font-bold text-gray-900">1. Brand Sponsorships</h4>
               <p className="mt-2 text-gray-600">Brands pay premium fees for access to our high-value audience and exclusive placement in the Buds Pro catalog. This is our primary revenue driver.</p>
-              <p className="mt-4 text-3xl font-extrabold text-gray-900">€1.8M - €3.6M</p>
-              <p className="text-gray-500">Annual Revenue</p>
+              <p className="mt-4 text-lg font-semibold text-gray-700">Primary Revenue Source</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h4 className="text-xl font-bold text-gray-900">2. Premium Merchandise Margin</h4>
               <p className="mt-2 text-gray-600">We generate a margin on the sale of premium products in the Buds Pro catalog, often through a hybrid model of credits and cash co-pays.</p>
-              <p className="mt-4 text-3xl font-extrabold text-gray-900">€57k - €225k</p>
-              <p className="text-gray-500">Annual Profit</p>
+              <p className="mt-4 text-lg font-semibold text-gray-700">Secondary Revenue Source</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-gray-900">3. Pro Membership Fees</h4>
-              <p className="mt-2 text-gray-600">A recurring revenue stream from our most engaged members who pay for access to the exclusive Buds Pro tier.</p>
-              <p className="mt-4 text-3xl font-extrabold text-gray-900">€91.7k - €839.6k</p>
-              <p className="text-gray-500">Annual Revenue</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 lg:mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center">Data-Driven User Segmentation</h3>
-          <p className="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">
-            Our model is built on a deep understanding of user spending habits. Analysis of Weed.de data reveals a clear premium tier that drives a disproportionate amount of revenue.
-          </p>
-          <div className="mt-6 bg-white p-8 rounded-lg shadow-md">
-            <img src="/user_segmentation_chart.png" alt="User Segmentation Chart" className="mx-auto" />
-          </div>
-        </div>
-
-        <div className="mt-12 lg:mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center">Financial Impact</h3>
-          <p className="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">
-            The Buds Pro model nearly doubles our total company revenue, transforming Buds from a "nice-to-have" loyalty program into a "must-have" marketing channel for cannabis brands.
-          </p>
-          <div className="mt-6 bg-white p-8 rounded-lg shadow-md">
-            <img src="/financial_impact_chart.png" alt="Financial Impact Chart" className="mx-auto" />
           </div>
         </div>
 
