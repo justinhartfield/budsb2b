@@ -39,7 +39,7 @@ const PartnerDashboardPage = () => {
     {
       icon: ShoppingCart,
       label: 'Total Purchases',
-      value: '$142,580',
+      value: '€142,580',
       change: '+8.2%',
       trend: 'up',
       color: 'from-green-500 to-emerald-500'
@@ -55,7 +55,7 @@ const PartnerDashboardPage = () => {
     {
       icon: Award,
       label: 'Avg. Customer Value',
-      value: '$50.08',
+      value: '€50.08',
       change: '-2.3%',
       trend: 'down',
       color: 'from-orange-500 to-red-500'
@@ -63,11 +63,11 @@ const PartnerDashboardPage = () => {
   ]
 
   const topProducts = [
-    { name: 'Blue Dream 3.5g', purchases: 456, revenue: '$18,240', trend: 'up' },
-    { name: 'Sour Diesel Pre-Roll', purchases: 389, revenue: '$11,670', trend: 'up' },
-    { name: 'Hybrid Gummies 10pk', purchases: 312, revenue: '$9,360', trend: 'down' },
-    { name: 'OG Kush 7g', purchases: 278, revenue: '$13,904', trend: 'up' },
-    { name: 'CBD Tincture 1000mg', purchases: 245, revenue: '$12,250', trend: 'up' }
+    { name: 'Blue Dream 3.5g', purchases: 456, revenue: '€18,240', trend: 'up' },
+    { name: 'Sour Diesel Pre-Roll', purchases: 389, revenue: '€11,670', trend: 'up' },
+    { name: 'Hybrid Gummies 10pk', purchases: 312, revenue: '€9,360', trend: 'down' },
+    { name: 'OG Kush 7g', purchases: 278, revenue: '€13,904', trend: 'up' },
+    { name: 'CBD Tincture 1000mg', purchases: 245, revenue: '€12,250', trend: 'up' }
   ]
 
   const topRedemptions = [
@@ -205,7 +205,7 @@ const PartnerDashboardPage = () => {
                       transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
                       className="h-full bg-gradient-to-r from-green-500 to-cyan-500 rounded-full flex items-center justify-end pr-3"
                     >
-                      <span className="text-white text-xs font-bold">${(item.amount * 200).toLocaleString()}</span>
+                      <span className="text-white text-xs font-bold">€{(item.amount * 200).toLocaleString()}</span>
                     </motion.div>
                   </div>
                 </div>
@@ -374,11 +374,11 @@ const PartnerDashboardPage = () => {
               </thead>
               <tbody>
                 {[
-                  { name: 'Sarah Martinez', purchases: '$2,450', buds: '3,240', lastVisit: 'Today', tier: 'Enterprise' },
-                  { name: 'Mike Thompson', purchases: '$1,890', buds: '2,150', lastVisit: '2 days ago', tier: 'Basic' },
-                  { name: 'Jessica Lee', purchases: '$3,120', buds: '4,680', lastVisit: 'Today', tier: 'Enterprise' },
-                  { name: 'David Rodriguez', purchases: '$980', buds: '890', lastVisit: '1 week ago', tier: 'Standard' },
-                  { name: 'Emma Kim', purchases: '$1,560', buds: '1,920', lastVisit: '3 days ago', tier: 'Standard' }
+                  { name: 'Sarah Martinez', purchases: '€2,450', buds: '3,240', lastVisit: 'Today', tier: 'Enterprise' },
+                  { name: 'Mike Thompson', purchases: '€1,890', buds: '2,150', lastVisit: '2 days ago', tier: 'Basic' },
+                  { name: 'Jessica Lee', purchases: '€3,120', buds: '4,680', lastVisit: 'Today', tier: 'Enterprise' },
+                  { name: 'David Rodriguez', purchases: '€980', buds: '890', lastVisit: '1 week ago', tier: 'Growth' },
+                  { name: 'Emma Kim', purchases: '€1,560', buds: '1,920', lastVisit: '3 days ago', tier: 'Growth' }
                 ].map((customer, index) => (
                   <tr key={index} className="border-b border-gray-800 hover:bg-gray-900/50 transition-colors">
                     <td className="py-3 px-4 text-white font-semibold">{customer.name}</td>

@@ -429,7 +429,7 @@ export const allTranslations = {
           },
           {
             q: "Wie lösen Kunden Buds-Prämien ein?",
-            a: "Beim Checkout sehen sie verfügbare Buds-Prämien neben Ihren bestehenden Optionen. Ein Klick fügt es ihrer Bestellung hinzu. Wir übernehmen die Erfüllung (Co-Pack oder zentral)."
+            a: "Beim Checkout sehen sie verfügbare Buds-Prämien neben Ihren bestehenden Optionen. Ein Klick fügt es ihrer Bestellung hinzu. Die Erfüllung wird von Buds übernommen."
           },
           {
             q: "Wird dies unsere bestehenden Prämieneinlösungen kannibalisieren?",
@@ -638,7 +638,7 @@ allTranslations.platforms = {
         },
         {
           q: "What's the customer experience?",
-          a: "At checkout, customers see available Buds rewards. One click adds it to their order. Fulfillment is handled by Buds (co-pack or central 3PL). Seamless for customers and sellers."
+          a: "At checkout, customers see available Buds rewards. One click adds it to their order. Fulfillment is handled by Buds. Seamless for customers and sellers."
         },
         {
           q: "Can we white-label this completely?",
@@ -848,7 +848,7 @@ allTranslations.platforms = {
         },
         {
           q: "Wie ist die Kundenerfahrung?",
-          a: "Beim Checkout sehen Kunden verfügbare Buds-Prämien. Ein Klick fügt es ihrer Bestellung hinzu. Die Erfüllung wird von Buds übernommen (Co-Pack oder zentraler 3PL). Nahtlos für Kunden und Verkäufer."
+          a: "Beim Checkout sehen Kunden verfügbare Buds-Prämien. Ein Klick fügt es ihrer Bestellung hinzu. Die Erfüllung wird von Buds übernommen. Nahtlos für Kunden und Verkäufer."
         },
         {
           q: "Können wir dies vollständig White-Labeln?",
@@ -2041,7 +2041,7 @@ allTranslations.partners = {
         },
         {
           q: "How does fulfillment work?",
-          a: "Co-pack: Customer redeems, you ship directly (like a normal order). Central: You send inventory to our EU 3PL, we handle all fulfillment when redeemed."
+          a: "Fulfillment is handled by Buds."
         },
         {
           q: "What platforms do you integrate with?",
@@ -2397,7 +2397,7 @@ allTranslations.partners = {
         },
         {
           q: "Wie lösen Kunden Prämien ein?",
-          a: "Beim Checkout sehen sie verfügbare Buds-Prämien. Ein Klick fügt es ihrer Bestellung hinzu. Für Co-Pack erfüllen Sie es. Für zentral übernimmt unser 3PL."
+          a: "Beim Checkout sehen sie verfügbare Buds‑Prämien. Ein Klick fügt es ihrer Bestellung hinzu. Die Erfüllung wird von Buds übernommen."
         },
         {
           q: "Kann ich kontrollieren, welche Produkte ich spende?",
@@ -2414,7 +2414,7 @@ allTranslations.partners = {
         },
         {
           q: "Wie funktioniert die Erfüllung?",
-          a: "Co-Pack: Kunde löst ein, Sie versenden direkt (wie eine normale Bestellung). Zentral: Sie senden Inventar an unseren EU-3PL, wir übernehmen alle Erfüllung bei Einlösung."
+          a: "Die Erfüllung wird von Buds übernommen."
         },
         {
           q: "Mit welchen Plattformen integrieren Sie?",

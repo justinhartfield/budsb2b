@@ -155,7 +155,7 @@ const PharmaciesPage = () => {
   const faqs = [
     { q: "Is this legal for pharmacies in Germany/EU?", a: "Yes. Buds only handles non-prescription wellness products. No Rx data is shared, no prescription rewards. Fully compliant with pharmacy regulations and GDPR/DSGVO." },
     { q: "Are product donations required?", a: "No, product donations are completely optional and do not affect your membership tier or benefits." },
-    { q: "How do patients redeem rewards?", a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. We handle fulfillment—either you ship (co-pack) or our 3PL ships (central)." },
+    { q: "How do patients redeem rewards?", a: "At checkout (in-store or online), they see available rewards. One click adds it to their order. Buds handles fulfillment." },
     { q: "What about patient privacy?", a: "Zero patient data sharing. We only track anonymous redemption events. Your patient relationships and data remain 100% private and under your control." },
     { q: "Can we control which products appear as rewards?", a: "Yes. Full control via pharmacy admin panel. Approve/reject products, set categories, exclude brands, or curate specific collections for your patients." },
     { q: "What if a product is recalled?", a: "Immediate network-wide removal. We monitor regulatory databases and remove recalled products within hours. Audit trail shows all actions taken." },

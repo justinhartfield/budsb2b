@@ -536,197 +536,37 @@ const BudsPage = () => {
         </div>
       </section>
 
-      {/* Placement & Perks */}
+      {/* Membership Tier Benefits */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-black text-gray-900 text-center mb-12">Placement & perks (how we rank)</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <h2 className="text-4xl font-black text-gray-900 text-center mb-12">Membership tier benefits</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">All tiers include the Buds loyalty widget and standard analytics. Higher tiers add visibility and support benefits.</p>
+
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Membership Tiers</h3>
-              <p className="text-gray-600">We offer three simple membership tiers: Basic, Growth, and Enterprise.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Basic</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>✓ Loyalty widget</li>
+                <li>✓ Standard analytics dashboard</li>
+                <li>✓ Email support</li>
+              </ul>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Higher Scores</h3>
-              <p className="text-gray-600">Higher tiers unlock more benefits, including better widget placement and newsletter features.</p>
+            <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Growth</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>✓ Everything in Basic</li>
+                <li>✓ Newsletter mentions</li>
+                <li>✓ Priority support</li>
+              </ul>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Tiebreakers</h3>
-              <p className="text-gray-600">Ties are broken by recent click‑through performance.</p>
+            <div className="bg-yellow-50 rounded-xl p-6 border border-yellow-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Enterprise</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>✓ Everything in Growth</li>
+                <li>✓ Premium placement</li>
+                <li>✓ Dedicated support</li>
+              </ul>
             </div>
-          </div>
-
-          {/* Newsletter & Widget Mockup */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-6">Top Donors Get Prime Exposure</h3>
-            <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-              See how high-performing partners get featured in our weekly newsletter and receive top widget placement across the Buds network.
-            </p>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Newsletter Mockup */}
-              <div className="bg-white rounded-2xl border-2 border-gray-300 overflow-hidden shadow-lg">
-                <div className="bg-gray-100 px-4 py-3 border-b border-gray-300 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="ml-4 text-sm font-semibold text-gray-700">Gmail</span>
-                  </div>
-                  <span className="text-xs text-gray-500">•••</span>
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div>
-                      <h4 className="font-bold text-gray-900">Buds Weekly Newsletter</h4>
-                      <p className="text-sm text-gray-600">hello@budsrewards.com</p>
-                    </div>
-                    <span className="text-xs text-gray-500">Today, 8:00 AM</span>
-                  </div>
-                  <p className="text-xs text-gray-500 mb-4">To: you@example.com</p>
-                  
-                  <div className="bg-gradient-to-br from-green-50 to-cyan-50 rounded-xl p-6 mb-4">
-                    <h5 className="text-xl font-black text-gray-900 mb-2">📧 Buds Weekly</h5>
-                    <p className="text-sm text-gray-600 mb-4">Partner Spotlight Edition</p>
-                    
-                    <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-3 mb-4">
-                      <p className="text-xs font-semibold text-yellow-800">SPONSORED CONTENT</p>
-                      <p className="text-xs text-yellow-700">This content is sponsored by premium brand partners</p>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg p-4 mb-4">
-                      <p className="text-xs font-semibold text-purple-600 mb-2">FEATURED ADVERTISER PARTNER</p>
-                      <h6 className="font-bold text-gray-900 mb-2">Partner Store A - Signature Series</h6>
-                      <p className="text-xs text-gray-600 mb-3">Our advertising partner is offering exclusive products and accessories as Buds rewards.</p>
-                      
-                      <div className="bg-green-50 border border-green-200 rounded p-2">
-                        <p className="text-xs font-semibold text-green-800">Advertiser Exclusive Offer</p>
-                        <p className="text-xs text-green-700">Growth & Enterprise tiers get priority access</p>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg p-4">
-                      <p className="text-xs font-semibold text-gray-900 mb-3">🏆 This Week's Top Donors</p>
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="w-6 h-6 bg-yellow-400 text-yellow-900 rounded-full flex items-center justify-center text-xs font-bold">1</span>
-                            <span className="text-xs font-semibold">Partner Store A</span>
-                          </div>
-                          <span className="text-xs text-green-600 font-semibold">Score: 1.8</span>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="w-6 h-6 bg-gray-300 text-gray-700 rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                            <span className="text-xs font-semibold">Partner Store B</span>
-                          </div>
-                          <span className="text-xs text-green-600 font-semibold">Score: 1.5</span>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="w-6 h-6 bg-orange-300 text-orange-900 rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                            <span className="text-xs font-semibold">Partner Store C</span>
-                          </div>
-                          <span className="text-xs text-green-600 font-semibold">Score: 1.3</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <p className="text-xs text-gray-500 text-center">Sent to 12,450+ cannabis enthusiasts across EU</p>
-                </div>
-              </div>
-
-              {/* Widget Placement Hierarchy */}
-              <div className="space-y-4">
-                <h4 className="text-xl font-bold text-gray-900 mb-4">🎯 Widget Placement</h4>
-                <p className="text-sm text-gray-600 mb-6">Membership Tier Benefits</p>
-                
-                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-400 rounded-xl p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-yellow-800">🥇 Top Placement</span>
-                    <span className="text-xs font-bold text-yellow-900">Score: 1.5+</span>
-                  </div>
-                  <h5 className="font-bold text-gray-900 mb-2">Partner Store A - Signature Series Kit</h5>
-                  <div className="space-y-1">
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-green-600" /> First position in widget
-                    </p>
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-green-600" /> Featured in newsletter
-                    </p>
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-green-600" /> Premium analytics
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-xl p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-blue-800">🥈 Mid Placement</span>
-                    <span className="text-xs font-bold text-blue-900">Score: 1.0-1.4</span>
-                  </div>
-                  <h5 className="font-bold text-gray-900 mb-2">Partner Store B - Premium Accessories</h5>
-                  <div className="space-y-1">
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-blue-600" /> Standard widget position
-                    </p>
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-blue-600" /> Monthly newsletter mention
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-300 rounded-xl p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-gray-700">🥉 Standard Placement</span>
-                    <span className="text-xs font-bold text-gray-900">Score: 0.8-0.9</span>
-                  </div>
-                  <h5 className="font-bold text-gray-900 mb-2">Partner Store C - Basic Rewards</h5>
-                  <div className="space-y-1">
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-gray-600" /> Rotation-based display
-                    </p>
-                    <p className="text-xs text-gray-700 flex items-center gap-1">
-                      <Check className="w-3 h-3 text-gray-600" /> Basic analytics
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-300 rounded-xl p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-red-800">Below Target</span>
-                    <span className="text-xs font-bold text-red-900">Score: &lt;0.8</span>
-                  </div>
-                  <h5 className="font-bold text-gray-900 mb-2">Reduced visibility until catch-up</h5>
-                  <p className="text-xs text-red-700">⚠ Limited display • Catch-up plan required</p>
-                </div>
-
-                <p className="text-center text-sm font-semibold text-gray-900 mt-6">
-                  Higher Tier = Better Placement & More Features
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-green-50 to-cyan-50 rounded-2xl p-8 border border-green-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Top Donor Benefits</h3>
-            <ul className="space-y-3 max-w-3xl mx-auto">
-              {[
-                'First position in Buds reward widgets across all partner sites',
-                'Featured product spotlights in weekly newsletter sent to 12,450+ subscribers',
-                'Premium analytics and performance insights',
-                'Exclusive access to limited-time promotional campaigns',
-                'Priority co-marketing opportunities with other top brands',
-                'Direct feedback line to product development team'
-              ].map((benefit, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">{benefit}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>

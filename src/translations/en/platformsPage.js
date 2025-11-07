@@ -140,7 +140,7 @@ export const platformsPage = {
       },
       {
         category: "Redemption Flow",
-        details: "Buds-branded checkout widget or deeper platform integration. Co-pack or central fulfillment"
+        details: "Buds-branded checkout widget or deeper platform integration. Fulfillment is handled by Buds"
       },
       {
         category: "Analytics & Reporting",
@@ -170,7 +170,7 @@ export const platformsPage = {
       },
       {
         q: "How does fulfillment work?",
-        a: "Buds handles it. Either co-pack (seller ships directly) or central (our 3PL ships). Your platform has zero fulfillment burden or customer service load."
+        a: "Buds handles fulfillment. Your platform has zero fulfillment burden or customer service load."
       },
       {
         q: "Is Buds a white-label solution?",

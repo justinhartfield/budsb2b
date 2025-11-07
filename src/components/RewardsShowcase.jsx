@@ -15,7 +15,7 @@ const rewards = [
   { image: rewardBox, name: 'Mystery Rewards', delay: 0.5 }
 ]
 
-const RewardsShowcase = ({ title = "Reward Variety", subtitle = "From travel to merchandise, cannabis products to experiences", compact = false }) => {
+const RewardsShowcase = ({ title = "Reward Variety", subtitle = "80% standard vouchers via Comarch, 20% curated cannabis products", compact = false }) => {
   return (
     <div className={compact ? "py-12" : "py-20"}>
       <div className="text-center mb-12">

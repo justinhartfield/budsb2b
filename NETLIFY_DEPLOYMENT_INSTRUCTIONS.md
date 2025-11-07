@@ -64,6 +64,7 @@ Once deployed, the following routes will be accessible:
 - `/partners` - Partner landing page
 - `/partners/login` - Partner login page
 - `/partners/dashboard` - Partner analytics dashboard
+ - `/contact` - Contact Sales form
 
 ## ✅ Post-Deployment Checklist
 
@@ -72,7 +73,7 @@ Once deployed, the following routes will be accessible:
 - [ ] Check partner dashboard loads properly
 - [ ] Test responsive design on mobile
 - [ ] Verify all images load correctly
-- [ ] Test form submissions (login page)
+- [ ] Test form submissions (contact form, login page)
 
 ## 🎨 Custom Domain (Optional)
 

@@ -85,8 +85,8 @@ export const sectionContent = {
           description: "Transform dead stock into valuable loyalty rewards without public discounting."
         },
         {
-          title: "Prime Exposure",
-          description: "Get top widget placement and features in Buds weekly newsletter."
+          title: "Standard Exposure",
+          description: "Newsletter mentions and standard widget placement across the network."
         },
         {
           title: "Privacy-Safe Insights",
@@ -106,8 +106,8 @@ export const sectionContent = {
           description: "Verwandeln Sie tote Bestände in wertvolle Treueprämien ohne öffentliche Rabatte."
         },
         {
-          title: "Erstklassige Präsenz",
-          description: "Erhalten Sie Top-Widget-Platzierung und Features im wöchentlichen Buds-Newsletter."
+          title: "Standard-Präsenz",
+          description: "Newsletter-Erwähnungen und Standard-Widget-Platzierung im Netzwerk."
         },
         {
           title: "Datenschutzsichere Einblicke",

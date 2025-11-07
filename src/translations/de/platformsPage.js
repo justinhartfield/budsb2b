@@ -140,7 +140,7 @@ export const platformsPage = {
       },
       {
         category: "Einlösungsprozess",
-        details: "Buds-gebrandetes Checkout-Widget oder tiefere Plattformintegration. Co-Pack oder zentrale Abwicklung"
+        details: "Buds-gebrandetes Checkout-Widget oder tiefere Plattformintegration. Die Abwicklung übernimmt Buds"
       },
       {
         category: "Analyse & Reporting",
@@ -170,7 +170,7 @@ export const platformsPage = {
       },
       {
         q: "Wie funktioniert die Abwicklung?",
-        a: "Buds übernimmt diese. Entweder Co-Pack (Verkäufer versendet direkt) oder zentral (unser 3PL versendet). Ihre Plattform hat keinerlei Abwicklungs- oder Kundenserviceaufwand."
+        a: "Buds übernimmt die Abwicklung. Ihre Plattform hat keinerlei Abwicklungs- oder Kundenserviceaufwand."
       },
       {
         q: "Ist Buds eine White-Label-Lösung?",
