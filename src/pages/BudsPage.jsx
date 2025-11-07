@@ -195,13 +195,15 @@ const BudsPage = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                {currentSections.cta.applyToPartner} <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg rounded-lg font-bold">
+                  {currentSections.cta.applyToPartner} <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-900 px-8 py-6 text-lg rounded-lg font-bold hover:bg-gray-50">
                 {currentSections.cta.integrationDocs}
               </Button>
-              <Link to="/partners/login">
+              <Link to="/contact">
                 <Button size="lg" variant="outline" className="border-2 border-red-500 text-red-500 px-8 py-6 text-lg rounded-lg font-bold hover:bg-red-50">
                   {currentSections.cta.contactSales}
                 </Button>
@@ -818,13 +820,15 @@ const BudsPage = () => {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-10 py-6 text-lg rounded-lg font-bold">
-              Apply to Partner <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-10 py-6 text-lg rounded-lg font-bold">
+                Apply to Partner <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-900 px-10 py-6 text-lg rounded-lg font-bold hover:bg-gray-50">
               Integration Docs
             </Button>
-            <Link to="/partners/login">
+            <Link to="/contact">
               <Button size="lg" variant="outline" className="border-2 border-red-500 text-red-500 px-10 py-6 text-lg rounded-lg font-bold hover:bg-red-50">
                 Contact Sales
               </Button>

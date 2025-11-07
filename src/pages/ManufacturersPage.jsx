@@ -207,9 +207,11 @@ const ManufacturersPage = () => {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                Apply as Manufacturer <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
+                  Apply as Manufacturer <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="border-2 border-pink-600 text-pink-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-pink-50">
                 Channel Strategy Guide
               </Button>
@@ -468,9 +470,11 @@ const ManufacturersPage = () => {
             Join manufacturers using Buds for sampling, brand awareness, and overstock relief
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Apply as Manufacturer <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
+                Apply as Manufacturer <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Link to="/partners/dashboard">
               <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
                 View Dashboard Demo

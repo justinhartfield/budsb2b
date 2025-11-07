@@ -62,7 +62,7 @@ const PlatformsPage = () => {
             </p>
 
             <div className="flex gap-4 justify-center flex-wrap">
-              <Link to="/partners/login">
+              <Link to="/contact">
                 <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
                   {t('cta.applyButton')} <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -309,7 +309,7 @@ const PlatformsPage = () => {
           <p className="text-xl mb-8 opacity-90">{t('cta.subtitle')}</p>
           
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link to="/partners/login">
+            <Link to="/contact">
               <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
                 {t('cta.applyButton')} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

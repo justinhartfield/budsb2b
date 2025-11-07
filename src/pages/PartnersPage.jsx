@@ -75,13 +75,15 @@ const PartnersPage = () => {
                   Partner Login
                 </Button>
               </Link>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-black text-xl px-12 py-6 rounded-full font-bold"
-              >
-                Become a Partner
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white hover:text-black text-xl px-12 py-6 rounded-full font-bold"
+                >
+                  Become a Partner
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -178,12 +180,14 @@ const PartnersPage = () => {
               Ready to join our coalition loyalty program? Choose a membership tier and start rewarding your customers today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button 
-                size="lg" 
-                className="bg-white text-black hover:bg-gray-200 text-xl px-12 py-6 rounded-full font-bold"
-              >
-                Choose a Plan
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-black hover:bg-gray-200 text-xl px-12 py-6 rounded-full font-bold"
+                >
+                  Choose a Plan
+                </Button>
+              </Link>
               <Link to="/partners/login">
                 <Button 
                   size="lg" 

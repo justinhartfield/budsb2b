@@ -193,9 +193,11 @@ const PharmaciesPage = () => {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
-                Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-6 text-lg rounded-lg font-bold">
+                  Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="border-2 border-cyan-600 text-cyan-600 px-8 py-6 text-lg rounded-lg font-bold hover:bg-cyan-50">
                 Compliance Documentation
               </Button>
@@ -398,9 +400,11 @@ const PharmaciesPage = () => {
 
           <div className="mt-12 text-center">
             <p className="text-lg text-gray-600 mb-6">Total time to launch: <span className="font-bold text-cyan-600">2-3 weeks</span></p>
-            <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-6 text-lg rounded-lg font-bold">
-              Start Application <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-10 py-6 text-lg rounded-lg font-bold">
+                Start Application <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -441,9 +445,11 @@ const PharmaciesPage = () => {
             Join pharmacy chains using Buds to increase retention and move wellness inventory
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
-              Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 px-10 py-6 text-lg rounded-lg font-bold">
+                Apply as Pharmacy <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Link to="/partners/dashboard">
               <Button size="lg" variant="outline" className="border-2 border-white text-white px-10 py-6 text-lg rounded-lg font-bold hover:bg-white/10">
                 View Dashboard Demo

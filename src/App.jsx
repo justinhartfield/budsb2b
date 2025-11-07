@@ -10,6 +10,7 @@ import ExistingLoyaltyPage from './pages/ExistingLoyaltyPage'
 import PlatformsPage from './pages/PlatformsPage'
 import PharmaciesPage from './pages/PharmaciesPage'
 import ManufacturersPage from './pages/ManufacturersPage'
+import ContactSalesPage from './pages/ContactSalesPage'
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/platforms" element={<><Navigation /><PlatformsPage /></>} />
           <Route path="/pharmacies" element={<><Navigation /><PharmaciesPage /></>} />
           <Route path="/manufacturers" element={<><Navigation /><ManufacturersPage /></>} />
+          <Route path="/contact" element={<><Navigation /><ContactSalesPage /></>} />
         </Routes>
       </div>
     </Router>
