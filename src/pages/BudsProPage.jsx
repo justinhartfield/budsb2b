@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Crown, Zap, Calendar, CreditCard, Tag, Sticker, Gift, Lock, TrendingUp, Users, Star } from 'lucide-react'
+import { Crown, Zap, Calendar, CreditCard, Tag, Sticker, Gift, Lock, TrendingUp, Users, Star, ShieldCheck, Gem, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import budsProBadge from '../assets/budspro-badge.png'
@@ -11,14 +11,14 @@ const BudsProPage = () => {
   const { t, tArray } = useTranslation('budsProPage')
   
   const iconMap = {
-    0: Calendar,
-    1: Zap,
-    2: Lock,
-    3: CreditCard,
-    4: Tag,
-    5: Sticker,
+    0: Gem,
+    1: Sparkles,
+    2: ShieldCheck,
+    3: Calendar,
+    4: Zap,
+    5: Lock,
     6: Gift,
-    7: Lock
+    7: CreditCard
   }
   
   const pathwayIcons = {
@@ -31,8 +31,8 @@ const BudsProPage = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-        <VideoBackground opacity={0.15} />
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/30 via-black/50 to-black/70" />
+        <VideoBackground opacity={0.2} />
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/40 via-black/60 to-black/80" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
@@ -47,7 +47,7 @@ const BudsProPage = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-              {t('hero.badge', 'Invitation Required')}
+              {t('hero.badge', 'Invitation Only')}
             </motion.div>
             
             <motion.div
@@ -61,20 +61,20 @@ const BudsProPage = () => {
             
             <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400">
-                {t('hero.title', 'BUDSPRO')}
+                {t('hero.title', 'BUDS PRO')}
               </span>
             </h1>
             
             <p className="text-3xl text-gray-300 mb-4 font-light">
-              {t('hero.subtitle', 'Go Pro. Get Closer.')}
+              {t('hero.subtitle', 'The Unattainable Tier')}
             </p>
             
             <p className="text-xl text-yellow-400 mb-8 font-semibold">
-              {t('hero.tagline', 'Your Loyalty, Elevated.')}
+              {t('hero.tagline', 'Exclusivity is the ultimate reward.')}
             </p>
             
             <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              {t('hero.description', 'Buds Pro is our invite-only premium tier for our top 10% of customers. It provides access to exclusive rewards and experiences from our brand partners.')}
+              {t('hero.description', 'Buds Pro is not a loyalty program; it is a statement. An invitation-only sanctum for the top 1% of cannabis connoisseurs, offering unparalleled access and experiences that money cannot buy.')}
             </p>
           </motion.div>
         </div>
@@ -85,10 +85,10 @@ const BudsProPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">
-              {t('perks.title', 'What Buds Pro includes')}
+              {t('perks.title', 'The Privileges of Pro')}
             </h2>
             <p className="text-gray-400 text-lg">
-              {t('perks.subtitle', 'Eight exclusive benefits for our most dedicated members')}
+              {t('perks.subtitle', 'Membership is a key to a world of unparalleled benefits')}
             </p>
           </div>
 
@@ -102,7 +102,7 @@ const BudsProPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300"
+                  className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300 transform hover:-translate-y-2"
                 >
                   <div className="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-yellow-400" />
@@ -116,42 +116,20 @@ const BudsProPage = () => {
         </div>
       </section>
 
-      {/* Partner Brands Showcase */}
-      <section className="py-16 px-6 bg-black border-y border-yellow-500/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-2">Partner Brands</h3>
-            <p className="text-gray-400">Access exclusive rewards from premium cannabis brands</p>
+      {/* Participation Cost Section */}
+      <section className="py-20 px-6 bg-black">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">
+            The Price of Exclusivity
+          </h2>
+          <p className="text-gray-400 text-lg mb-10">
+            Buds Pro is an invite-only program with a significant annual fee, ensuring a community of dedicated connoisseurs.
+          </p>
+          <div className="inline-block bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-yellow-500/30">
+            <p className="text-2xl text-gray-400 mb-2">Annual Membership Fee</p>
+            <p className="text-6xl font-black text-yellow-400">€10,000</p>
+            <p className="text-gray-500 mt-2">+ local taxes</p>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
-            >
-              <BrandLogo brand="cookies" size="xl" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
-            >
-              <BrandLogo brand="vibes" size="xl" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-yellow-500/10 hover:border-yellow-500/30 transition-all"
-            >
-              <BrandLogo brand="weedmaps" size="xl" />
-            </motion.div>
-          </div>
-          <p className="text-center text-gray-500 text-sm mt-8">+ 40 more premium cannabis brands and platforms</p>
         </div>
       </section>
 
@@ -160,10 +138,10 @@ const BudsProPage = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 text-white">
-              {t('invitation.title', 'How to get invited')}
+              {t('invitation.title', 'The Path to Pro')}
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              {t('invitation.subtitle', "Buds Pro is earned, not purchased. Here's how to receive an invitation:")}
+              {t('invitation.subtitle', "Membership is earned through dedication, not purchased. Here are the pathways to an invitation:")}
             </p>
           </div>
 
@@ -191,47 +169,19 @@ const BudsProPage = () => {
         </div>
       </section>
 
-      {/* Exclusive Community Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">
-            {t('exclusive.title', 'Join the inner circle')}
-          </h2>
-          <p className="text-gray-400 text-lg mb-12">
-            {t('exclusive.subtitle', 'Buds Pro members are part of an exclusive community of cannabis enthusiasts')}
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-            {tArray('exclusive.features').map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex items-center gap-3 bg-gray-800/50 p-4 rounded-lg border border-yellow-500/10"
-              >
-                <div className="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0" />
-                <span className="text-gray-300">{feature}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 px-6 bg-gradient-to-br from-yellow-900/20 via-black to-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
-            {t('cta.title', 'Interested in Buds Pro?')}
+            {t('cta.title', 'Your Journey Begins')}
           </h2>
           <p className="text-gray-400 text-lg mb-10">
-            {t('cta.subtitle', 'Stay engaged with Buds and our partners. Invitations are sent monthly to qualifying members.')}
+            {t('cta.subtitle', 'Engage with the Buds network. The most dedicated members are rewarded.')}
           </p>
           
           <Link to="/">
             <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-6 text-lg rounded-lg font-bold">
-              {t('cta.button', 'Back to Buds')}
+              {t('cta.button', 'Return to Buds')}
             </Button>
           </Link>
         </div>
@@ -241,4 +191,3 @@ const BudsProPage = () => {
 }
 
 export default BudsProPage
-

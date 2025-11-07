@@ -2651,3 +2651,104 @@ allTranslations.budsPro = {
   }
 }
 
+
+
+// ============================================
+// BUDS PRO PAGE - Complete translations
+// ============================================
+budsProPage: {
+  en: {
+    hero: {
+      badge: "Invitation Only",
+      title: "BUDS PRO",
+      subtitle: "The Unattainable Tier",
+      tagline: "Exclusivity is the ultimate reward.",
+      description: "Buds Pro is not a loyalty program; it is a statement. An invitation-only sanctum for the top 1% of cannabis connoisseurs, offering unparalleled access and experiences that money cannot buy."
+    },
+    perks: {
+      title: "The Privileges of Pro",
+      subtitle: "Membership is a key to a world of unparalleled benefits",
+      items: [
+        { title: "The Vault", description: "Access to a curated selection of off-menu, rare, and exclusive products from the world’s top brands." },
+        { title: "The Inner Circle", description: "Entry into a private, vetted community of cannabis leaders, creators, and connoisseurs." },
+        { title: "The Concierge", description: "A dedicated 24/7 concierge for sourcing, recommendations, and priority support." },
+        { title: "The Experience", description: "Invitations to exclusive, money-can’t-buy events, dinners, and brand partner experiences." },
+        { title: "The First Look", description: "Early access to new partner products and drops before they are available to the public." },
+        { title: "The Welcome Kit", description: "A personalized, high-end welcome kit valued at over €1,000." },
+        { title: "The Annual Gift", description: "A surprise annual gift box curated with the year’s best products." },
+        { title: "The Status", description: "The unmistakable recognition and status of being a Buds Pro member." }
+      ]
+    },
+invitation: {
+      title: "The Path to Pro",
+      subtitle: "Membership is earned through dedication, not purchased. Here are the pathways to an invitation:",
+      pathways: [
+        { title: "Sustained Engagement", description: "Demonstrate consistent, high-value interaction within the Buds network over a 12-month period." },
+        { title: "Top-Tier Spender", description: "Rank in the top 1% of spenders across the entire Buds ecosystem." },
+        { title: "Community Leadership", description: "Be a recognized and respected voice of influence within the cannabis community." }
+      ]
+    },
+    exclusive: {
+      title: "Join the inner circle",
+      subtitle: "Buds Pro members are part of an exclusive community of cannabis enthusiasts",
+      features: [
+        "Private Discord server",
+        "Direct line to Buds founders",
+        "Early access to new features",
+        "Exclusive content and AMAs"
+      ]
+    },
+    cta: {
+      title: "Your Journey Begins",
+      subtitle: "Engage with the Buds network. The most dedicated members are rewarded.",
+      button: "Return to Buds"
+    }
+  },
+  de: {
+    hero: {
+      badge: "Einladung erforderlich",
+      title: "BUDSPRO",
+      subtitle: "Werde Pro. Komm näher.",
+      tagline: "Deine Treue, aufgewertet.",
+      description: "Buds Pro ist unsere nur auf Einladung zugängliche Premium-Stufe für unsere Top-10%-Kunden. Es bietet Zugang zu exklusiven Prämien und Erlebnissen von unseren Markenpartnern."
+    },
+    perks: {
+      title: "Was Buds Pro beinhaltet",
+      subtitle: "Acht exklusive Vorteile für unsere engagiertesten Mitglieder",
+      items: [
+        { title: "Frühzeitiger Zugang", description: "Erster Blick auf neue Produkte und Partner-Drops" },
+        { title: "Exklusive Prämien", description: "Zugang zu einem kuratierten Katalog von Premium-Produkten" },
+        { title: "VIP-Events", description: "Einladungen zu privaten Partys und Branchenveranstaltungen" },
+        { title: "Bevorzugter Support", description: "Engagierter Concierge für alle Ihre Bedürfnisse" },
+        { title: "Bonus-Credits", description: "Erhalten Sie bei jedem Kauf Bonus-Credits" },
+        { title: "Kostenloser Versand", description: "Für alle Prämieneinlösungen" },
+        { title: "Jahresgeschenk", description: "Eine kuratierte Geschenkbox mit Premium-Produkten" },
+        { title: "Community-Zugang", description: "Treten Sie einer privaten Community von Cannabis-Enthusiasten bei" }
+      ]
+    },
+    invitation: {
+      title: "Wie man eingeladen wird",
+      subtitle: "Buds Pro wird verdient, nicht gekauft. So erhalten Sie eine Einladung:",
+      pathways: [
+        { title: "Hohes Engagement", description: "Interagieren Sie konsequent mit Buds und unseren Partnern" },
+        { title: "Top-Spender", description: "Gehören Sie zu den Top 10% der Spender im Buds-Netzwerk" },
+        { title: "Community-Einfluss", description: "Seien Sie eine anerkannte Stimme in der Cannabis-Community" }
+      ]
+    },
+    exclusive: {
+      title: "Tritt dem inneren Kreis bei",
+      subtitle: "Buds Pro-Mitglieder sind Teil einer exklusiven Community von Cannabis-Enthusiasten",
+      features: [
+        "Privater Discord-Server",
+        "Direkter Draht zu den Buds-Gründern",
+        "Frühzeitiger Zugang zu neuen Funktionen",
+        "Exklusive Inhalte und AMAs"
+      ]
+    },
+    cta: {
+      title: "Interessiert an Buds Pro?",
+      subtitle: "Bleiben Sie mit Buds und unseren Partnern in Kontakt. Einladungen werden monatlich an qualifizierte Mitglieder gesendet.",
+      button: "Zurück zu Buds"
+    }
+  }
+}
