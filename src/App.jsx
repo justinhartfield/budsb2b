@@ -11,7 +11,6 @@ import PlatformsPage from './pages/PlatformsPage'
 import PharmaciesPage from './pages/PharmaciesPage'
 import ManufacturersPage from './pages/ManufacturersPage'
 import ContactSalesPage from './pages/ContactSalesPage'
-import AboutBudsPage from './pages/AboutBudsPage'
 import './App.css'
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path="/pharmacies" element={<><Navigation /><PharmaciesPage /></>} />
           <Route path="/manufacturers" element={<><Navigation /><ManufacturersPage /></>} />
           <Route path="/contact" element={<><Navigation /><ContactSalesPage /></>} />
-          <Route path="/about-buds" element={<><Navigation /><AboutBudsPage /></>} />
         </Routes>
       </div>
     </Router>

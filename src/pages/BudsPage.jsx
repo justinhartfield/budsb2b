@@ -280,10 +280,6 @@ const BudsPage = () => {
                   <span className="font-bold text-green-500 mr-2 text-xl">✓</span>
                   <span><span className="font-bold">Availability:</span> All Buds members</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-green-500 mr-2 text-xl">✓</span>
-                  <span><span className="font-bold">Economics:</span> 100% margin (cost to Buds is €0)</span>
-                </li>
               </ul>
             </div>
             <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-lg shadow-md border border-yellow-200">
@@ -297,10 +293,6 @@ const BudsPage = () => {
                 <li className="flex items-start">
                   <span className="font-bold text-yellow-600 mr-2 text-xl">✓</span>
                   <span><span className="font-bold">Availability:</span> Only Buds Pro members (Our Top 10% of Customers)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-yellow-600 mr-2 text-xl">✓</span>
-                  <span><span className="font-bold">Economics:</span> Variable margin, high profitability</span>
                 </li>
               </ul>
             </div>
@@ -719,7 +711,7 @@ const BudsPage = () => {
             <div>
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link to="/about-buds" className="hover:text-white">About Buds</Link></li>
+                <li><a href="#" className="hover:text-white">About Us</a></li>
                 <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-white">GDPR Compliance</a></li>

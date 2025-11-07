@@ -80,17 +80,6 @@ const Navigation = () => {
           </Link>
 
           <Link
-            to="/about-buds"
-            className={`text-lg font-semibold transition-all duration-300 hover:scale-105 ${
-              isProPage
-                ? 'text-white/70 hover:text-white'
-                : 'text-gray-800 hover:text-green-600'
-            }`}
-          >
-            {t('navigation.aboutBuds', 'About Buds')}
-          </Link>
-
-          <Link
             to="/contact"
             className={`text-lg font-semibold transition-all duration-300 hover:scale-105 ${
               isProPage
