@@ -264,7 +264,7 @@ const BudsPage = () => {
           </h2>
           
           <p className="text-lg text-gray-600 text-center mb-4 max-w-3xl mx-auto">
-            Choose the membership tier that fits your business needs. All tiers include our standard loyalty widget and analytics dashboard.
+            Our revenue is primarily generated through brand sponsorships for placement in our premium reward catalog. This allows us to offer a powerful loyalty solution to our partners at a low cost.
           </p>
           
           <p className="text-sm text-gray-500 text-center mb-12">
@@ -272,8 +272,8 @@ const BudsPage = () => {
           </p>
 
           <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Simple Pricing</h3>
-            <p className="text-gray-600 text-center mb-6">Fixed monthly fees based on your business size</p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Membership Tiers</h3>
+            <p className="text-gray-600 text-center mb-6">Affordable monthly fees for our coalition partners</p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
@@ -709,7 +709,7 @@ const BudsPage = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
               <h3 className="text-2xl font-black mb-4">Buds Rewards</h3>
-              <p className="text-gray-400">Partner with us to turn excess inventory into customer loyalty rewards.</p>
+              <p className="text-gray-400">The coalition loyalty program for the cannabis industry, powered by brand sponsorships.</p>
             </div>
             
             <div>

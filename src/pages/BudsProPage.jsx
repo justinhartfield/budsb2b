@@ -74,7 +74,7 @@ const BudsProPage = () => {
             </p>
             
             <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              {t('hero.description', 'Buds Pro is our invitation-only premium tier for true cannabis connoisseurs. Unlock exclusive perks, early access, and VIP experiences.')}
+              {t('hero.description', 'Buds Pro is our invite-only premium tier for our top 10% of customers. It provides access to exclusive rewards and experiences from our brand partners.')}
             </p>
           </motion.div>
         </div>
