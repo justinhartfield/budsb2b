@@ -120,15 +120,19 @@ const BudsProPage = () => {
       <section className="py-20 px-6 bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">
-            The Price of Exclusivity
+            Membership Investment
           </h2>
           <p className="text-gray-400 text-lg mb-10">
-            Buds Pro is an invite-only program with a significant annual fee, ensuring a community of dedicated connoisseurs.
+            Buds Pro membership requires a significant annual investment, ensuring a community of truly dedicated connoisseurs.
           </p>
           <div className="inline-block bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-yellow-500/30">
-            <p className="text-2xl text-gray-400 mb-2">Annual Membership Fee</p>
-            <p className="text-6xl font-black text-yellow-400">€10,000</p>
-            <p className="text-gray-500 mt-2">+ local taxes</p>
+            <p className="text-2xl text-gray-400 mb-4">Annual Membership Fee</p>
+            <p className="text-4xl font-black text-yellow-400 mb-6">By Invitation Only</p>
+            <Link to="/">
+              <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black px-8 py-4 text-lg rounded-lg font-bold">
+                Inquire for Pricing
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
